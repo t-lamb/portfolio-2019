@@ -133,7 +133,9 @@ header {
   width: 50%;
   padding: .5rem 0 0 1.2rem;
   border-right: 1px solid #dde8e5;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.6; }
 
 .header-logo img {
   width: 2.2rem;
@@ -223,42 +225,18 @@ header {
 .tag-line {
   padding: 1rem .2rem; }
 
-.hello {
-  font-size: 1.5rem; }
-
-.bio {
-  padding: 0 0 2rem 0;
-  margin: 1.5rem 1.5rem 0rem 1.5rem; }
-
 .bio-pic {
-  background-image: url("imgs/teresa.jpg");
-  background-size: cover;
-  min-height: 400px;
-  background-position: center;
-  opacity: 0.7;
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(100%);
-  -moz-transition: .5s ease-in-out;
-  filter: grayscale(100%); }
-
-.bio-pic:hover {
-  opacity: 1;
-  -webkit-filter: grayscale(0%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(0%);
-  -moz-transition: .5s ease-in-out;
-  filter: grayscale(0%); }
+  display: block;
+  margin: 2rem auto;
+  width: 50%; }
 
 .info-text {
-  padding: 0 1.5rem 2.5rem 1.5rem;
-  border-bottom: 1px solid #dde8e5; }
+  padding: 0 1.5rem 1.5rem 1.5rem; }
+  .info-text.border-bottom {
+    border-bottom: 1px solid #dde8e5; }
 
 .proj-item {
   width: 100%; }
-
-.info-wide {
-  width: 50%; }
 
 .info-text h2 {
   margin-top: 1.5rem; }
@@ -331,24 +309,7 @@ iframe {
   padding: 1.5rem 0 2rem 1.5rem; }
 
 /*--MEDIA QUERIES--------------*/
-/*@media screen and (max-width: 1024px){
-  .proj-img-top {
-    padding-top: 30px;
-  }
-  .resume {
-    padding: 0rem 1rem 2rem;
-  }
-  .portfolio-item img{
-    width: 100%;
-  }
-  .project-section p,h3{
-    width: 100%;
-  }
-}*/
 @media screen and (max-width: 900px) {
-  .info-wide {
-    width: 100%; }
-
   iframe {
     width: 100%; } }
 @media screen and (max-width: 800px) {
