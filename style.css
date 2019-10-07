@@ -116,37 +116,40 @@ img {
 
 /*--HEADER--------------------*/
 header {
-  position: fixed;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
-  height: 3.3rem;
-  background-color: #ffffff;
-  margin: 0 auto;
-  font-size: 0; }
+  z-index: 10; }
   header a {
     color: #3b3a36; }
 
+nav {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr; }
+
 .header-logo {
-  float: left;
-  width: 50%;
-  padding: .5rem 0 0 1.2rem;
   border-right: 1px solid #dde8e5;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 1.6; }
+  padding: .5rem 0 .5rem 1.5rem; }
 
-.header-logo img {
-  width: 2.2rem;
-  margin: 0 .5rem .2rem 0;
-  vertical-align: bottom; }
+.header-nav {
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-auto-flow: column;
+  justify-content: start;
+  padding: .5rem 0 .5rem 1.5rem; }
 
 .header-nav a {
   font-size: 1rem;
   display: inline-block;
-  margin: .8rem 1rem 0 1.5rem;
-  padding: 0 0 .4rem 0; }
+  padding: .4rem 0; }
 
 .burger-icon {
   display: none; }
@@ -163,7 +166,7 @@ header {
   display: inline-block;
   width: 100%;
   margin: 0 auto;
-  padding: 3.5rem 0 0 0;
+  padding: 0;
   font-size: 0; }
 
 .portfolio_item {
@@ -214,7 +217,7 @@ header {
 .flex-wrap {
   width: 100%;
   display: flex;
-  padding: 3.5rem 0 0 0;
+  padding: 0;
   flex-wrap: wrap;
   font-size: 0; }
 
@@ -329,17 +332,6 @@ footer {
   .text-block {
     width: 100%; } }
 @media screen and (max-width: 600px) {
-  .header-logo {
-    border: none;
-    padding-right: 0; }
-
-  .header-nav {
-    padding: 0; }
-
-  .header-nav a {
-    float: right;
-    padding: .8rem 1.5rem 0 .5rem; }
-
   h1 {
     font-size: 2.5rem; }
 
@@ -382,33 +374,18 @@ footer {
     float: right;
     padding: 0 1.5rem .5rem 0; } }
 @media screen and (max-width: 512px) {
-  .container, .flex-wrap {
-    padding: 1.5rem 0 0 0; }
-
   .header-logo {
-    width: 100%;
+    border-right: none;
     font-size: 1.25rem; }
 
-  .header-logo img {
-    width: 1.6rem;
-    margin: 0 .3rem .3rem 0; }
-
   .header-nav {
-    width: 100%;
-    display: flex; }
+    padding-left: 0; }
 
   .header-nav a {
-    margin: .5rem .75rem 0 1.5rem;
-    padding: 0;
-    clear: both;
     color: #A3B0AE; }
 
   .header-nav a:hover {
     color: #81BBB0; }
-
-  header {
-    height: 3.5rem;
-    position: relative; }
 
   .page-head {
     width: 100%;
