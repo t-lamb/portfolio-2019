@@ -48,18 +48,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: 'core_sans_d_35_regularregular';
-  src: url("fonts/CoreSansD35-webfont.eot");
-  src: url("fonts/CoreSansD35-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/CoreSansD35-webfont.woff2") format("woff2"), url("fonts/CoreSansD35-webfont.woff") format("woff"), url("fonts/CoreSansD35-webfont.ttf") format("truetype"), url("fonts/CoreSansD35-webfont.svg#core_sans_d_35_regularregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'core_sans_d_45_mediumregular';
-  src: url("CoreSansD45-webfont.eot");
-  src: url("CoreSansD45-webfont.eot?#iefix") format("embedded-opentype"), url("CoreSansD45-webfont.woff2") format("woff2"), url("CoreSansD45-webfont.woff") format("woff"), url("CoreSansD45-webfont.ttf") format("truetype"), url("CoreSansD45-webfont.svg#core_sans_d_45_mediumregular") format("svg");
-  font-weight: bold;
-  font-style: normal; }
 img {
   max-width: 100%; }
 
