@@ -36,7 +36,6 @@ p {
 }
 a {
 	color: $medGrey;
-	text-decoration: none;
 }
 a:hover {
 	color: $darkBlue;
@@ -71,6 +70,7 @@ header {
 	z-index: 10;
 	a {
 		  color: $darkGrey;
+			text-decoration: none;
 	}
 }
 nav {

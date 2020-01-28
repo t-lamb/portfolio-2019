@@ -80,8 +80,7 @@ p {
   padding: .5rem 0 1rem; }
 
 a {
-  color: #A3B0AE;
-  text-decoration: none; }
+  color: #A3B0AE; }
 
 a:hover {
   color: #81BBB0; }
@@ -113,7 +112,8 @@ header {
   right: 0;
   z-index: 10; }
   header a {
-    color: #3b3a36; }
+    color: #3b3a36;
+    text-decoration: none; }
 
 nav {
   align-items: center;
