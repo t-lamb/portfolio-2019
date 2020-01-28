@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wearable Exploration // Ezra Lamb</title>
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="header-logo">
+                    <a href="index.html">
+                      Ezra Lamb
+                    </a>
+                </div><!--/header logo-->
+                <div class="header-nav">
+                    <a href="index.html" class="header-nav-link">portfolio</a>
+                    <a href="info.html" class="header-nav-link">info</a>
+                </div><!--/header nav-->
+            </nav>
+        </header>
+
+        <div class="flex-wrap">
+            <div class="page-head">
+                <h1>Laugh Track</h1>
+                <p class="tag-line">
+
+                </p>
+            </div>
+            <div class="proj-item text-block">
+                <p>
+                    This is a project for a wearables class at NYU. This week we were asked to think about our sense of self. While thinking about self it became quickly apparent that my laugh is my most distinguishable feature. Recently I laughed during a Thesis Tuesday while first years are required to be off the floor. It was a huge snowball effect that started with angry stares and muttering, was later overheard in faculty venting, then, after six days, resulted in an email to all first years in a displeased tone. It was not at all the first time my laugh has gotten me in trouble. Thinking about my laugh this week has made me realize more about
+                </p>
+                <p>
+                    Many of my friends have used my laughter to find me in a noisy crowded space, even if they weren’t initially aware I was there or listening for me. If it is that distinct I think there must be some way to sense it. And if people who know me can track my location with my laughter, I should be able to as well.
+                </p>
+                <p>
+                    My wearable is a necklace that detects the location of my laughter. It would allow me to log and map data about my laugh.
+                </p>
+                <p>
+                    Here is a mocked up view of how my laughter could be tracked using the Google Maps API.
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_map.jpeg" alt="laugh track">
+                </p>
+                <p>
+                    Many social apps like Twitter can access your GPS location, so a fun interaction could trigger a tweet with a tagged location. I like this idea because my laugh identifies me even when I don’t mean to draw attention to myself. This is doing the same thing, but using technology to passively send that information.
+                </p>
+                <h4>Sensing Laughter</h4>
+                <p>
+                    I initially thought about the possibility of using a <a href="https://pulsesensor.com/">pulse sensor</a> to track changes in the throat, but shifted quickly to an electret microphone. It is easy to use these mics as sensors to detect volume, but it’s hard to differentiate it from other loud sounds. Luckily, in my Basic Analog Circuits class we were building small amplifiers.
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_amp-schematic.jpg" alt="laugh track">
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_amp-breadboard.jpg" alt="laugh track">
+                </p>
+                <p>
+                    As beautiful as this was, I am not sure it’s something that can be sewn. Luckily we live in the future where <a href="https://www.sparkfun.com/products/12758">small affordable prebuilt versions come with surface mounted resistors and capacitors</a>. I was able to quickly hook this up to an Arduino and LED.
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_process1.jpg" alt="laugh track">
+                </p>
+                <p>
+                    I discovered the uSpeech voice detection library for Arduino, which I started playing with. The library uses phonemes, so I had to calibrate and find the phonemes that represent my laugh. Luckily, ‘h’ and 'o’ seem pretty accurate.
+                </p>
+                <h4>Fabrication</h4>
+                <p>
+                    In order to keep the mic close to my mouth I decided on a necklace, but since I haven’t figured out how to use the uSpeech library with Gemma or Flora, I can only build a low-fi prototype. I chose a crescent shape that I think looks like a smile, and comfortable felt.
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_inspiration.jpg" alt="laugh track">
+                    <br>Design inspiration
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_process2.jpg" alt="laugh track">
+                    <br>Faking the circuit
+                </p>
+                <p>
+                    I chose a hexagonal design to have a peek into the inner working. Also, I think it reflects my personal style.
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_process3.jpg" alt="laugh track">
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_finished1.jpg" alt="laugh track">
+                    <br>Wearing my finished prototype
+                </p>
+                <p>
+                    <img src="imgs/wearables/wearables_laugh-track_finished2.jpg" alt="laugh track">
+                    <br>Form & Function
+                </p>
+            </div>
+        </div><!-- end flex-wrap -->
+
+        <div class="pagination">
+            <a class="pag-link prev" href="wearables.html"><span class="arrow">&#8604;</span> Back to Wearable Exploration</a>
+            <a class="pag-link next" href=""> <span class="arrow"></span></a>
+        </div><!--/pagination-->
+
+        <footer>
+            <div class="footer-social">
+                <a href="https://github.com/t-lamb" class="social svg-hover">
+                    <img src="imgs/github.svg" alt="github">
+                    <img src="imgs/github_hover.svg" alt="github">
+                </a>
+                <a href="http://www.linkedin.com/in/ezralamb" class="social svg-hover">
+                    <img src="imgs/linked.svg" alt="linked in">
+                    <img src="imgs/linked_hover.svg" alt="linked in">
+                </a>
+                <a href="mailto:hello@ezralamb.com" class="social svg-hover">
+                    <img src="imgs/email.svg" alt="email">
+                    <img src="imgs/email_hover.svg" alt="email">
+                </a>
+            </div><!--/social-->
+            <div class="footer-email">
+                Ezra Lamb
+                <br>Developer, Designer, &amp; Educator
+                <br>hello@ezralamb.com
+                <br><br><br>Handmade with &#9825; by Ezra. &copy; 2020
+            </div><!--/footer-email-->
+        </footer>
+    </div><!--/wrapper-->
+</body>
+</html>
