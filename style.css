@@ -52,8 +52,14 @@ img {
   max-width: 100%; }
 
 /*--END RESET----------------------*/
+@font-face {
+  font-family: 'Victor Mono';
+  src: url("fonts/VictorMono-Oblique.woff"); }
+@font-face {
+  font-family: 'Victor Mono Italic';
+  src: url("fonts/VictorMono-SemiBoldItalic.woff"); }
 html {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
   color: #3b3a36; }
 
@@ -72,15 +78,18 @@ h3 {
   letter-spacing: .08rem; }
 
 h4 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+  padding: 1rem 0 0 0; }
 
 p {
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   padding: .5rem 0 1rem; }
 
 a {
-  color: #A3B0AE; }
+  border-bottom: 1px solid #dde8e5;
+  color: #A3B0AE;
+  text-decoration: none; }
 
 a:hover {
   color: #81BBB0; }
@@ -126,6 +135,9 @@ nav {
   font-size: 1.5rem;
   font-weight: bold;
   padding: .5rem 0 .5rem 1.5rem; }
+  .header-logo a {
+    border: none;
+    font-family: 'Victor Mono Italic', sans-serif; }
 
 .header-nav {
   display: grid;
@@ -134,7 +146,9 @@ nav {
   justify-content: start;
   padding: .5rem 0 .5rem 1.5rem; }
 
-.header-nav a {
+.header-nav-link {
+  border: none;
+  font-family: 'Victor Mono', sans-serif;
   font-size: 1rem;
   display: inline-block;
   padding: .4rem 0; }
@@ -189,6 +203,7 @@ nav {
   margin: 0 auto; }
 
 .portfolio_tag {
+  font-family: 'Victor Mono', sans-serif;
   font-size: 1rem;
   font-weight: normal;
   background-color: #ffffff;
@@ -275,7 +290,9 @@ iframe {
   margin: 2rem 0; }
 
 .pag-link {
+  border: none;
   display: inline-block;
+  font-family: 'Victor Mono', sans-serif;
   padding: 0 1.5rem .5rem 1.5rem;
   font-size: 1.25rem;
   text-decoration: none; }
@@ -302,6 +319,9 @@ footer {
   grid-column-gap: 1rem;
   justify-content: start;
   padding: 1.5rem 1.5rem 2rem 1.6rem; }
+
+.social {
+  border: none; }
 
 .social img {
   width: 1.5rem; }
