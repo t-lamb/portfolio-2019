@@ -1,11 +1,11 @@
 @import 'reset';
-$darkGrey: #3b3a36;
-$medGrey: #A3B0AE;
-$lightGrey: #e9ece5;
-$darkBlue: #81BBB0;
-$lightBlue: #c0dfd9;
-$borderThin: 1px solid #dde8e5;
-$borderThick: 3px solid #dde8e5;
+$darkGrey: #1A1D1F;
+$medGrey: #96A8B3;
+$lightGrey: #D8E3EB;
+$lightGreyRGBA: rgba(216,227,235,1);
+$darkBlue: #0F63DA;
+$borderThin: 1px solid $lightGrey;
+$borderThick: 3px solid $lightGrey;
 
 $designlab: #1F2453;
 $nationbuilder: #1498BE;
@@ -63,6 +63,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
+	border-color: $darkBlue;
 	color: $darkBlue;
 }
 li {
@@ -85,7 +86,7 @@ img {
 /*--HEADER--------------------*/
 
 header {
-	background-color: #ffffff;
+	background-color: #fff;
   margin: 0 auto;
   padding: 0;
   position: sticky;
@@ -170,7 +171,7 @@ nav {
 		}
 	}
 	h3 {
-		color:#ffffff;
+		color: #fff;
 		text-decoration: none;
 	}
 	&.designlab {
@@ -274,9 +275,9 @@ nav {
   display: block;
   margin: 2rem auto;
   width: 50%;
-  -webkit-box-shadow: 6px 6px 0px 0px rgba(221,232,229,1);
-  -moz-box-shadow: 6px 6px 0px 0px rgba(221,232,229,1);
-  box-shadow: 6px 6px 0px 0px rgba(221,232,229,1);
+  -webkit-box-shadow: 6px 6px 0px 0px $lightGreyRGBA;
+  -moz-box-shadow: 6px 6px 0px 0px $lightGreyRGBA;
+  box-shadow: 6px 6px 0px 0px $lightGreyRGBA;
 }
 .info-text {
 	padding: 0 1.5rem 1.5rem 1.5rem;
@@ -387,7 +388,7 @@ footer {
   	}
 }
 @media screen and (max-width: 600px){
-  	h1{
+  	h1 {
   		font-size: 2.5rem;
   	}
     footer {
