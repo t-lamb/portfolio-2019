@@ -64,7 +64,6 @@ html {
   color: #3b3a36; }
 
 h1 {
-  color: #c0dfd9;
   font-size: 3.5rem; }
 
 h2 {
@@ -170,7 +169,7 @@ nav {
 
 .portfolio-heading {
   color: #3b3a36;
-  font-family: 'Victor Mono', sans-serif;
+  font-weight: bold;
   font-size: 40px;
   margin: 3rem 1.5rem 1.5rem; }
 
@@ -229,11 +228,38 @@ nav {
   font-size: 0; }
 
 .page-head {
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   width: 100%; }
 
+.page-heading.designlab {
+  color: #1F2453; }
+.page-heading.nationbuilder {
+  color: #1498BE; }
+.page-heading.stitchgood {
+  color: #2E5EAA; }
+.page-heading.theknit {
+  color: #CC33FF; }
+.page-heading.weatherwhiskers {
+  color: #2CB7C0; }
+.page-heading.almostcooked {
+  color: #E43E3B; }
+.page-heading.web {
+  color: #0F63DA; }
+.page-heading.tedx {
+  color: #E43E3B; }
+.page-heading.teknikio {
+  color: #3D53B8; }
+.page-heading.cyberknitics {
+  color: #000000; }
+.page-heading.lovelace {
+  color: #A3B0AE; }
+.page-heading.woven {
+  color: #000000; }
+.page-heading.wearables {
+  color: #2CB7C0; }
+
 .tag-line, .breadcrumb {
-  padding: 1rem .2rem; }
+  padding: 0 .2rem 1rem; }
 
 .bio-pic {
   display: block;
