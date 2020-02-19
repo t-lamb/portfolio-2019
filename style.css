@@ -161,60 +161,64 @@ nav {
 
 /*--CONTENT-------------*/
 .wrapper, nav {
-  max-width: 1300px;
-  margin: auto; }
-
-.container {
-  display: inline-block;
-  width: 100%;
   margin: 0 auto;
-  padding: 0;
-  font-size: 0; }
+  max-width: 1440px; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.portfolio-heading {
+  color: #3b3a36;
+  font-family: 'Victor Mono', sans-serif;
+  font-size: 40px;
+  margin: 3rem 1.5rem 1.5rem; }
 
 .portfolio_item {
-  display: inline-block;
-  background-color: black;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  width: 50%;
+  align-items: center;
+  display: grid;
+  height: 400px;
+  justify-content: center;
   text-align: center; }
-
-.portfolio_item img {
-  width: 100%;
-  height: auto;
-  vertical-align: top;
-  padding: 0;
-  margin: 0;
-  opacity: 0.6;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
-
-.portfolio_item:hover img {
-  opacity: .9; }
-
-.portfolio_label {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
-  color: #ffffff;
-  margin: 0 auto; }
-
-.portfolio_tag {
-  font-family: 'Victor Mono', sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  background-color: #ffffff;
-  color: #3b3a36;
-  padding: .3rem .7rem .5rem .7rem;
-  display: none;
-  max-width: 20rem;
-  margin: .5rem auto 0 auto; }
-
-.portfolio_item:hover .portfolio_tag {
-  display: inline; }
+  .portfolio_item a {
+    border: none; }
+  .portfolio_item img {
+    margin: 0 auto 1rem;
+    width: auto;
+    transition: width .25s ease-in-out;
+    -moz-transition: width .25s ease-in-out;
+    -webkit-transition: width .25s ease-in-out; }
+    .portfolio_item img:hover {
+      width: 120%; }
+  .portfolio_item h3 {
+    color: #ffffff;
+    text-decoration: none; }
+  .portfolio_item.designlab {
+    background-color: #1F2453; }
+  .portfolio_item.nationbuilder {
+    background-color: #1498BE; }
+  .portfolio_item.stitchgood {
+    background-color: #2E5EAA; }
+  .portfolio_item.theknit {
+    background-color: #CC33FF; }
+  .portfolio_item.weatherwhiskers {
+    background-color: #2CB7C0; }
+  .portfolio_item.almostcooked {
+    background-color: #E43E3B; }
+  .portfolio_item.web {
+    background-color: #0F63DA; }
+  .portfolio_item.tedx {
+    background-color: #E43E3B; }
+  .portfolio_item.teknikio {
+    background-color: #3D53B8; }
+  .portfolio_item.cyberknitics {
+    background-color: #000000; }
+  .portfolio_item.lovelace {
+    background-color: #A3B0AE; }
+  .portfolio_item.woven {
+    background-color: #000000; }
+  .portfolio_item.wearables {
+    background-color: #2CB7C0; }
 
 /*--END PORTFOLIO-----*/
 .flex-wrap {
@@ -228,7 +232,7 @@ nav {
   padding: 1rem 1.5rem 1.5rem 1.5rem;
   width: 100%; }
 
-.tag-line {
+.tag-line, .breadcrumb {
   padding: 1rem .2rem; }
 
 .bio-pic {
@@ -356,8 +360,8 @@ footer {
   .social img {
     width: 2.5rem; }
 
-  .info-item {
-    width: 100%; }
+  .grid-container {
+    display: block; }
 
   .medium {
     width: 100%; }
@@ -403,19 +407,7 @@ footer {
   .footer-social {
     justify-content: space-between; }
 
-  .portfolio_label {
-    top: 40%; }
-
-  .portfolio_tag {
-    display: block;
-    color: #ffffff;
-    background-color: transparent;
-    padding: 0 .75rem; }
-
   .portfolio_item:hover img {
-    opacity: .6; }
-
-  .portfolio_item:hover .portfolio_tag {
-    display: block; } }
+    opacity: .6; } }
 
 /*# sourceMappingURL=style.css.map */

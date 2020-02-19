@@ -7,6 +7,20 @@ $lightBlue: #c0dfd9;
 $borderThin: 1px solid #dde8e5;
 $borderThick: 3px solid #dde8e5;
 
+$designlab: #1F2453;
+$nationbuilder: #1498BE;
+$stitchgood: #2E5EAA;
+$theknit: #CC33FF;
+$weatherwhiskers: #2CB7C0;
+$almostcooked: #E43E3B;
+$web: #0F63DA;
+$tedx: #E43E3B;
+$teknikio: #3D53B8;
+$cyberknitics: #000000;
+$lovelace: #A3B0AE;
+$woven: #000000;
+$wearables: #2CB7C0;
+
 @font-face {
   font-family: 'Victor Mono';
   src: url("fonts/VictorMono-Oblique.woff");
@@ -124,61 +138,83 @@ nav {
 
 /*--CONTENT-------------*/
 .wrapper, nav {
-	max-width: 1300px;
-	margin: auto;
-}
-.container {
-	display: inline-block;
-	width:100%;
 	margin: 0 auto;
-	padding: 0;
-	font-size: 0;
+	max-width: 1440px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns:1fr 1fr;
+}
+.portfolio-heading {
+	color: $darkGrey;
+	font-family: 'Victor Mono', sans-serif;
+	font-size: 40px;
+	margin: 3rem 1.5rem 1.5rem;
 }
 .portfolio_item {
-	display: inline-block;
-	background-color: black;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-	width:50%;
+	align-items: center;
+	display: grid;
+	height: 400px;
+	justify-content: center;
 	text-align: center;
+	a {
+		border:none;
+	}
+	img {
+		margin: 0 auto 1rem;
+	  width: auto;
+	  transition: width .25s ease-in-out;
+	  -moz-transition: width .25s ease-in-out;
+	  -webkit-transition: width .25s ease-in-out;
+		&:hover {
+			width: 120%;
+		}
+	}
+	h3 {
+		color:#ffffff;
+		text-decoration: none;
+	}
+	&.designlab {
+		background-color: $designlab;
+	}
+	&.nationbuilder {
+		background-color: $nationbuilder;
+	}
+	&.stitchgood {
+		background-color: $stitchgood;
+	}
+	&.theknit {
+		background-color: $theknit;
+	}
+	&.weatherwhiskers {
+		background-color: $weatherwhiskers;
+	}
+	&.almostcooked {
+		background-color: $almostcooked;
+	}
+	&.web {
+		background-color: $web;
+	}
+	&.tedx {
+		background-color: $tedx;
+	}
+	&.teknikio {
+		background-color: $teknikio;
+	}
+	&.cyberknitics {
+		background-color: $cyberknitics;
+	}
+	&.lovelace {
+		background-color: $lovelace;
+	}
+	&.woven {
+		background-color: $woven;
+	}
+	&.wearables {
+		background-color: $wearables;
+	}
 }
-.portfolio_item img {
-  width: 100%;
-  height: auto;
- 	vertical-align: top;
- 	padding: 0;
- 	margin: 0;
-  opacity: 0.6;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-}
-.portfolio_item:hover img {
-  opacity: .9;
-}
-.portfolio_label {
-  position: absolute;
-  left: 0;
-  top: 45%;
-  width: 100%;
-  color: #ffffff;
-  margin: 0 auto;
-}
-.portfolio_tag {
-	font-family: 'Victor Mono', sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  background-color: #ffffff;
-  color: $darkGrey;
-  padding: .3rem .7rem .5rem .7rem;
-  display: none;
-  max-width: 20rem;
-  margin: .5rem auto 0 auto;
-}
-.portfolio_item:hover .portfolio_tag {
-  display: inline;
-}
+
 /*--END PORTFOLIO-----*/
 .flex-wrap {
 	width: 100%;
@@ -326,9 +362,9 @@ footer {
   	.social img{
   		width: 2.5rem;
   	}
-  	.info-item{
-  		width: 100%;
-  	}
+		.grid-container {
+			display: block;
+		}
   	.medium{
   		width: 100%;
   	}
@@ -375,19 +411,7 @@ footer {
   	.footer-social {
   		justify-content: space-between;
   	}
-    .portfolio_label {
-        top: 40%;
-    }
-    .portfolio_tag {
-        display: block;
-        color: #ffffff;
-        background-color: transparent;
-        padding: 0 .75rem;
-    }
     .portfolio_item:hover img {
         opacity: .6;
-    }
-    .portfolio_item:hover .portfolio_tag {
-        display: block;
     }
 }
