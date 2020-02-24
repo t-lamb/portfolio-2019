@@ -1,19 +1,19 @@
 @import 'reset';
-$darkGrey: #1A1D1F;
-$medGrey: #96A8B3;
-$lightGrey: #D8E3EB;
-$lightGreyRGBA: rgba(216,227,235,1);
-$darkBlue: #0F63DA;
-$borderThin: 1px solid $lightGrey;
-$borderThick: 3px solid $lightGrey;
+$bodytext: #1A1D1F;
+$linkColor: #96A8B3;
+$linkColorHover: #0F63DA;
+$borderColor: #D8E3EB;
+$borderColorRGBA: rgba(216,227,235,1);
+$borderThin: 1px solid $borderColor;
+$borderThick: 3px solid $borderColor;
 
 $designlab: #1F2453;
 $nationbuilder: #1498BE;
 $stitchgood: #455FE8;
 $theknit: #CC33FF;
-$weatherwhiskers: #55607D;
+$weatherwhiskers: #2CB7C0;
 $almostcooked: #E43E3B;
-$web: #1A1D1F;
+$web: #0F63DA;
 $tedx: #E43E3B;
 $teknikio: #3D53B8;
 $cyberknitics: #7B84FC;
@@ -33,7 +33,7 @@ $wearables: #2CB7C0;
 html {
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 16px;
-	color: $darkGrey;
+	color: $bodytext;
 }
 h1 {
 	font-size: 3.5rem;
@@ -59,12 +59,12 @@ p {
 }
 a {
 	border-bottom: $borderThin;
-	color: $medGrey;
+	color: $linkColor;
 	text-decoration: none;
 }
 a:hover {
-	border-color: $darkBlue;
-	color: $darkBlue;
+	border-color: $linkColorHover;
+	color: $linkColorHover;
 }
 li {
 	font-size: 1rem;
@@ -96,7 +96,7 @@ header {
 	right: 0;
 	z-index: 10;
 	a {
-		  color: $darkGrey;
+		  color: $bodytext;
 			text-decoration: none;
 	}
 }
@@ -147,32 +147,29 @@ nav {
 	grid-template-columns:1fr 1fr;
 }
 .portfolio-heading {
-	color: $darkGrey;
-	font-weight: bold;
-	font-size: 40px;
+	color: $bodytext;
+	font-size: 2.5rem;
 	margin: 3rem 1.5rem 1.5rem;
 }
-.portfolio_item {
+.portfolio-item {
 	align-items: center;
 	display: grid;
 	height: 400px;
 	justify-content: center;
 	text-align: center;
-	a {
-		border:none;
-	}
 	img {
-		margin: 0 auto 1rem;
-	  width: auto;
+		margin: 0 auto;
+	  width: 160px;
 	  transition: width .25s ease-in-out;
 	  -moz-transition: width .25s ease-in-out;
 	  -webkit-transition: width .25s ease-in-out;
 		&:hover {
-			width: 120%;
+			width: 180px;
 		}
 	}
 	h3 {
 		color: #fff;
+    margin: 1rem auto 0;
 		text-decoration: none;
 	}
 	&.designlab {
@@ -214,6 +211,13 @@ nav {
 	&.wearables {
 		background-color: $wearables;
 	}
+}
+.portfolio-item-link {
+  align-items: center;
+  border: none;
+  display: grid;
+  grid-template-rows: 180px auto;
+  justify-items: center;
 }
 
 /*--END PORTFOLIO-----*/
@@ -276,9 +280,9 @@ nav {
   display: block;
   margin: 2rem auto;
   width: 50%;
-  -webkit-box-shadow: 6px 6px 0px 0px $lightGreyRGBA;
-  -moz-box-shadow: 6px 6px 0px 0px $lightGreyRGBA;
-  box-shadow: 6px 6px 0px 0px $lightGreyRGBA;
+  -webkit-box-shadow: 6px 6px 0px 0px $borderColorRGBA;
+  -moz-box-shadow: 6px 6px 0px 0px $borderColorRGBA;
+  box-shadow: 6px 6px 0px 0px $borderColorRGBA;
 }
 .info-text {
 	padding: 0 1.5rem 1.5rem 1.5rem;
@@ -381,7 +385,10 @@ footer {
 }
 
 @media screen and (max-width: 800px){
-  	.portfolio_item {
+    .portfolio-heading {
+      text-align: center;
+    }
+  	.portfolio-item {
     	width: 100%;
   	}
   	.text-block{
@@ -441,10 +448,10 @@ footer {
       padding-left:0;
     }
     .header-nav a {
-      color: $medGrey;
+      color: $linkColor;
     }
     .header-nav a:hover {
-      color: $darkBlue;
+      color: $linkColorHover;
     }
   	.page-head {
   		width: 100%;
@@ -453,7 +460,7 @@ footer {
   	.footer-social {
   		justify-content: space-between;
   	}
-    .portfolio_item:hover img {
+    .portfolio-item:hover img {
         opacity: .6;
     }
 }

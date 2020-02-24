@@ -171,55 +171,60 @@ nav {
 
 .portfolio-heading {
   color: #1A1D1F;
-  font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem;
   margin: 3rem 1.5rem 1.5rem; }
 
-.portfolio_item {
+.portfolio-item {
   align-items: center;
   display: grid;
   height: 400px;
   justify-content: center;
   text-align: center; }
-  .portfolio_item a {
-    border: none; }
-  .portfolio_item img {
-    margin: 0 auto 1rem;
-    width: auto;
+  .portfolio-item img {
+    margin: 0 auto;
+    width: 160px;
     transition: width .25s ease-in-out;
     -moz-transition: width .25s ease-in-out;
     -webkit-transition: width .25s ease-in-out; }
-    .portfolio_item img:hover {
-      width: 120%; }
-  .portfolio_item h3 {
+    .portfolio-item img:hover {
+      width: 180px; }
+  .portfolio-item h3 {
     color: #fff;
+    margin: 1rem auto 0;
     text-decoration: none; }
-  .portfolio_item.designlab {
+  .portfolio-item.designlab {
     background-color: #1F2453; }
-  .portfolio_item.nationbuilder {
+  .portfolio-item.nationbuilder {
     background-color: #1498BE; }
-  .portfolio_item.stitchgood {
+  .portfolio-item.stitchgood {
     background-color: #455FE8; }
-  .portfolio_item.theknit {
+  .portfolio-item.theknit {
     background-color: #CC33FF; }
-  .portfolio_item.weatherwhiskers {
-    background-color: #55607D; }
-  .portfolio_item.almostcooked {
-    background-color: #E43E3B; }
-  .portfolio_item.web {
-    background-color: #1A1D1F; }
-  .portfolio_item.tedx {
-    background-color: #E43E3B; }
-  .portfolio_item.teknikio {
-    background-color: #3D53B8; }
-  .portfolio_item.cyberknitics {
-    background-color: #7B84FC; }
-  .portfolio_item.lovelace {
-    background-color: #A3B0AE; }
-  .portfolio_item.woven {
-    background-color: #1A1D1F; }
-  .portfolio_item.wearables {
+  .portfolio-item.weatherwhiskers {
     background-color: #2CB7C0; }
+  .portfolio-item.almostcooked {
+    background-color: #E43E3B; }
+  .portfolio-item.web {
+    background-color: #0F63DA; }
+  .portfolio-item.tedx {
+    background-color: #E43E3B; }
+  .portfolio-item.teknikio {
+    background-color: #3D53B8; }
+  .portfolio-item.cyberknitics {
+    background-color: #7B84FC; }
+  .portfolio-item.lovelace {
+    background-color: #A3B0AE; }
+  .portfolio-item.woven {
+    background-color: #1A1D1F; }
+  .portfolio-item.wearables {
+    background-color: #2CB7C0; }
+
+.portfolio-item-link {
+  align-items: center;
+  border: none;
+  display: grid;
+  grid-template-rows: 180px auto;
+  justify-items: center; }
 
 /*--END PORTFOLIO-----*/
 .flex-wrap {
@@ -242,11 +247,11 @@ nav {
 .page-heading.theknit {
   color: #CC33FF; }
 .page-heading.weatherwhiskers {
-  color: #55607D; }
+  color: #2CB7C0; }
 .page-heading.almostcooked {
   color: #E43E3B; }
 .page-heading.web {
-  color: #1A1D1F; }
+  color: #0F63DA; }
 .page-heading.tedx {
   color: #E43E3B; }
 .page-heading.teknikio {
@@ -367,7 +372,10 @@ footer {
   iframe {
     width: 100%; } }
 @media screen and (max-width: 800px) {
-  .portfolio_item {
+  .portfolio-heading {
+    text-align: center; }
+
+  .portfolio-item {
     width: 100%; }
 
   .text-block {
@@ -435,7 +443,7 @@ footer {
   .footer-social {
     justify-content: space-between; }
 
-  .portfolio_item:hover img {
+  .portfolio-item:hover img {
     opacity: .6; } }
 
 /*# sourceMappingURL=style.css.map */
