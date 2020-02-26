@@ -149,7 +149,7 @@ nav {
 /*--CONTENT-------------*/
 .wrapper, nav {
   margin: 0 auto;
-  max-width: 1440px; }
+  max-width: 1300px; }
 
 .grid-container {
   display: grid;
@@ -206,6 +206,10 @@ nav {
     background-color: #1A1D1F; }
   .portfolio-item.wearables {
     background-color: #2CB7C0; }
+  .portfolio-item.bio {
+    background-color: #60a3bc;
+    grid-column: 1;
+    grid-row: 1; }
 
 .portfolio-item-link {
   align-items: center;
@@ -256,26 +260,29 @@ nav {
 .tag-line, .breadcrumb {
   padding: 0 .2rem 1rem; }
 
+.bio-pic-wrap {
+  align-items: center;
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  justify-content: center; }
+
 .bio-pic {
   display: block;
   margin: 2rem auto;
   width: 50%;
-  -webkit-box-shadow: 6px 6px 0px 0px #d8e3eb;
-  -moz-box-shadow: 6px 6px 0px 0px #d8e3eb;
-  box-shadow: 6px 6px 0px 0px #d8e3eb; }
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(96, 163, 188, 0.75);
+  -moz-box-shadow: 6px 6px 0px 0px rgba(96, 163, 188, 0.75);
+  box-shadow: 6px 6px 0px 0px rgba(96, 163, 188, 0.75); }
 
-.info-text {
-  padding: 1.5rem; }
-  .info-text.border-bottom {
-    border-bottom: 1px solid #D8E3EB; }
+.bio-heading {
+  color: #fff;
+  font-weight: normal;
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  text-align: left; }
 
-.proj-item {
-  width: 100%; }
-  .proj-item img {
-    vertical-align: top; }
-
-.info-text h2 {
-  margin-top: 1.5rem; }
+.bio-heading-intro {
+  font-family: "Victor Mono Italic", sans-serif; }
 
 .medium {
   width: 50%; }
@@ -286,11 +293,13 @@ nav {
 .text-block {
   margin: 0 auto;
   max-width: 46rem;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
-  width: 70%; }
+  padding: 1.5rem 1.5rem 1rem 1.5rem; }
+  .text-block.bio {
+    padding-top: 2.5rem; }
 
 .img-block {
-  padding-bottom: 2.5rem; }
+  padding-bottom: 2.5rem;
+  width: 100%; }
 
 .proj-link {
   margin: 0; }
@@ -379,6 +388,8 @@ footer {
       width: 120px; }
       .portfolio-item img:hover {
         width: 120px; }
+    .portfolio-item.bio {
+      height: auto; }
 
   .portfolio-item-link {
     grid-template-rows: 120px auto; }
@@ -416,6 +427,10 @@ footer {
   .header-nav {
     justify-content: end;
     padding-right: 1.5rem; }
+
+  .bio-heading {
+    font-size: 1.75rem;
+    padding: 2rem 1.5rem; }
 
   .page-head {
     border-top: 1px solid #D8E3EB;
