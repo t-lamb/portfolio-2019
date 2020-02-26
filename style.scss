@@ -1,8 +1,7 @@
 @import 'reset';
 $bodytext: #1A1D1F;
-$linkColor: #27a4ac;
-/*$linkColor: #96A8B3;*/
-$linkColorHover: #1B7278;
+$linkColor: #60a3bc;
+$linkColorHover: #43859e;
 $borderColor: #D8E3EB;
 $borderColorRGBA: rgba(216,227,235,1);
 
@@ -36,7 +35,7 @@ $font3: 'Victor Mono Italic', sans-serif;
 html { color:$bodytext; font-family:$font1; font-size:16px; }
 h1 { font-size: 3.5rem; }
 h2 { font-size:2rem; font-weight:700; padding:0 0 .5rem 0; }
-h3 { font-size:1.5rem; letter-spacing:.08rem; }
+h3 { font-size:1.5rem; }
 h4 { font-size:1.75rem; padding:1rem 0 0 0; }
 p { font-size:1.2rem; line-height:1.6; padding:.5rem 0 1rem; }
 a { border-bottom:1px solid $linkColor; color:$linkColor; text-decoration:none;
@@ -105,7 +104,7 @@ nav {
 		}
 	}
 	h3 {
-    color:#fff; margin:1rem auto 0; text-decoration:none;
+    color:#fff; letter-spacing:.05rem; margin:1rem auto 0; text-decoration:none;
   }
 	&.designlab { background-color:$designlab; }
 	&.nationbuilder { background-color:$nationbuilder; }
@@ -227,10 +226,7 @@ footer {
   iframe { width:100%; }
 }
 
-@media screen and (max-width: 800px){
-  	.text-block { width:100%; }
-}
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
   	h1 { font-size:2.5rem; }
     footer { grid-template-columns:1fr; }
   	.footer-social {
@@ -249,6 +245,21 @@ footer {
   	.small {
   		width:50%;
   	}
+    .portfolio-item {
+      height:320px;
+      img {
+        width:120px;
+        &:hover {
+          width:120px;
+        }
+      }
+    }
+    .portfolio-item-link {
+      grid-template-rows:120px auto;
+    }
+    .text-block {
+      width:100%;
+    }
   	iframe {
   		width:100%;
   	}
@@ -262,7 +273,7 @@ footer {
       	float:right; padding:0 1.5rem .5rem 0;
     }
 }
-@media screen and (max-width: 512px){
+@media screen and (max-width: 480px){
     .header-logo {
       border-right:none; font-size:1.25rem;
   	}
@@ -272,6 +283,9 @@ footer {
   	.page-head {
   		border-top:1px solid $borderColor; width:100%;
   	}
+    .portfolio-heading {
+      font-size:1.5rem;
+    }
   	.footer-social {
   		justify-content:space-between;
   	}

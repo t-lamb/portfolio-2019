@@ -52,7 +52,6 @@ img {
   max-width: 100%; }
 
 /*--END RESET----------------------*/
-/*$linkColor: #96A8B3;*/
 @font-face {
   font-family: 'Victor Mono';
   src: url("fonts/VictorMono-Oblique.woff"); }
@@ -73,8 +72,7 @@ h2 {
   padding: 0 0 .5rem 0; }
 
 h3 {
-  font-size: 1.5rem;
-  letter-spacing: .08rem; }
+  font-size: 1.5rem; }
 
 h4 {
   font-size: 1.75rem;
@@ -86,12 +84,12 @@ p {
   padding: .5rem 0 1rem; }
 
 a {
-  border-bottom: 1px solid #27a4ac;
-  color: #27a4ac;
+  border-bottom: 1px solid #60a3bc;
+  color: #60a3bc;
   text-decoration: none; }
   a:hover {
-    border-color: #1B7278;
-    color: #1B7278; }
+    border-color: #43859e;
+    color: #43859e; }
 
 li {
   font-size: 1rem;
@@ -182,6 +180,7 @@ nav {
       width: 180px; }
   .portfolio-item h3 {
     color: #fff;
+    letter-spacing: .05rem;
     margin: 1rem auto 0;
     text-decoration: none; }
   .portfolio-item.designlab {
@@ -354,10 +353,7 @@ footer {
 @media screen and (max-width: 900px) {
   iframe {
     width: 100%; } }
-@media screen and (max-width: 800px) {
-  .text-block {
-    width: 100%; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 2.5rem; }
 
@@ -382,6 +378,19 @@ footer {
   .small {
     width: 50%; }
 
+  .portfolio-item {
+    height: 320px; }
+    .portfolio-item img {
+      width: 120px; }
+      .portfolio-item img:hover {
+        width: 120px; }
+
+  .portfolio-item-link {
+    grid-template-rows: 120px auto; }
+
+  .text-block {
+    width: 100%; }
+
   iframe {
     width: 100%; }
 
@@ -396,7 +405,7 @@ footer {
   .next {
     float: right;
     padding: 0 1.5rem .5rem 0; } }
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 480px) {
   .header-logo {
     border-right: none;
     font-size: 1.25rem; }
@@ -407,6 +416,9 @@ footer {
   .page-head {
     border-top: 1px solid #D8E3EB;
     width: 100%; }
+
+  .portfolio-heading {
+    font-size: 1.5rem; }
 
   .footer-social {
     justify-content: space-between; } }
