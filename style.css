@@ -209,7 +209,8 @@ nav {
   .portfolio-item.bio {
     background-color: #60a3bc;
     grid-column: 1;
-    grid-row: 1; }
+    grid-row: 1;
+    height: auto; }
 
 .portfolio-item-link {
   align-items: center;
@@ -262,18 +263,11 @@ nav {
 
 .bio-pic-wrap {
   align-items: center;
+  background-color: #60a3bc;
   display: grid;
   grid-column: 2;
   grid-row: 1;
   justify-content: center; }
-
-.bio-pic {
-  display: block;
-  margin: 2rem auto;
-  width: 50%;
-  -webkit-box-shadow: 6px 6px 0px 0px rgba(96, 163, 188, 0.75);
-  -moz-box-shadow: 6px 6px 0px 0px rgba(96, 163, 188, 0.75);
-  box-shadow: 6px 6px 0px 0px rgba(96, 163, 188, 0.75); }
 
 .bio-heading {
   color: #fff;
@@ -365,7 +359,10 @@ footer {
 /*--MEDIA QUERIES--------------*/
 @media screen and (max-width: 900px) {
   iframe {
-    width: 100%; } }
+    width: 100%; }
+
+  .bio-heading {
+    font-size: 1.75rem; } }
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2.5rem; }
@@ -429,7 +426,6 @@ footer {
     padding-right: 1.5rem; }
 
   .bio-heading {
-    font-size: 1.75rem;
     padding: 2rem 1.5rem; }
 
   .page-head {
