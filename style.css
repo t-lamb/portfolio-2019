@@ -163,6 +163,7 @@ nav {
   text-align: left; }
 
 .intro-icon {
+  margin: 0 auto;
   padding: 3rem; }
 
 .portfolio-heading {
@@ -375,6 +376,9 @@ footer {
 .nobreak {
   white-space: nowrap; }
 
+.hide-sm-up {
+  display: none; }
+
 /*--MEDIA QUERIES--------------*/
 @media screen and (max-width: 1040px) {
   .intro-heading {
@@ -400,6 +404,13 @@ footer {
 
   .small {
     width: 50%; }
+
+  .intro-heading {
+    padding-bottom: 0; }
+
+  .intro-icon {
+    max-width: 400px;
+    padding: 3rem 1.5rem; }
 
   .portfolio-item {
     min-height: 320px; }
@@ -436,7 +447,13 @@ footer {
 
   .social {
     margin: .5rem 0;
-    padding: 0 0 .5rem; } }
+    padding: 0 0 .5rem; }
+
+  .hide-sm-up {
+    display: block; }
+
+  .hide-sm-down {
+    display: none; } }
 @media screen and (max-width: 480px) {
   .header-logo {
     border-right: none;
@@ -448,6 +465,9 @@ footer {
 
   .intro-heading {
     font-size: 1.75rem; }
+
+  .intro-icon {
+    max-width: 100%; }
 
   .bio-heading {
     padding: 2rem 1.5rem; }
