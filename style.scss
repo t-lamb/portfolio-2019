@@ -19,6 +19,8 @@ $lovelace: #A3B0AE;
 $woven: #1A1D1F;
 $wearables: #2CB7C0;
 $bio: #60a3bc;
+$intro: #60a3bc;
+$intro2: #43859e;
 
 $font1: 'Nanum Gothic', sans-serif;
 $font2: 'Victor Mono', sans-serif;
@@ -84,22 +86,20 @@ nav {
 .grid-container {
   display:grid; grid-template-columns:1fr 1fr;
 }
+.intro-heading {
+  color:#fff; font-size:2.5rem; font-weight:normal; padding:3rem 1.5rem 3.5rem;
+  text-align:left;
+}
+.intro-icon {
+  padding:3rem;
+}
 .portfolio-heading {
-  color:$bodytext; font-size:2.5rem; margin:3.5rem 1.5rem 1.5rem;
+  color:$bodytext; font-family:$font2; font-size:2.5rem; margin:4rem 1.5rem 2rem;
   text-align:center;
 }
 .portfolio-item {
-  align-items:center; display:grid; height:400px; justify-content:center;
+  align-items:center; display:grid; min-height:400px; justify-content:center;
   text-align:center;
-	img {
-    margin:0 auto; width:160px;
-	  transition: width .25s ease-in-out;
-	  -moz-transition: width .25s ease-in-out;
-	  -webkit-transition: width .25s ease-in-out;
-		&:hover {
-			width:180px;
-		}
-	}
 	h3 {
     color:#fff; letter-spacing:.05rem; margin:1rem auto 0; text-decoration:none;
   }
@@ -116,11 +116,22 @@ nav {
 	&.lovelace { background-color:$lovelace; }
 	&.woven { background-color:$woven; }
 	&.wearables { background-color:$wearables; }
+  &.intro { background-color:$intro; }
+  &.intro2 { background-color:$intro2; }
   &.bio { background-color:$bio; grid-column:1; grid-row:1; height:auto; }
 }
 .portfolio-item-link {
   align-items:center; border:none; display:grid; grid-template-rows:180px auto;
   justify-items:center;
+}
+.portfolio-item-icon {
+  margin:0 auto; width:160px;
+  transition: width .25s ease-in-out;
+  -moz-transition: width .25s ease-in-out;
+  -webkit-transition: width .25s ease-in-out;
+  &:hover {
+    width:180px;
+  }
 }
 
 /*--END PORTFOLIO-----*/
@@ -216,8 +227,13 @@ footer {
 .footer-attribution {
   font-size:1rem; padding:2rem 0 0;
 }
-
+.nobreak {
+  white-space:nowrap;
+}
 /*--MEDIA QUERIES--------------*/
+@media screen and (max-width: 1040px){
+  .intro-heading { font-size:2.25rem; }
+}
 @media screen and (max-width: 900px){
   iframe { width:100%; }
   .bio-heading { font-size:1.75rem; }
@@ -236,17 +252,14 @@ footer {
 		width:50%;
 	}
   .portfolio-item {
-    height:320px;
-    img {
-      width:120px;
-      &:hover {
-        width:120px;
-      }
-    }
+    min-height:320px;
     &.bio { height:auto; }
   }
   .portfolio-item-link {
     grid-template-rows:120px auto;
+  }
+  .portfolio-item-icon {
+    width:120px;
   }
   .text-block {
     width:100%;
@@ -277,6 +290,7 @@ footer {
   .header-nav {
     justify-content:end; padding-right:1.5rem;
   }
+  .intro-heading { font-size:1.75rem; }
   .bio-heading { padding:2rem 1.5rem; }
 	.page-head {
 		border-top:1px solid $borderColor; width:100%;
