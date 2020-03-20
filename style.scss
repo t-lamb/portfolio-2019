@@ -81,7 +81,7 @@ nav {
 
 /*--CONTENT-------------*/
 .wrapper, nav {
-  margin:0 auto; max-width:1300px;
+  margin:0 auto; max-width:1440px;
 }
 .grid-container {
   display:grid; grid-template-columns:1fr 1fr;
@@ -180,6 +180,7 @@ nav {
 }
 .img-block {
   padding-bottom:2.5rem;
+  text-align:center;
   width:100%;
 }
 .proj-link {
