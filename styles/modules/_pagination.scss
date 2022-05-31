@@ -1,0 +1,35 @@
+/*--PAGINATION----------------------*/
+.pagination {
+  font-size:0; margin:2rem 0; width:100%;
+}
+.pag-link {
+  border:none; display:inline-block; font-family:$font2; font-size:1.25rem;
+  padding:0 1.5rem .5rem 1.5rem; text-decoration:none;
+  &:hover { border-color:$borderColor; }
+}
+.prev {
+  border-right:1px solid $borderColor; width:50%;
+}
+@media screen and (max-width: 1040px){
+  .intro-heading {
+    font-size:2.25rem;
+  }
+}
+@media screen and (max-width: 900px){
+  iframe { width:100%; }
+  .bio-heading {
+    font-size:1.75rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .pag-link {
+    font-size:1rem;
+  }
+  .prev {
+    border:none; padding:0 0 .5rem 1.5rem; width:auto;
+  }
+  .next {
+    	float:right; padding:0 1.5rem .5rem 0;
+  }
+}
