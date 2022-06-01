@@ -5,6 +5,10 @@ $break-md: 920px;
 $break-sm: 720px;
 $break-xs: 600px;
 
+/* Layout */
+$width-content: 1440px;
+$width-text: 60rem;
+
 /* Colors */
 $bodytext: #000000;
 $linkColor: #0A6F74;
@@ -34,6 +38,5 @@ $font1: 'Nanum Gothic', sans-serif;
 $font2: 'Quincy', sans-serif;
 
 /* Font Weights */
-$font-weight-light: 300;
 $font-weight-regular: 400;
-$font-weight-medium: 500;
+$font-weight-bold: 700;

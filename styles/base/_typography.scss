@@ -2,8 +2,7 @@
   font-family: $font2;
   font-size: 6rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
+  margin-bottom: 2rem;
   @include mq(md_down) {
     font-size: 3rem;
   }
@@ -12,8 +11,7 @@
   font-family: $font2;
   font-size: 4.5rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
+  margin-bottom: 2rem;
   @include mq(md_down) {
     font-size: 2.25rem;
   }
@@ -22,19 +20,19 @@
   font-family: $font2;
   font-size: 2.5rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
   @include mq(md_down) {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 }
 .heading-sm {
-  font-family: $font2;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
+  margin-bottom: 2rem;
+  @include mq(md_up) {
+    font-family: $font2;
+  }
   @include mq(md_down) {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: $font-weight-bold;
   }
 }

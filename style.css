@@ -107,6 +107,7 @@ summary {
 }
 
 /* Breakpoints */
+/* Layout */
 /* Colors */
 /* Fonts */
 /* Font Weights */
@@ -117,30 +118,18 @@ html {
   font-size: 16px;
 }
 
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 0 0 0.5rem 0;
-}
-
-h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 1.75rem;
-  padding: 1rem 0 0 0;
+h1, h2, h3, h4, h5 {
+  margin: 0 auto 1rem;
+  max-width: 60rem;
+  padding: 0;
 }
 
 p {
   font-size: 1.2rem;
   line-height: 1.6;
-  padding: 0.5rem 0 1rem;
+  margin: 1rem auto;
+  max-width: 60rem;
+  padding: 0;
 }
 
 a {
@@ -191,8 +180,7 @@ iframe {
   font-family: "Quincy", sans-serif;
   font-size: 6rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width: 919px) {
   .heading-xl {
@@ -204,8 +192,7 @@ iframe {
   font-family: "Quincy", sans-serif;
   font-size: 4.5rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
+  margin-bottom: 2rem;
 }
 @media only screen and (max-width: 919px) {
   .heading-lg {
@@ -217,25 +204,27 @@ iframe {
   font-family: "Quincy", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
 }
 @media only screen and (max-width: 919px) {
   .heading-md {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 }
 
 .heading-sm {
-  font-family: "Quincy", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.2;
-  margin: 0 0 2rem;
-  padding: 0;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 920px) {
+  .heading-sm {
+    font-family: "Quincy", sans-serif;
+  }
 }
 @media only screen and (max-width: 919px) {
   .heading-sm {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
 }
 
@@ -314,6 +303,12 @@ iframe {
   justify-self: end;
 }
 
+/* images */
+.u-image-sm {
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
 /* typography */
 .u-nobreak {
   white-space: nowrap;
@@ -375,7 +370,7 @@ iframe {
 .l-container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 2rem;
+  padding: 1rem 2rem;
 }
 
 .l-main {
@@ -395,6 +390,7 @@ iframe {
   grid-template-columns: 1fr 1fr;
   left: 0;
   margin: 0 auto;
+  max-width: 1440px;
   padding: 0 1rem;
   position: sticky;
   right: 0;
