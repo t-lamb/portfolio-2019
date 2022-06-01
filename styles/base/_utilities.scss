@@ -12,21 +12,51 @@
 
 /* spacing */
 .u-pad-bottom-rm {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 .u-pad-left-rm {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 /* layout */
+.u-grid-3 {
+  display: grid;
+  grid-column-gap: 2rem;
+  @include mq(md_up) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .u-justify-self-end {
-    justify-self: end;
+  justify-self: end;
 }
 
 /* images */
-.u-image-sm {
+.u-image-inline {
   margin: 1rem auto;
+  max-width: $width-text;
+}
+.u-image-sm {
+  margin: 2rem auto;
   max-width: 600px;
+}
+.u-image-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+  @include mq(md_up) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.u-image-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2rem auto;
+  @include mq(sm_up) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mq(md_up) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 /* typography */

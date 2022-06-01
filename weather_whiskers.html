@@ -9,139 +9,119 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                        Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <div class="l-header__right">
+            <nav class="nav u-hide-sm-down">
+                <a href="projects.html" class="nav__link">Projects</a>
+                <a href="case-studies.html" class="nav__link">Case Studies</a>
+                <a href="about.html" class="nav__link">About</a>
             </nav>
-        </header>
-
-        <main class="flex-wrap">
-            <div class="page-head">
-                <h1 class="page-heading weatherwhiskers">Case Study: Weather Whiskers</h1>
-                <p class="tag-line">
-                    Creating a weather app UI that’s &ldquo;so easy a cat could use it&rdquo;
-                </p>
-            </div>
-            <div class="proj-item img-block">
-                <img src="imgs/weatherwhiskers/weather_whiskers_head.jpg" alt="weather whiskers">
-            </div>
-            <div class="proj-item text-block">
-                <h2>Overview</h2>
-                <p>
-                    I worked on a small team to establish the user experience, interface design, brand identity, and artwork for both of our iOS and Android apps.
-                </p>
-                <h3>Client:</h3>
-                <p>Ask Applications</p>
-                <h3>Role:</h3>
-                <p>Art Director, UX Designer</p>
-                <h3>Timeline:</h3>
-                <p>9 months</p>
-                <h3>Tools:</h3>
-                <p>Adobe Illustrator, Adobe Photoshop, InVision, Balsamiq</p>
-            </div>
-            <div class="proj-item text-block">
-                <h2>Challenge</h2>
-                <p>
-                    Our goal was to make the experience &ldquo;so easy a cat could use it&rdquo;. Our users would need to be able to add and switch between cities, check the forecast, and share their weather on social media.
-                </p>
-                <h3>High Level Goal:</h3>
-                <p>
-                    Provide accurate weather while delighting the audience
-                </p>
-                <h3>Scope:</h3>
-                <ul>
-                    <li>
-                        Design iOS and Android Apps
-                    </li>
-                    <li>
-                        Create all Branding Assets including app icons
-                    </li>
-                    <li>
-                        Create artwork of cats wearing weather-appropriate clothing
-                    </li>
-                </ul>
-                <h3>Constraints:</h3>
-                <ul>
-                    <li>
-                        Utilize existing weather API
-                    </li>
-                    <li>
-                        Budget for stock photo usage
-                    </li>
-                </ul>
-            </div>
-            <div class="proj-item text-block">
-                <h2>Research</h2>
-                <p>
-                    For our research, we tested over a dozen existing weather apps and studied best practice guides for Apple iOS and Android app interfaces. We developed user flows and developed low-fidelity mockups in HTML and CSS for User Testing.
-                </p>
+        </div><!--/header right-->
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="heading-lg">Case Study: Weather Whiskers</h1>
+            <p class="heading-sm">Creating a weather app UI that’s &ldquo;so easy a cat could use it&rdquo;</p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading-md">Overview</h2>
+            <p>I worked on a small team to establish the user experience, interface design, brand identity, and artwork for both of our iOS and Android apps.</p>
+            <h3 class="heading-xs">Client:</h3>
+            <p>Ask Applications</p>
+            <h3 class="heading-xs">Role:</h3>
+            <p>Art Director, UX Designer</p>
+            <h3 class="heading-xs">Timeline:</h3>
+            <p>9 months</p>
+            <h3 class="heading-xs">Tools:</h3>
+            <p>Adobe Illustrator, Adobe Photoshop, InVision, Balsamiq</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading-md">Challenge</h2>
+            <p>Our goal was to make the experience &ldquo;so easy a cat could use it&rdquo;. Our users would need to be able to add and switch between cities, check the forecast, and share their weather on social media.</p>
+            <h3 class="heading-xs">High Level Goal:</h3>
+            <p>Provide accurate weather while delighting the audience</p>
+            <h3 class="heading-xs">Scope:</h3>
+            <ul>
+                <li>
+                    Design iOS and Android Apps
+                </li>
+                <li>
+                    Create all Branding Assets including app icons
+                </li>
+                <li>
+                    Create artwork of cats wearing weather-appropriate clothing
+                </li>
+            </ul>
+            <h3 class="heading-xs">Constraints:</h3>
+            <ul>
+                <li>
+                    Utilize existing weather API
+                </li>
+                <li>
+                    Budget for stock photo usage
+                </li>
+            </ul>
+        </section>
+        <section class="l-container">
+            <h2 class="heading-md">Research</h2>
+            <p>For our research, we tested over a dozen existing weather apps and studied best practice guides for Apple iOS and Android app interfaces. We developed user flows and developed low-fidelity mockups in HTML and CSS for User Testing.</p>
+            <div class="u-image-inline">
                 <img src="imgs/weatherwhiskers/cat_android_userflow.jpg" alt="weather whiskers user flow for Android">
             </div>
-            <div class="proj-item text-block">
-                <h2>User Interface Design</h2>
-                <p>
-                    As part of our design process we developed a style guide. Even though we had chosen a theme for the app, it was still important to establish a cohesive tone for language and visual design. A hallmark of our project was attention to detail. I developed a set of cat-themed icons for each weather condition. We also decided to use color to provide visual clues about the weather, because cats can’t read. I developed a color and icon guide that was affectionately titled The Purriodic Table.
-                </p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading-md">User Interface Design</h2>
+            <p>As part of our design process we developed a style guide. Even though we had chosen a theme for the app, it was still important to establish a cohesive tone for language and visual design. A hallmark of our project was attention to detail. I developed a set of cat-themed icons for each weather condition. We also decided to use color to provide visual clues about the weather, because cats can’t read. I developed a color and icon guide that was affectionately titled The Purriodic Table.</p>
+            <div class="u-image-inline">
                 <img src="imgs/weatherwhiskers/cat_style.jpg" alt="weather whiskers style guide">
-                <img src="imgs/weatherwhiskers/cat_colors.png" alt="weather whiskers purriodic table">
             </div>
-            <div class="proj-item text-block">
-                <p>
-                    Once the app was ready to release into the app stores, we also needed to develop marketing assets that could convey the tone of the app as both playful and credible.
-                </p>
+            <div class="u-image-inline">
+              <img src="imgs/weatherwhiskers/cat_colors.png" alt="weather whiskers purriodic table">
             </div>
-            <div class="proj-item img-block">
-                <img class="small" src="imgs/weatherwhiskers/cat_screenshot1.jpg" alt="weather whiskers ios app">
-                <img class="small" src="imgs/weatherwhiskers/cat_screenshot2.jpg" alt="weather whiskers ios app">
-                <img class="small" src="imgs/weatherwhiskers/cat_screenshot3.jpg" alt="weather whiskers ios app">
-                <img class="small" src="imgs/weatherwhiskers/cat_screenshot5.jpg" alt="weather whiskers ios app">
+            <p>Once the app was ready to release into the app stores, we also needed to develop marketing assets that could convey the tone of the app as both playful and credible.</p>
+            <div class="u-image-grid-4">
+                <img src="imgs/weatherwhiskers/cat_screenshot1.jpg" alt="weather whiskers ios app">
+                <img src="imgs/weatherwhiskers/cat_screenshot2.jpg" alt="weather whiskers ios app">
+                <img src="imgs/weatherwhiskers/cat_screenshot3.jpg" alt="weather whiskers ios app">
+                <img src="imgs/weatherwhiskers/cat_screenshot5.jpg" alt="weather whiskers ios app">
             </div>
-            <div class="proj-item text-block">
-                <h2>Content Creation</h2>
-                <p>
-                    It was important to us to fill the app with high-quality art. Each image was crafted to tell a story, depict emotion, and hopefully amuse the user. In the first version of the app we released a litter of 16 cats. Additional themed Cat Packs were available for in-app purchases. One popular pack titled Meowsterpieces featured art-inspired weather scenes.
-                </p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading-md">Content Creation</h2>
+            <p>It was important to us to fill the app with high-quality art. Each image was crafted to tell a story, depict emotion, and hopefully amuse the user. In the first version of the app we released a litter of 16 cats. Additional themed Cat Packs were available for in-app purchases. One popular pack titled Meowsterpieces featured art-inspired weather scenes.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/weatherwhiskers/snowman_cat.jpg" alt="weather whiskers cat art">
+                <img src="imgs/weatherwhiskers/dad_cat.jpg" alt="weather whiskers cat art">
+                <img src="imgs/weatherwhiskers/filmnoir_cat.jpg" alt="weather whiskers cat art">
+                <img src="imgs/weatherwhiskers/umbrella_cat.jpg" alt="weather whiskers cat art">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/weatherwhiskers/snowman_cat.jpg" alt="weather whiskers cat art">
-                <img class="medium" src="imgs/weatherwhiskers/dad_cat.jpg" alt="weather whiskers cat art">
-                <img class="medium" src="imgs/weatherwhiskers/filmnoir_cat.jpg" alt="weather whiskers cat art">
-                <img class="medium" src="imgs/weatherwhiskers/umbrella_cat.jpg" alt="weather whiskers cat art">
-            </div>
-            <div class="proj-item text-block">
-                <h2>Results</h2>
-                <p>
-                    The Weather Whiskers app quickly gained popularity, received press, and earned a 4.5 star rating on the iOS App Store and Google Play Store. It is no longer available for download.
-                </p>
-            </div>
-        </main>
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+        </section>
+        <section class="l-container">
+            <h2 class="heading-md">Results</h2>
+            <p>The Weather Whiskers app quickly gained popularity, received press, and earned a 4.5 star rating on the iOS App Store and Google Play Store. It is no longer available for download.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

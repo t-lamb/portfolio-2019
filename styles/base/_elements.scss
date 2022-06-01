@@ -1,19 +1,43 @@
-html { color:$bodytext; font-family:$font1; font-size:16px; }
-h1, h2, h3, h4, h5 { margin:0 auto 1rem; max-width:$width-text; padding:0; }
-p { font-size:1.2rem; line-height:1.6; margin:1rem auto; max-width: $width-text; padding:0; }
-a { border-bottom:1px solid $linkColor; color:$linkColor; text-decoration:none;
-  &:hover { border-color:$linkColorHover; color:$linkColorHover; }
+html {
+  color: $bodytext;
+  font-family: $font1;
+  font-size: 16px;
 }
-ul { font-size:1.2rem; line-height:1.6; padding:.5rem 0 1rem; }
-li { margin-left: 2rem; padding:0 0 1rem; }
-img { max-width:100%; }
-iframe { padding:1rem 0 0 0; width:100%; }
-@media screen and (max-width: 900px){
-  iframe { width:100%; }
+h1, h2, h3, h4, h5 {
+  max-width: $width-text;
+  padding: 0;
 }
-@media screen and (max-width: 768px){
-	h1 { font-size:2.5rem; }
-	iframe {
-		width:100%;
-	}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+  max-width: $width-text;
+  padding: 0;
+}
+a {
+  border-bottom: 1px solid $linkColor;
+  color: $linkColor;
+  text-decoration: none;
+  &:hover {
+    border-color: $linkColorHover;
+    color: $linkColorHover;
+  }
+}
+ul, ol {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 1rem auto 2rem;
+  max-width: $width-text;
+  padding: 0;
+}
+li {
+  margin: 0.5rem 0 0.5rem 2rem;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+iframe {
+  padding: 1rem 0 0 0;
+  width:100%;
 }
