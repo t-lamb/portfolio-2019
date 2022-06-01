@@ -1,0 +1,46 @@
+/* show/hide */
+.u-hide-xxs { @include mq(xxs) { display: none !important; }}
+.u-hide-xs-up { @include mq(xs_up) { display: none !important; }}
+.u-hide-sm-down { @include mq(sm_down) { display: none !important; }}
+.u-hide-sm-up { @include mq(sm_up) { display: none !important; }}
+.u-hide-md-down { @include mq(md_down) { display: none !important; }}
+.u-hide-md-up { @include mq(md_up) { display: none !important; }}
+.u-hide-lg-down { @include mq(lg_down) { display: none !important; }}
+.u-hide-lg-up { @include mq(lg_up) { display: none !important; }}
+.u-hide-xl-down { @include mq(xl_down) { display: none !important; }}
+.u-hide-xl { @include mq(xl) { display: none !important; }}
+
+/* spacing */
+.u-pad-bottom-rm {
+    padding-bottom: 0 !important;
+}
+.u-pad-left-rm {
+    padding-left: 0 !important;
+}
+
+/* layout */
+.u-justify-self-end {
+    justify-self: end;
+}
+
+/* typography */
+.u-nobreak {
+  white-space:nowrap;
+}
+
+/* animations */
+.u-animate {
+    animation-fill-mode: both;
+    position: absolute;
+    @media print, (prefers-reduced-motion: reduce) {
+            animation-duration: 1ms !important;
+            transition-duration: 1ms !important;
+            animation-iteration-count: 1 !important;
+    }
+}
+.u-animate-fade-in {
+    @include animation(fade-in);
+}
+.u-animate-fade-out {
+    @include animation(fade-out);
+}

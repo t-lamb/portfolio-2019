@@ -1,5 +1,5 @@
 /*--FOOTER----------------------*/
-footer {
+.l-footer {
   display:grid; grid-template-columns:1fr 1fr;
 }
 .social {
@@ -7,7 +7,7 @@ footer {
   .social-icon { width:1.5rem; }
   .social-label {
     border-bottom:1px solid rgba(255,255,255,0); color:$bodytext;
-    display:inline-block; font-family:$font2; margin:.25rem 0 .25rem .25rem;
+    display:inline-block; margin:.25rem 0 .25rem .25rem;
     vertical-align:bottom;
     &:hover {
        border-color:$linkColorHover; color:$linkColorHover;
@@ -20,25 +20,13 @@ footer {
 .footer-attribution {
   font-size:1rem; padding:2rem 0 0;
 }
-.nobreak {
-  white-space:nowrap;
-}
-.hide-sm-up {
-  display:none;
-}
 
 @media screen and (max-width: 768px){
-  footer { grid-template-columns:1fr; }
+  .l-footer { grid-template-columns:1fr; }
   .footer-email {
     border-left:none; grid-column-start:1;
   }
   .social {
     margin:.5rem 0; padding:0 0 .5rem;
-  }
-  .hide-sm-up {
-    display:block;
-  }
-  .hide-sm-down {
-    display:none;
   }
 }

@@ -1,0 +1,40 @@
+.heading-xl {
+  font-family: $font2;
+  font-size: 6rem;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+  padding: 0;
+  @include mq(md_down) {
+    font-size: 3rem;
+  }
+}
+.heading-lg {
+  font-family: $font2;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+  padding: 0;
+  @include mq(md_down) {
+    font-size: 2.25rem;
+  }
+}
+.heading-md {
+  font-family: $font2;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+  padding: 0;
+  @include mq(md_down) {
+    font-size: 1rem;
+  }
+}
+.heading-sm {
+  font-family: $font2;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 2rem;
+  padding: 0;
+  @include mq(md_down) {
+    font-size: 1rem;
+  }
+}

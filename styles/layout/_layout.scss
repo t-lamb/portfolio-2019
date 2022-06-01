@@ -1,6 +1,13 @@
-.wrapper, nav {
-  margin:0 auto; max-width:1440px;
+.l-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 2rem;
+}
+.l-main {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 .grid-container {
-  display:grid; grid-template-columns:1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

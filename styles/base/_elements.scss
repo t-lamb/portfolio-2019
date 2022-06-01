@@ -10,3 +10,13 @@ a { border-bottom:1px solid $linkColor; color:$linkColor; text-decoration:none;
 ul { font-size:1.2rem; line-height:1.6; padding:.5rem 0 1rem; }
 li { margin-left: 2rem; padding:0 0 1rem; }
 img { max-width:100%; }
+iframe { padding:1rem 0 0 0; width:100%; }
+@media screen and (max-width: 900px){
+  iframe { width:100%; }
+}
+@media screen and (max-width: 768px){
+	h1 { font-size:2.5rem; }
+	iframe {
+		width:100%;
+	}
+}

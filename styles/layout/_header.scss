@@ -1,0 +1,23 @@
+.l-header {
+  background-color: #fff;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 10;
+	a {
+    color: $bodytext;
+  }
+}
+.l-header__logo {
+  border: none;
+  font-family: $font2;
+  font-size: 1.5rem;
+  padding: .5rem;
+  text-decoration: none;
+}
