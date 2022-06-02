@@ -32,15 +32,18 @@
 
 /* images */
 .u-image-lg {
-  margin: 1rem auto;
+  margin: 2rem auto;
+  text-align: center;
 }
 .u-image-md {
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: $width-text;
+  text-align: center;
 }
 .u-image-sm {
   margin: 2rem auto;
   max-width: 600px;
+  text-align: center;
 }
 .u-image-grid-2 {
   display: grid;

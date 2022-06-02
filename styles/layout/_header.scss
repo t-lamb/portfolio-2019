@@ -2,11 +2,11 @@
   background-color: #fff;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   left: 0;
   margin: 0 auto;
   max-width: $width-content;
-  padding: 0 1rem;
+  padding: 1rem;
   position: sticky;
   right: 0;
   top: 0;
