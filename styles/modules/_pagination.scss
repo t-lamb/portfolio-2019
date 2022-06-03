@@ -5,10 +5,10 @@
 .pag-link {
   border:none; display:inline-block; font-family:$font2; font-size:1.25rem;
   padding:0 1.5rem .5rem 1.5rem; text-decoration:none;
-  &:hover { border-color:$borderColor; }
+  &:hover { border-color:$color-border; }
 }
 .prev {
-  border-right:1px solid $borderColor; width:50%;
+  border-right:1px solid $color-border; width:50%;
 }
 @media screen and (max-width: 1040px){
   .intro-heading {

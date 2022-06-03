@@ -10,18 +10,23 @@ $width-content: 1440px;
 $width-text: 60rem;
 
 /* Colors */
-$bodytext: #000000;
-$linkColor: #0A6F74;
-$linkColorHover: #144A4C;
-$borderColor: #ABDBDD;
-$borderColorRGBA: rgba(96, 163, 188, .75);
+$color-primary-lightest: #ABDBDD;
+$color-primary-light: #67B7BA;
+$color-primary: #2E9196;
+$color-primary-dark: #0A6F74;
+$color-primary-darkest: #144A4C;
 
+$color-background: #FFFFFF;
+$color-border: $color-primary-lightest;
+
+$color-text: #000000;
+$color-link: $color-primary-dark;
+$color-link-hover: $color-primary-darkest;
+
+/* colors to remove */
+$bio: #2E9196;
 $designlab: #1F2453;
 $nationbuilder: #1498BE;
-$stitchgood: #455FE8;
-$theknit: #CC33FF;
-$weatherwhiskers: #2CB7C0;
-$almostcooked: #E43E3B;
 $web: #0F63DA;
 $tedx: #E43E3B;
 $teknikio: #3D53B8;
@@ -29,9 +34,6 @@ $cyberknitics: #7B84FC;
 $lovelace: #A3B0AE;
 $woven: #1A1D1F;
 $wearables: #2CB7C0;
-$bio: #2E9196;
-$intro: #ABDBDD;
-$intro2: #67B7BA;
 
 /* Fonts */
 $font1: 'Nanum Gothic', sans-serif;

@@ -11,12 +11,10 @@
   right: 0;
   top: 0;
   z-index: 10;
-	a {
-    color: $bodytext;
-  }
 }
 .l-header__logo {
   border: none;
+  color: $color-text;
   font-family: $font2;
   font-size: 1.5rem;
   padding: .5rem;

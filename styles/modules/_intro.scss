@@ -1,5 +1,5 @@
 .intro {
-  background-color:$intro;
+  background-color: $color-primary-lightest;
   padding: 6rem 2rem 2rem;
   @include mq(md_down) {
     padding-top: 3rem;

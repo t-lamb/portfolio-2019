@@ -1,20 +1,33 @@
 .nav {
   justify-self: end;
   padding: 0;
+  position: relative;
 }
 .nav__list {
+  @include transition(height 0.5s ease-in-out, width 0.5s ease-in-out);
+  display: grid;
   list-style: none;
   margin: 0;
   @include mq(sm_up) {
-    display: grid;
     grid-auto-flow: column;
     grid-column-gap: 1rem;
     justify-content: end;
   }
   @include mq(sm_down) {
-    display: none;
+    align-content: center;
+    background-color: $color-background;
+    grid-row-gap: 0.5rem;
+    height: 0;
+    max-width: 90vw;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    width: 0;
     &.is-open {
-      display: block;
+      height: 13rem;
+      padding: .5rem 0;
+      width: 20rem;
     }
   }
 }
@@ -22,15 +35,29 @@
   margin: 0;
 }
 .nav__link {
-  border-bottom: 1px solid rgba(255,255,255,0);
+  border-bottom: 2px solid rgba(255,255,255,0);
+  color: $color-text;
   font-size: 1rem;
   padding: .5rem;
   text-decoration: none;
-  &:hover {
-    border-color: $linkColorHover;
+  @include mq(sm_up) {
+    &:hover, &--is-active {
+      border-color: $color-primary;
+    }
+  }
+  @include mq(sm_down) {
+    display: block;
+    padding: .5rem 1rem;
+    &:hover {
+      background-color: $color-primary-lightest;
+      border-color: $color-primary-lightest;
+      color: $color-text;
+    }
   }
 }
 .nav__button {
+  background: transparent;
+  border: none;
   display: none;
   @include mq(sm_down) {
     display: block;

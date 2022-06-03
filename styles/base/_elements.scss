@@ -1,5 +1,5 @@
 html {
-  color: $bodytext;
+  color: $color-text;
   font-family: $font1;
   font-size: 16px;
 }
@@ -15,12 +15,12 @@ p {
   padding: 0;
 }
 a {
-  border-bottom: 1px solid $linkColor;
-  color: $linkColor;
+  border-bottom: 1px solid $color-link;
+  color: $color-link;
   text-decoration: none;
   &:hover {
-    border-color: $linkColorHover;
-    color: $linkColorHover;
+    border-color: $color-link-hover;
+    color: $color-link-hover;
   }
 }
 ul, ol {
