@@ -212,67 +212,71 @@ iframe {
   width: 100%;
 }
 
-.heading-xl {
+@font-face {
+  font-family: "Quincy";
+  src: url("fonts/QuincyCFExtraBold.woff");
+}
+.display-lg {
   font-family: "Quincy", sans-serif;
   font-size: 6rem;
   line-height: 1.2;
   margin: 0 auto 2rem;
 }
 @media only screen and (max-width: 919px) {
-  .heading-xl {
+  .display-lg {
     font-size: 3rem;
   }
 }
 
-.heading-lg {
+.display-md {
   font-family: "Quincy", sans-serif;
   font-size: 4.5rem;
   line-height: 1.2;
   margin: 2rem auto;
 }
 @media only screen and (max-width: 919px) {
-  .heading-lg {
+  .display-md {
     font-size: 2.25rem;
   }
 }
 
-.heading-md {
+.display-sm {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 2rem auto 1rem;
+}
+@media only screen and (min-width: 920px) {
+  .display-sm {
+    font-family: "Quincy", sans-serif;
+  }
+}
+@media only screen and (max-width: 919px) {
+  .display-sm {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+.heading {
   font-family: "Quincy", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 2rem auto 1rem;
 }
 @media only screen and (max-width: 919px) {
-  .heading-md {
+  .heading {
     font-size: 1.75rem;
   }
 }
 
-.heading-sm {
-  font-size: 2rem;
-  line-height: 1.2;
-  margin: 2rem auto 1rem;
-}
-@media only screen and (min-width: 920px) {
-  .heading-sm {
-    font-family: "Quincy", sans-serif;
-  }
-}
-@media only screen and (max-width: 919px) {
-  .heading-sm {
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-}
-
-.heading-xs {
+.subhead {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin: 1.5rem auto 0.5rem;
 }
 @media only screen and (max-width: 919px) {
-  .heading-xs {
+  .subhead {
     font-size: 1.25rem;
   }
 }
@@ -461,31 +465,13 @@ iframe {
   animation-iteration-count: 1;
 }
 
-@font-face {
-  font-family: "Quincy";
-  src: url("fonts/QuincyCFExtraBold.woff");
-}
-.l-container {
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 1rem 2rem;
-}
-.l-container--narrow {
-  max-width: 960px;
-}
-
 .l-main {
   margin: 0 auto;
   max-width: 1440px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .l-header {
-  background-color: #fff;
+  background-color: #FFFFFF;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: auto auto;
@@ -559,6 +545,58 @@ iframe {
     padding: 0 0 0.5rem;
   }
 }
+.l-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 1rem 2rem;
+}
+.l-container--center {
+  text-align: center;
+}
+.l-container--narrow {
+  max-width: 960px;
+}
+@media only screen and (min-width: 920px) {
+  .l-container--grid-2 {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .l-container--grid-3 {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .l-container--grid-3 {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.button {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #038187;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+.button:hover {
+  background-color: #09666B;
+  color: #FFFFFF;
+}
+.button:active {
+  background-color: #175759;
+  color: #FFFFFF;
+}
+
 .case-study {
   align-content: center;
   border: none;
@@ -788,6 +826,55 @@ iframe {
     padding: 0 1.5rem 0.5rem 0;
   }
 }
+.project-card {
+  border: none;
+  margin: 1rem 0;
+}
+
+.project-card__image {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  align-content: center;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 8rem;
+  height: 8rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.project-card__tagline {
+  color: #000000;
+  line-height: 1.4;
+}
+.project-card__tagline:hover {
+  color: #175759;
+}
+
+.project-card__text {
+  padding: 1rem 0 1rem;
+}
+@media only screen and (min-width: 720px) {
+  .project-card__text {
+    padding: 0.5rem 0;
+  }
+}
+
+.project-card__title {
+  color: #000000;
+  font-family: "Quincy", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 1rem auto 0.5rem;
+}
+@media only screen and (max-width: 919px) {
+  .project-card__title {
+    font-size: 1.75rem;
+  }
+}
+
 .tag {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;

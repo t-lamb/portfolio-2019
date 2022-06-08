@@ -16,11 +16,13 @@ $color-primary-light: #ABDBDD;
 $color-primary: #038187;
 $color-primary-dark: #09666B;
 $color-primary-darkest: #175759;
+$color-white: #FFFFFF;
+$color-black: #000000;
 
-$color-background: #FFFFFF;
+$color-background: $color-white;
 $color-border: $color-primary-light;
 
-$color-text: #000000;
+$color-text: $color-black;
 $color-link: $color-primary;
 $color-link-hover: $color-primary-darkest;
 

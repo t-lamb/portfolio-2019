@@ -6,19 +6,17 @@
 @import 'styles/base/typography';
 @import 'styles/base/utilities';
 
-@font-face {
-  font-family: 'Quincy';
-  src: url("fonts/QuincyCFExtraBold.woff");
-}
-
-@import 'styles/layout/layout';
+@import 'styles/layout/main';
 @import 'styles/layout/header';
 @import 'styles/layout/footer';
+@import 'styles/layout/container';
 
+@import 'styles/modules/button';
 @import 'styles/modules/case-study';
 @import 'styles/modules/intro';
 @import 'styles/modules/navigation';
 @import 'styles/modules/pagination';
+@import 'styles/modules/project-card';
 @import 'styles/modules/tag';
 
 /*--CONTENT-------------*/

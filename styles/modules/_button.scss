@@ -1,0 +1,17 @@
+.button {
+  @include border-radius(8px);
+  //border: 1px solid $color-primary;
+  background-color: $color-button;
+  color: $color-white;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  &:hover {
+    background-color: $color-button-hover;
+    color: $color-white;
+  }
+  &:active {
+    background-color: $color-button-press;
+    color: $color-white;
+  }
+}

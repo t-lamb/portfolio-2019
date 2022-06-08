@@ -25,26 +25,26 @@
     </header>
     <main class="l-main">
         <div class="intro">
-            <h1 class="heading-lg">Case Study: The Knit Net</h1>
-            <p class="heading-sm">Crafting a new way to find, save, and share knitting patterns</p>
+            <h1 class="display-md">Case Study: The Knit Net</h1>
+            <p class="display-sm">Crafting a new way to find, save, and share knitting patterns</p>
         </div>
         <section class="l-container">
-            <h2 class="heading-md">Overview</h2>
+            <h2 class="heading">Overview</h2>
             <p>When I told people I wanted to make an app for knitters a common response was &ldquo;But my grandmother doesn’t use the internet&rdquo;. When outsiders imagine knitters they often envision silver-haired women in rocking chairs. The reality is people of all ages, genders, and abilities enjoy the craft, and they’re turning to the internet for inspiration and community. The resources and tools available were limited, outdated, and inaccessible. I saw an opportunity to make a change.</p>
-            <h3 class="heading-xs">Role:</h3>
+            <h3 class="subhead">Role:</h3>
             <p>User Research, App Design and Development</p>
-            <h3 class="heading-xs">Timeline:</h3>
+            <h3 class="subhead">Timeline:</h3>
             <p>4 months</p>
-            <h3 class="heading-xs">Tools:</h3>
+            <h3 class="subhead">Tools:</h3>
             <p>Adobe Illustrator, Balsamiq, HTML5, CSS3, JavaScript, Node, Express, Mongo, Jade Template Language</p>
         </section>
         <section class="l-container">
             <div class="u-image-lg">
                 <img src="imgs/theknit/theknit_interface.jpg" alt="interface">
             </div>
-            <h2 class="heading-md">Challenge</h2>
+            <h2 class="heading">Challenge</h2>
             <p>My goal is to change the way people find, share, and use knitting patterns. Drawing inspiration from the open source movement, I aim to make instructions and resources more interactive and accessible, and foster a collaborative online environment. Most importantly, I want to inspire users to start, finish and share their projects.</p>
-            <h3 class="heading-xs">High Level Goals:</h3>
+            <h3 class="subhead">High Level Goals:</h3>
             <ul>
               <li>
                   Create an inviting, accessible online resource for knitters
@@ -53,7 +53,7 @@
                   Leverage the relationship between knitting and code to make digital patterns more accessible
               </li>
             </ul>
-            <h3 class="heading-xs">Scope:</h3>
+            <h3 class="subhead">Scope:</h3>
             <ul>
                 <li>
                     Conduct foundational research on motivations and barriers for crafters
@@ -68,14 +68,14 @@
                     Design User Interface that appeals to younger generations of crafters
                 </li>
             </ul>
-            <h3 class="heading-xs">Constraints:</h3>
+            <h3 class="subhead">Constraints:</h3>
             <p>This project was created as part of a semester-long capstone project for a course at New York University’s Interactive Telecommunications Program (NYU ITP). While I had regular feedback sessions from my professor and classmates, I conducted all research, design, and development.</p>
         </section>
         <section class="l-container">
             <div class="u-image-md">
                 <img src="imgs/theknit/theknit_head.jpg" alt="the knit">
             </div>
-            <h2 class="heading-md">User Research</h2>
+            <h2 class="heading">User Research</h2>
             <p>I began by painting a picture of what it means to be a knitter today. To connect with knitters I reached out to friends, classmates, and online communities. I conducted interviews, collected surveys, and read articles and essays about the craft.</p>
             <p>Example Questions:</p>
             <ul>
@@ -95,7 +95,7 @@
                     Where do you like to knit? Alone or in a group? Do you multitask?
                 </li>
             </ul>
-            <h3 class="heading-sm">Primary Persona:</h3>
+            <h3 class="subheading">Primary Persona:</h3>
             <p>From my results I was able to create a primary persona named Jill, a 27 year-old Marketing Assistant in Brooklyn, New York. Her goals are to find and use patterns away from her computer, share finished projects with friends, use up the yarn she’s been stashing away, and learn new skills to take on more advanced projects.</p>
             <p>Jill enjoys the social aspects of knitting. Knitting is a skill passed down by her family members, and she still enjoys participating in knitting or craft circles with her friends. She has no trouble keeping up a conversation while she works on a project, and generally appreciates being able to multitask. She likes to knit while she’s watching television, or on the go when she’s traveling.</p>
             <p>Jill is active on social media, where she often posts pictures of her finished projects. She turns to YouTube to learn new stitches and techniques. She has a long backlog of knitting projects and inspiration bookmarked on her computer, but doesn’t have <em>just the right yarn</em> to start them. She also has a growing stash of yarn in her closet that she’ll <em>definitely</em> use just as soon as she finds the right project.</p>
@@ -104,14 +104,14 @@
             </div>
         </section>
         <section class="l-container">
-            <h2 class="heading-md">User Flow</h2>
+            <h2 class="heading">User Flow</h2>
             <p>I created a map of the core user flow, identifying pages and interactions that I want to see in the first version of the app. While my initial idea was centered around generating patterns, the current app encourages users to browse patterns, contribute to the library, and start new projects.</p>
             <div class="u-image-lg">
                 <img src="imgs/theknit/theknit_flow.png" alt="user flow">
             </div>
         </section>
         <section class="l-container">
-            <h2 class="heading-md">User Experience Design</h2>
+            <h2 class="heading">User Experience Design</h2>
             <p>With my focus on accessibility, I took a mobile-first approach to design. During my research I found that most crafting websites were not mobile-friendly. They required users to download PDFs, which meant the pattern instructions were not easily scalable or interactive. I also found that knitters, like Jill, were rarely knitting in front of a desktop or laptop computer, and often didn’t have access to a printer. To reach the widest audience, it made sense to focus on responsiveness.</p>
             <p>I created wireframes to show the process of finding and generating knitting patterns. The user would start a new project by selecting an item (like a hat or scarf) that they’d like to make and/or the materials they have. When Jill is looking to work through her stash of yarn she can discover patterns that will work. If a pattern with her yarn and needle size doesn’t exist she can generate a new pattern that matches her criteria.</p>
             <div class="u-image-lg">
@@ -119,7 +119,7 @@
             </div>
         </section>
         <section class="l-container">
-            <h2 class="heading-md">App Development</h2>
+            <h2 class="heading">App Development</h2>
             <p>Along with my research, I built an interactive, responsive prototype of the web application. For this project I used Express javascript framework with Node.js. I created a database for users, images, and knitting patterns using MongoDB. To build the interface I used Jade Template Engine, HTML5, CSS3, and JavaScript.</p>
         </section>
     </main>
