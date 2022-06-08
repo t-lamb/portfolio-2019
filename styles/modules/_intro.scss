@@ -1,10 +1,16 @@
 .intro {
   background-color: $color-primary-light;
-  margin: 0 0 4rem;
-  padding: 4rem 2rem 2rem;
-  @include mq(md_down) {
-    margin-bottom: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+  margin: 0 0 2rem;
+  padding: 3rem 2rem 1rem;
+  @include mq(md_up) {
+    margin: 0 0 4rem;
+    padding: 4rem 2rem 2rem;
+  }
+  &--secondary {
+    padding-top: 1rem;
+    text-align: center;
+    @include mq(md_up) {
+      padding-top: 3rem;
+    }
   }
 }

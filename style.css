@@ -560,37 +560,81 @@ iframe {
   }
 }
 .case-study {
+  align-content: center;
   border: none;
   display: grid;
-  grid-column-gap: 2rem;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 2rem;
+  grid-column-gap: 3rem;
+  margin: 2rem 0;
+}
+@media only screen and (min-width: 720px) {
+  .case-study {
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 4rem;
+  }
 }
 
 .case-study__image {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
   align-content: center;
-  background-color: #175759;
+  background-color: #000000;
   display: grid;
-  height: 10rem;
+  grid-template-columns: 8rem;
   justify-content: center;
   padding: 2rem;
   text-align: center;
 }
 
 .case-study__tagline {
+  border-bottom: 2px solid #038187;
+  display: inline-block;
+}
+.case-study__tagline:hover {
+  border-color: #175759;
+  color: #175759;
+}
+
+.case-study__text {
+  padding: 1rem 0 1rem;
+}
+@media only screen and (min-width: 720px) {
+  .case-study__text {
+    padding: 0.5rem 0;
+  }
+}
+
+.case-study__title {
   color: #000000;
+  font-family: "Quincy", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 1rem auto;
+}
+@media only screen and (max-width: 919px) {
+  .case-study__title {
+    font-size: 1.75rem;
+  }
 }
 
 .intro {
   background-color: #ABDBDD;
-  margin: 0 0 4rem;
-  padding: 4rem 2rem 2rem;
+  margin: 0 0 2rem;
+  padding: 3rem 2rem 1rem;
 }
-@media only screen and (max-width: 919px) {
+@media only screen and (min-width: 920px) {
   .intro {
-    margin-bottom: 2rem;
+    margin: 0 0 4rem;
+    padding: 4rem 2rem 2rem;
+  }
+}
+.intro--secondary {
+  padding-top: 1rem;
+  text-align: center;
+}
+@media only screen and (min-width: 920px) {
+  .intro--secondary {
     padding-top: 3rem;
-    padding-bottom: 1rem;
   }
 }
 
@@ -658,8 +702,12 @@ iframe {
   }
   .nav__link:hover {
     background-color: #CBF1F2;
-    border-color: #ABDBDD;
+    border-color: #CBF1F2;
     color: #000000;
+  }
+  .nav__link:active {
+    background-color: #ABDBDD;
+    border-color: #ABDBDD;
   }
 }
 
@@ -740,6 +788,17 @@ iframe {
     padding: 0 1.5rem 0.5rem 0;
   }
 }
+.tag {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #ABDBDD;
+  color: #000000;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
 /*--CONTENT-------------*/
 .portfolio-heading {
   color: #000000;
