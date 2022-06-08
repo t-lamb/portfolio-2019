@@ -11,18 +11,22 @@ $width-content-narrow: 960px;
 $width-text: 60rem;
 
 /* Colors */
-$color-primary-lightest: #ABDBDD;
-$color-primary-light: #67B7BA;
-$color-primary: #2E9196;
-$color-primary-dark: #0A6F74;
-$color-primary-darkest: #144A4C;
+$color-primary-lightest: #CBF1F2;
+$color-primary-light: #ABDBDD;
+$color-primary: #038187;
+$color-primary-dark: #09666B;
+$color-primary-darkest: #175759;
 
 $color-background: #FFFFFF;
-$color-border: $color-primary-lightest;
+$color-border: $color-primary-light;
 
 $color-text: #000000;
-$color-link: $color-primary-dark;
+$color-link: $color-primary;
 $color-link-hover: $color-primary-darkest;
+
+$color-button: $color-primary;
+$color-button-hover: $color-primary-dark;
+$color-button-press: $color-primary-darkest;
 
 /* colors to remove */
 $bio: #2E9196;

@@ -181,13 +181,13 @@ p {
 }
 
 a {
-  border-bottom: 1px solid #0A6F74;
-  color: #0A6F74;
+  border-bottom: 1px solid #038187;
+  color: #038187;
   text-decoration: none;
 }
 a:hover {
-  border-color: #144A4C;
-  color: #144A4C;
+  border-color: #175759;
+  color: #175759;
 }
 
 ul, ol {
@@ -529,8 +529,8 @@ iframe {
   vertical-align: bottom;
 }
 .social .social-label:hover {
-  border-color: #144A4C;
-  color: #144A4C;
+  border-color: #175759;
+  color: #175759;
 }
 
 .footer-email {
@@ -569,7 +569,7 @@ iframe {
 
 .case-study__image {
   align-content: center;
-  background-color: #144A4C;
+  background-color: #175759;
   display: grid;
   height: 10rem;
   justify-content: center;
@@ -647,7 +647,8 @@ iframe {
 }
 @media only screen and (min-width: 720px) {
   .nav__link:hover, .nav__link--is-active {
-    border-color: #2E9196;
+    border-color: #038187;
+    color: #038187;
   }
 }
 @media only screen and (max-width: 719px) {
@@ -656,7 +657,7 @@ iframe {
     padding: 0.5rem 1rem;
   }
   .nav__link:hover {
-    background-color: #ABDBDD;
+    background-color: #CBF1F2;
     border-color: #ABDBDD;
     color: #000000;
   }

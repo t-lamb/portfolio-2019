@@ -43,6 +43,7 @@
   @include mq(sm_up) {
     &:hover, &--is-active {
       border-color: $color-primary;
+      color: $color-primary;
     }
   }
   @include mq(sm_down) {
@@ -52,6 +53,10 @@
       background-color: $color-primary-lightest;
       border-color: $color-primary-lightest;
       color: $color-text;
+    }
+    &:active {
+      background-color: $color-primary-light;
+      border-color: $color-primary-light;
     }
   }
 }
