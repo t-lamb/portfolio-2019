@@ -1,8 +1,8 @@
-.project-card {
+.card {
   border: none;
   margin: 1rem 0;
 }
-.project-card__image {
+.card__icon {
   @include border-radius(8px);
   align-content: center;
   background-color: $color-black;
@@ -13,20 +13,30 @@
   padding: 2rem;
   text-align: center;
 }
-.project-card__tagline {
+.card__image {
+  @include border-radius(8px);
+  align-content: center;
+  display: grid;
+  height: 10rem;
+  overflow: hidden;
+  @include mq(sm_up) {
+    height: 18rem;
+  }
+}
+.card__tagline {
   color: $color-text;
   line-height: 1.4;
   &:hover {
     color: $color-link-hover;
   }
 }
-.project-card__text {
+.card__text {
   padding: 1rem 0 1rem;
   @include mq(sm_up) {
     padding: 0.5rem 0;
   }
 }
-.project-card__title {
+.card__title {
   color: $color-text;
   font-family: $font2;
   font-size: 2.5rem;

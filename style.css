@@ -667,6 +667,70 @@ iframe {
   }
 }
 
+.card {
+  border: none;
+  margin: 1rem 0;
+}
+
+.card__icon {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  align-content: center;
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: 8rem;
+  height: 8rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card__image {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  align-content: center;
+  display: grid;
+  height: 10rem;
+  overflow: hidden;
+}
+@media only screen and (min-width: 720px) {
+  .card__image {
+    height: 18rem;
+  }
+}
+
+.card__tagline {
+  color: #000000;
+  line-height: 1.4;
+}
+.card__tagline:hover {
+  color: #175759;
+}
+
+.card__text {
+  padding: 1rem 0 1rem;
+}
+@media only screen and (min-width: 720px) {
+  .card__text {
+    padding: 0.5rem 0;
+  }
+}
+
+.card__title {
+  color: #000000;
+  font-family: "Quincy", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 1rem auto 0.5rem;
+}
+@media only screen and (max-width: 919px) {
+  .card__title {
+    font-size: 1.75rem;
+  }
+}
+
 .intro {
   background-color: #ABDBDD;
   margin: 0 0 2rem;
@@ -838,55 +902,6 @@ iframe {
     padding: 0 1.5rem 0.5rem 0;
   }
 }
-.project-card {
-  border: none;
-  margin: 1rem 0;
-}
-
-.project-card__image {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  align-content: center;
-  background-color: #000000;
-  display: grid;
-  grid-template-columns: 8rem;
-  height: 8rem;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
-}
-
-.project-card__tagline {
-  color: #000000;
-  line-height: 1.4;
-}
-.project-card__tagline:hover {
-  color: #175759;
-}
-
-.project-card__text {
-  padding: 1rem 0 1rem;
-}
-@media only screen and (min-width: 720px) {
-  .project-card__text {
-    padding: 0.5rem 0;
-  }
-}
-
-.project-card__title {
-  color: #000000;
-  font-family: "Quincy", sans-serif;
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin: 1rem auto 0.5rem;
-}
-@media only screen and (max-width: 919px) {
-  .project-card__title {
-    font-size: 1.75rem;
-  }
-}
-
 .tag {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
