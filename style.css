@@ -257,6 +257,17 @@ iframe {
   }
 }
 
+.heading-lg {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 2rem auto 0;
+}
+@media only screen and (max-width: 919px) {
+  .heading-lg {
+    font-size: 1.75rem;
+  }
+}
+
 .heading {
   font-family: "Quincy", sans-serif;
   font-size: 2.5rem;
@@ -347,8 +358,8 @@ iframe {
   padding-bottom: 0 !important;
 }
 
-.u-pad-left-rm {
-  padding-left: 0 !important;
+.u-pad-top-rm {
+  padding-top: 0 !important;
 }
 
 /* layout */
@@ -497,6 +508,7 @@ iframe {
 .l-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 6rem 0 0;
 }
 
 .social {
