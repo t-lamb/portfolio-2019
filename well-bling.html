@@ -9,112 +9,98 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <p class="breadcrumb">
-                  <a href="wearables.html">Wearable Exploration</a> >> Well&nbsp;Being&nbsp;Bling
-                </p>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Well Being Bling</h1>
+            <p class="display-sm">Wearable Exploration</p>
+        </div>
+        <section class="l-container">
+            <p>This is a project for a wearables class at NYU. As the first part of our assignment we made a map of our wellbeing. I noticed that my health is like a balancing act for me. I try to drink more water than coffee and alcohol. If I eat a lot of carbs and sweets, I try to follow it up with vegetables and fruit. When I work for extended periods of time, I try to fit in breaks for taking walks, reading, and knitting.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_map.jpg" alt="well being bling">
             </div>
-            <div class="proj-item text-block">
-                <h1>Well Being Bling</h1>
-                <p>
-                    This is a project for a wearables class at NYU. As the first part of our assignment we made a map of our wellbeing. I noticed that my health is like a balancing act for me. I try to drink more water than coffee and alcohol. If I eat a lot of carbs and sweets, I try to follow it up with vegetables and fruit. When I work for extended periods of time, I try to fit in breaks for taking walks, reading, and knitting.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_map.jpg" alt="well being bling">
-                </p>
-                <p>
-                    During last week’s discussion Weight Watchers came up as a simplified way for people to understand nutrition. I would like to have a similar point system, but something more symbolic. While thinking about wellbeing, and attaching sensors to my body, I started thinking about how I could create a system for tracking my health that is self-actuated. I like the idea of making something that feels “off the grid” and makes me more aware of my body. I loved how ITP alum Michelle Cortese used colors with her project <a href="http://www.logmyvibe.com/">log(me)</a>.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_inspiration1.jpg" alt="well being bling">
-                </p>
-                <p>
-                    I started thinking about Mood Rings, which I loved when I was growing up, which I realized I could produce digitally with a programmable LED. I used a Neopixel that I hooked up to three buttons, one for each Red, Green and Blue.
-                </p>
-                <p>
-                    Each color would represent a healthy activity. Pressing each button makes its color brighter and alters the overall color. Over time the colors fade, so they must be reactivated by logging healthy activities.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_process1.jpg" alt="well being bling">
-                </p>
-                <p>
-                    To make this wearable I needed a place to store the microcontroller, so I started looking into the design of bracelet rings. I found some really beautiful macrame designs on Etsy. This provides a convenient way to hide the hardware and wires.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_inspiration2.jpg" alt="well being bling">
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_inspiration3.jpg" alt="well being bling">
-                </p>
-                <h4>Fabrication</h4>
-                <p>
-                    I chose to build mine out of felt because it’s really nice for prototyping and would be a comfortable cuff. I started by sewing 3 fabric buttons with pull-down resistors.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_process2.jpg" alt="well being bling">
-                </p>
-                <p>
-                    I chose to use an Arduino Micro, but I only had one with header pins soldered on, so I bent them and extended the pins I needed.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_process3.jpg" alt="well being bling">
-                </p>
-                <p>
-                    I wanted the bracelet to open easily for trouble-shooting so I added a snap that connects the buttons to power, and holds the cuff shut.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_finished_wristband.jpg" alt="well being bling">
-                </p>
-                <p>
-                    I labeled the buttons with some quick embroidery.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_well-bling_finished_ring.jpg" alt="well being bling">
-                </p>
-                <p>
-                    I was not able to get this circuit to work quite right in this prototype, but here is how I imagine it to work.
-                </p>
+            <p>During last week’s discussion Weight Watchers came up as a simplified way for people to understand nutrition. I would like to have a similar point system, but something more symbolic. While thinking about wellbeing, and attaching sensors to my body, I started thinking about how I could create a system for tracking my health that is self-actuated. I like the idea of making something that feels “off the grid” and makes me more aware of my body. I loved how ITP alum Michelle Cortese used colors with her project <a href="http://www.logmyvibe.com/">log(me)</a>.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_inspiration1.jpg" alt="well being bling">
             </div>
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="wearables.html"><span class="arrow"><~</span> Back to Wearable Exploration</a>
-            <a class="pag-link next" href=""> <span class="arrow"></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+            <p>I started thinking about Mood Rings, which I loved when I was growing up, which I realized I could produce digitally with a programmable LED. I used a Neopixel that I hooked up to three buttons, one for each Red, Green and Blue.</p>
+            <p>Each color would represent a healthy activity. Pressing each button makes its color brighter and alters the overall color. Over time the colors fade, so they must be reactivated by logging healthy activities.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_process1.jpg" alt="well being bling">
+            </div>
+            <p>To make this wearable I needed a place to store the microcontroller, so I started looking into the design of bracelet rings. I found some really beautiful macrame designs on Etsy. This provides a convenient way to hide the hardware and wires.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_inspiration2.jpg" alt="well being bling">
+            </div>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_inspiration3.jpg" alt="well being bling">
+            </div>
+            <h2 class="heading">Fabrication</h2>
+            <p>I chose to build mine out of felt because it’s really nice for prototyping and would be a comfortable cuff. I started by sewing 3 fabric buttons with pull-down resistors.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_process2.jpg" alt="well being bling">
+            </div>
+            <p>I chose to use an Arduino Micro, but I only had one with header pins soldered on, so I bent them and extended the pins I needed.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_process3.jpg" alt="well being bling">
+            </div>
+            <p>I wanted the bracelet to open easily for trouble-shooting so I added a snap that connects the buttons to power, and holds the cuff shut.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_finished_wristband.jpg" alt="well being bling">
+            </div>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_well-bling_finished_ring.jpg" alt="well being bling">
+            </div>
+            <p>I labeled the buttons with some quick embroidery.I was not able to get this circuit to work quite right in this prototype, but here is how I imagine it to work.</p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

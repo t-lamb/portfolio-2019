@@ -9,105 +9,99 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <h1 class="page-heading nationbuilder">NationBuilder</h1>
-                <p class="tag-line">
-                    Designer and Developer for community management software company
-                </p>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">NationBuilder</h1>
+            <p class="display-sm">Designer and Developer for community management software company</p>
+        </div>
+        <section class="l-container">
+            <p>NationBuilder offers online software for building and managing a community along with a suite of other products geared towards supporting leadership.</p>
+        </section>
+        <section>
+            <div class="l-container">
+                <h2 class="heading">Rebranding</h2>
+                <p>In October of 2017, NationBuilder officially launched a <a href="https://nationbuilder.com/evolving_the_nationbuilder_brand" target="_blank">major rebrand</a>. The bold new logo represents community, inclusion, and the power of creation on the internet. Along with fine-tuning our branding assets, I worked for months in advance alongside our design and development team, updating the entire website and all related properties to align with our new appearance and voice. One page I really enjoyed working on was our <a href="https://nationbuilder.com/brand_resources" target="_blank">Brand Resources</a> page.</p>
             </div>
-            <div class="proj-item img-block">
-                <img src="imgs/nationbuilder/nationbuilder_head.svg" alt="nationbuilder logo">
+            <div class="l-container l-container--grid-2 l-container--narrow">
+              <img src="imgs/nationbuilder/nationbuilder_rebrand1.svg" alt="NationBuilder rebrand old logo">
+              <img src="imgs/nationbuilder/nationbuilder_rebrand2.svg" alt="NationBuilder rebrand new logo">
             </div>
-            <div class="proj-item text-block">
-                <p>NationBuilder offers online software for building and managing a community along with a suite of other products geared towards supporting leadership.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">NationBuilder Stories</h2>
+            <p>NationBuilder software was designed to meet the needs of political campaigns, nonprofits and anyone with the goal of reaching and organizing large groups of people. I was the primary developer for the <a href="https://nationbuilder.com/stories" target="_blank">Stories</a> section of the website, which showcases the diverse range of customers and their impact on the world.</p>
+            <div class="u-image-md">
+                <img src="imgs/nationbuilder/nationbuilder_stories1.jpg" alt="NationBuilder Stories Story page">
             </div>
-            <div class="proj-item text-block">
-                <h2>Rebranding &mdash;</h2>
-                <p>In October of 2017, NationBuilder officially launched a major rebrand. The bold new logo represents community, inclusion, and the power of creation on the internet. Along with fine-tuning our branding assets, I worked for months in advance alongside our design and development team, updating the entire website and all related properties to align with our new appearance and voice. One page I really enjoyed working on was our <a href="https://nationbuilder.com/brand_resources" target="_blank">Brand Resources</a> page.</p>
-                <p>
-                  <a href="https://nationbuilder.com/evolving_the_nationbuilder_brand" target="_blank">Evolving the NationBuilder brand</a>
-                </p>
+            <div class="u-image-md">
+                <img src="imgs/nationbuilder/nationbuilder_stories2.jpg" alt="NationBuilder Stories card design">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_rebrand1.svg" alt="NationBuilder rebrand old logo">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_rebrand2.svg" alt="NationBuilder rebrand new logo">
+        </section>
+        <section class="l-container">
+            <h2 class="heading">NationBuilder Cities</h2>
+            <p>In concert with providing software, NationBuilder started an effort to facilitate in-person meetups for local leaders and NationBuilder customers. I worked to develop a template for facilitators setting up new city chapters, and I co-organized and hosted our initial NationBuilder NYC meetups.</p>
+            <div class="u-image-md">
+                <img src="imgs/nationbuilder/nationbuilder_cities1.jpg" alt="NationBuilder Cities website">
             </div>
-            <div class="proj-item text-block">
-                <h2>NationBuilder Stories &mdash;</h2>
-                <p>NationBuilder software was designed to meet the needs of political campaigns, nonprofits and anyone with the goal of reaching and organizing large groups of people. I was the primary developer for the Stories section of the website, which showcases the diverse range of customers and their impact on the world.</p>
-                <p>
-                  <a href="https://nationbuilder.com/stories" target="_blank">NationBuilder Stories</a>
-                </p>
+            <div class="u-image-md">
+                <img src="imgs/nationbuilder/nationbuilder_cities2.jpg" alt="NationBuilder Cities meetup. Speaker at front talking about leadership">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_stories1.jpg" alt="NationBuilder Stories Story page">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_stories2.jpg" alt="NationBuilder Stories card design">
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Women’s Conference</h2>
+            <p>The <a href="https://www.nationbuilderwomen.com/" target="_blank">NationBuilder Women’s Conference</a> is a multi-day gathering for women in leadership to discuss challenges facing women today and tell their stories of growth and persistence. I attended the first conference in Los Angeles in April 2017, and contributed my skills to support the event. I was the primary developer for the event website, facilitated a collaborative textile-arts project, and gave a speech about the history of textiles and women.</p>
+            <div class="u-image-md">
+                <img src="imgs/nationbuilder/nationbuilder_women2.jpg" alt="NationBuilder Women's Conference Website">
             </div>
-            <div class="proj-item text-block">
-                <h2>NationBuilder Cities &mdash;</h2>
-                <p>In concert with providing software, NationBuilder started an effort to facilitate in-person meetups for local leaders and NationBuilder customers. I worked to develop a <a href="https://nyc.nationbuilder.com/" target="_blank">template</a> for facilitators setting up new city chapters, and I co-organized and hosted our initial <a href="">NationBuilder NYC meetups</a>.</p>
-                <p>
-                  <a href="https://nationbuilder.com/cities" target="_blank">NationBuilder Cities</a>
-                </p>
-            </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_cities1.jpg" alt="NationBuilder Cities website">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_cities2.jpg" alt="NationBuilder Cities meetup. Speaker at front talking about leadership">
-            </div>
-            <div class="proj-item text-block">
-                <h2>Women’s Conference &mdash;</h2>
-                <p>The NationBuilder Women’s Conference is a multi-day gathering for women in leadership to discuss challenges facing women today and tell their stories of growth and persistence. I attended the first conference in Los Angeles in April 2017, and contributed my skills to support the event. I was the primary developer for the event website, facilitated a collaborative textile-arts project, and gave a speech about the history of textiles and women.</p>
-                <p>
-                  <a href="https://www.nationbuilderwomen.com/" target="_blank">Women's Conference Website</a>
-                </p>
-            </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_women1.jpg" alt="NationBuilder Women's Conference Ezra speaking">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_women2.jpg" alt="NationBuilder Women's Conference Website">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_women3.jpg" alt="NationBuilder Women's Conference collaborative tapestry">
-                <img class="medium" src="imgs/nationbuilder/nationbuilder_women4.jpg" alt="NationBuilder Women's Conference weaving">
-            </div>
-
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="designlab.html"><span class="arrow"><~</span> Designlab</a>
-            <a class="pag-link next" href="stitchgood.html">StitchGood <span class="arrow">~></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

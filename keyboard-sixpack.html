@@ -9,106 +9,95 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <p class="breadcrumb">
-                  <a href="wearables.html">Wearable Exploration</a> >> Keyboard&nbsp;Six&nbsp;Pack
-                </p>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Keyboard Six Pack</h1>
+            <p class="display-sm">Wearable Exploration</p>
+        </div>
+        <section class="l-container">
+            <p>This is a project for a wearables class at NYU. For this assignment we explored sound. I started thinking about instruments and how it would be fun to play an instrument on my body. I had previously made a couple keyboards using Arduino and a piezo speaker. I started thinking about how I could recreate this as a wearable.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_keyboard.gif" alt="keyboard sixpack">
             </div>
-            <div class="proj-item text-block">
-                <h1>Keyboard Six Pack</h1>
-                <p>
-                    This is a project for a wearables class at NYU. For this assignment we explored sound. I started thinking about instruments and how it would be fun to play an instrument on my body. I had previously made a couple keyboards using Arduino and a piezo speaker. I started thinking about how I could recreate this as a wearable.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_keyboard.gif" alt="keyboard sixpack">
-                </p>
-                <p>
-                    I thought it would be fun to tap on my belly to produce music and then it occurred to me that I could create a six-pack of buttons that would produce different sounds. My Floridian upbringing has taught me that people love to show off their six-packs at the beach, so I imagine this instrument would be a hit at beach parties. A marketable version would be water-proof, SPF 30, and sound like steel drums.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_inspiration.jpg" alt="keyboard sixpack">
-                </p>
-                <h4>Fabrication</h4>
-                <p>
-                    I started by drawing some abs on a mannequin to make a pattern.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_fab1.jpg" alt="keyboard sixpack">
-                </p>
-                <p>
-                    Then I cut them out of muslin and tried them on myself. Oops, this lo-fi selfie almost make them look real!
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_fab2.jpg" alt="keyboard sixpack">
-                </p>
-                <p>
-                    I traced them onto some fusible interfacing web so I could attach the conductive fabric to some jersey fabric. I also attached conductive fabric to the muslin. These would act as the two sides on my fabric buttons.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_fab3.jpg" alt="keyboard sixpack">
-                </p>
-                <p>
-                    To make my fabric buttons I cut holes into foam and placed it in between conductive fabric. I had to resew the connections a few times, because I initially got my circuitry mixed up. I learned a lot about sewing with resistors.
-                </p>
-                <p>
-                    I soldered the piezo and some metal snaps to a breadboard so it could be removable. A future version would need to be water-proof to be safe near the ocean and pool, and at the very least have detachable parts so it could be washed.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_fab4.gif" alt="keyboard sixpack">
-                </p>
-                <p>
-                    The current version uses an Arduino Uno and has to be plugged in, but it would not be difficult to recreate it with a Flora and a battery.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_fab5.jpg" alt="keyboard sixpack">
-                </p>
-                <p>
-                    I created a stretchy green outer layer with extra foam for more definition based on this tutorial for a <a href="https://www.u-createcrafts.com/creative-guest-homemade-muscle-suits-by/">child’s Halloween costume</a>. I kinda look like a Ninja Turtle.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_sixpack_finished.jpg" alt="keyboard sixpack">
-                </p>
+            <p>I thought it would be fun to tap on my belly to produce music and then it occurred to me that I could create a six-pack of buttons that would produce different sounds. My Floridian upbringing has taught me that people love to show off their six-packs at the beach, so I imagine this instrument would be a hit at beach parties. A marketable version would be water-proof, SPF 30, and sound like steel drums.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_inspiration.jpg" alt="keyboard sixpack">
             </div>
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="wearables.html"><span class="arrow"><~</span> Back to Wearable Exploration</a>
-            <a class="pag-link next" href=""> <span class="arrow"></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+            <h2 class="heading">Fabrication</h2>
+            <p>I started by drawing some abs on a mannequin to make a pattern.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_fab1.jpg" alt="keyboard sixpack">
+            </div>
+            <p>Then I cut them out of muslin and tried them on myself. Oops, this lo-fi selfie almost make them look real!</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_fab2.jpg" alt="keyboard sixpack">
+            </div>
+            <p>I traced them onto some fusible interfacing web so I could attach the conductive fabric to some jersey fabric. I also attached conductive fabric to the muslin. These would act as the two sides on my fabric buttons.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_fab3.jpg" alt="keyboard sixpack">
+            </div>
+            <p>To make my fabric buttons I cut holes into foam and placed it in between conductive fabric. I had to resew the connections a few times, because I initially got my circuitry mixed up. I learned a lot about sewing with resistors.</p>
+            <p>I soldered the piezo and some metal snaps to a breadboard so it could be removable. A future version would need to be water-proof to be safe near the ocean and pool, and at the very least have detachable parts so it could be washed.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_fab4.gif" alt="keyboard sixpack">
+            </div>
+            <p>The current version uses an Arduino Uno and has to be plugged in, but it would not be difficult to recreate it with a Flora and a battery.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_fab5.jpg" alt="keyboard sixpack">
+            </div>
+            <p>I created a stretchy green outer layer with extra foam for more definition based on this tutorial for a <a href="https://www.u-createcrafts.com/creative-guest-homemade-muscle-suits-by/">child’s Halloween costume</a>. I kinda look like a Ninja Turtle.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_sixpack_finished.jpg" alt="keyboard sixpack">
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>
