@@ -1,0 +1,50 @@
+html {
+  color: $color-text;
+  font-family: $font1;
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5 {
+  max-width: $width-text;
+  padding: 0;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+  max-width: $width-text;
+  padding: 0;
+}
+a {
+  border-bottom: 1px solid $color-link;
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    border-color: $color-link-hover;
+    color: $color-link-hover;
+  }
+}
+ul, ol {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 1rem auto 2rem;
+  max-width: $width-text;
+  padding: 0;
+}
+li {
+  margin: 0.5rem 0 0.5rem 2rem;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+iframe {
+  padding: 1rem 0 0 0;
+  width:100%;
+}
+hr {
+  background-color: $color-primary-light;
+  border: none;
+  height: 2px;
+  margin: 2rem auto;
+  max-width: $width-text;
+}

@@ -1,0 +1,48 @@
+.card {
+  border: none;
+  margin: 1rem 0;
+}
+.card__icon {
+  @include border-radius(8px);
+  align-content: center;
+  background-color: $color-black;
+  display: grid;
+  grid-template-columns: 8rem;
+  height: 8rem;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.card__image {
+  @include border-radius(8px);
+  align-content: center;
+  display: grid;
+  height: 10rem;
+  overflow: hidden;
+  @include mq(sm_up) {
+    height: 18rem;
+  }
+}
+.card__tagline {
+  color: $color-text;
+  line-height: 1.4;
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+.card__text {
+  padding: 1rem;
+  @include mq(sm_up) {
+    padding: 0.5rem 1.5rem;
+  }
+}
+.card__title {
+  color: $color-text;
+  font-family: $font2;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 1rem auto 0.5rem;
+  @include mq(md_down) {
+    font-size: 1.75rem;
+  }
+}

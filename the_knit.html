@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,91 +9,153 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <h1 class="page-heading theknit">The Knit Net</h1>
-                <p class="tag-line">
-                    A web app to make knitting more accessible
-                </p>
-            </div>
-            <div class="proj-item img-block">
-                <img src="imgs/theknit/theknit_head.jpg" alt="the knit">
-            </div>
-            <div class="proj-item text-block">
-                <p>
-                    The idea for The Knit Net started as a simple javascript app, <a href="knit-like-me/index.html">Knit Like Me</a>, that I made to demonstrate the similarities between knitting and programming. While focusing on this metaphor, I ended up in many discussions with classmates about how crafting has been left behind by the tech world and how this could be improved.
-                    <br><br>
-                    My goal is to change the way people find, share, and use knitting patterns. Drawing inspiration from the open source movement, I aim to make instructions and resources more interactive and accessible, and foster a collaborative online environment. Most importantly, I want to inspire users to start, finish and share their projects.
-                </p>
-                <p>
-                    <a href="http://theknit.herokuapp.com/" target="_blank">Visit theknit.net</a>
-                </p>
-            </div>
-            <div class="proj-item img-block">
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Case Study: The Knit Net</h1>
+            <p class="display-sm">Building a digital platform for <span class="u-nobreak">modern crafters</span></p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading">Overview</h2>
+            <p>When I told people I wanted to make an app for knitters a common response was &ldquo;But my grandmother doesn’t use the internet&rdquo;. When outsiders imagine knitters they often envision silver-haired women in rocking chairs. The reality is people of all ages, genders, and abilities enjoy the craft, and they’re turning to the internet for inspiration and community. The resources and tools available were limited, outdated, and inaccessible. I saw an opportunity to make a change.</p>
+            <h3 class="subhead">Role:</h3>
+            <p>User Research, App Design and Development</p>
+            <h3 class="subhead">Timeline:</h3>
+            <p>4 months</p>
+            <h3 class="subhead">Tools:</h3>
+            <p>Adobe Illustrator, Balsamiq, HTML5, CSS3, JavaScript, Node, Express, Mongo, Jade Template Language</p>
+        </section>
+        <section class="l-container">
+            <div class="u-image-lg">
                 <img src="imgs/theknit/theknit_interface.jpg" alt="interface">
             </div>
-            <div class="proj-item text-block">
-                <h2>Research &mdash;</h2>
-                <p>
-                    I began by composing a picture of what it means to be a knitter today. I reached out to friends, classmates, and the online community on Reddit.com/r/knitting. My questions were centered around on what motivates someone to start a project and what that process is like. To help direct my research, I created a persona representing many of my core users.
-                    <br><br>
-                    I created a map of the core user flow, identifying pages and interactions that I want to see in the first version of the app. While my initial idea was centered around generating patterns, the current app encourages users to browse patterns, contribute to the library, and start new projects.
-                </p>
+            <h2 class="heading">Challenge</h2>
+            <p>My goal is to change the way people find, share, and use knitting patterns. Drawing inspiration from the open source movement, I aim to make instructions and resources more interactive and accessible, and foster a collaborative online environment. Most importantly, I want to inspire users to start, finish and share their projects.</p>
+            <h3 class="subhead">High Level Goals:</h3>
+            <ul>
+              <li>
+                  Create an inviting, accessible online resource for knitters
+              </li>
+              <li>
+                  Leverage the relationship between knitting and code to make digital patterns more accessible
+              </li>
+            </ul>
+            <h3 class="subhead">Scope:</h3>
+            <ul>
+                <li>
+                    Conduct foundational research on motivations and barriers for crafters
+                </li>
+                <li>
+                    Map out user experience for adding, finding, sharing, and using knitting patterns
+                </li>
+                <li>
+                    Build interactive prototype for inputting and displaying knitting patterns
+                </li>
+                <li>
+                    Design User Interface that appeals to younger generations of crafters
+                </li>
+            </ul>
+            <h3 class="subhead">Constraints:</h3>
+            <p>This project was created as part of a semester-long capstone project for a course at New York University’s Interactive Telecommunications Program (NYU ITP). While I had regular feedback sessions from my professor and classmates, I conducted all research, design, and development.</p>
+        </section>
+        <section class="l-container">
+            <div class="u-image-md">
+                <img src="imgs/theknit/theknit_head.jpg" alt="the knit">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/theknit/theknit_persona.png" alt="persona">
-                <img class="medium" src="imgs/theknit/theknit_flow.png" alt="user flow">
+            <h2 class="heading">User Research</h2>
+            <p>I began by painting a picture of what it means to be a knitter today. To connect with knitters I reached out to friends, classmates, and online communities. I conducted interviews, collected surveys, and read articles and essays about the craft.</p>
+            <p>Example Questions:</p>
+            <ul>
+                <li>
+                    What do you enjoy about knitting?
+                </li>
+                <li>
+                    How did you learn to knit? Who taught you? At what age?
+                </li>
+                <li>
+                    Where do you go to learn new skills and techniques?
+                </li>
+                <li>
+                    Do you use patterns when you knit? Where do you go to find them?
+                </li>
+                <li>
+                    Where do you like to knit? Alone or in a group? Do you multitask?
+                </li>
+            </ul>
+            <h3 class="subheading">Primary Persona:</h3>
+            <p>From my results I was able to create a primary persona named Jill, a 27 year-old Marketing Assistant in Brooklyn, New York. Her goals are to find and use patterns away from her computer, share finished projects with friends, use up the yarn she’s been stashing away, and learn new skills to take on more advanced projects.</p>
+            <p>Jill enjoys the social aspects of knitting. Knitting is a skill passed down by her family members, and she still enjoys participating in knitting or craft circles with her friends. She has no trouble keeping up a conversation while she works on a project, and generally appreciates being able to multitask. She likes to knit while she’s watching television, or on the go when she’s traveling.</p>
+            <p>Jill is active on social media, where she often posts pictures of her finished projects. She turns to YouTube to learn new stitches and techniques. She has a long backlog of knitting projects and inspiration bookmarked on her computer, but doesn’t have <em>just the right yarn</em> to start them. She also has a growing stash of yarn in her closet that she’ll <em>definitely</em> use just as soon as she finds the right project.</p>
+            <div class="u-image-lg">
+                <img src="imgs/theknit/theknit_persona.png" alt="persona">
             </div>
-            <div class="proj-item text-block">
-                <h2>Design &amp; Development &mdash;</h2>
-                <p>
-                    I chose a mobile-first approach for both design and development. People all around the world are gaining access to the internet via smartphones, while access to desktop computers remains limited. Most crafting websites are not mobile-friendly and require the user to download PDFs of the instructions, which are not easily scalable or interactive. With a focus on accessibility, I hope to reach a much broader group of people and make it easier to craft on the go.
-                    <br><br>
-                    I am currently building the app with Node, Express, Mongo, and Jade templating engine, while rapidly improving my skills in CSS and Javascript. I hope to create an experience that is simple and fully responsive. You can view my code in progress on <a href="https://github.com/t-lamb/theknit" target="_blank">Github</a>.
-                </p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">User Flow</h2>
+            <p>I created a map of the core user flow, identifying pages and interactions that I want to see in the first version of the app. While my initial idea was centered around generating patterns, the current app encourages users to browse patterns, contribute to the library, and start new projects.</p>
+            <div class="u-image-lg">
+                <img src="imgs/theknit/theknit_flow.png" alt="user flow">
             </div>
-            <div class="proj-item img-block">
+        </section>
+        <section class="l-container">
+            <h2 class="heading">User Experience Design</h2>
+            <p>With my focus on accessibility, I took a mobile-first approach to design. During my research I found that most crafting websites were not mobile-friendly. They required users to download PDFs, which meant the pattern instructions were not easily scalable or interactive. I also found that knitters, like Jill, were rarely knitting in front of a desktop or laptop computer, and often didn’t have access to a printer. To reach the widest audience, it made sense to focus on responsiveness.</p>
+            <p>I created wireframes to show the process of finding and generating knitting patterns. The user would start a new project by selecting an item (like a hat or scarf) that they’d like to make and/or the materials they have. When Jill is looking to work through her stash of yarn she can discover patterns that will work. If a pattern with her yarn and needle size doesn’t exist she can generate a new pattern that matches her criteria.</p>
+            <div class="u-image-lg">
                 <img src="imgs/theknit/theknit_wires.png" alt="interface">
             </div>
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="stitchgood.html"><span class="arrow"><~</span> Stitchgood</a>
-            <a class="pag-link next" href="weather_whiskers.html">Weather Whiskers <span class="arrow">~></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+        </section>
+        <section class="l-container">
+            <h2 class="heading">App Development</h2>
+            <p>Along with my research, I built an interactive, responsive prototype of the web application. For this project I used Express javascript framework with Node.js. I created a database for users, images, and knitting patterns using MongoDB. To build the interface I used Jade Template Engine, HTML5, CSS3, and JavaScript.</p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

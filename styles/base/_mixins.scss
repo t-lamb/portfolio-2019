@@ -1,0 +1,136 @@
+﻿@mixin animation($name, $duration: 1s, $timing: ease, $delay: 0s, $iteration: 1) { //used to call animations in _animations.scss
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-timing-function: $timing;
+    -webkit-animation-delay: $delay;
+    -webkit-animation-iteration-count: $iteration;
+
+    -moz-animation-name: $name;
+    -moz-animation-duration: $duration;
+    -moz-animation-timing-function: $timing;
+    -moz-animation-delay: $delay;
+    -moz-animation-iteration-count: $iteration;
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+    animation-delay: $delay;
+    animation-iteration-count: $iteration;
+}
+
+@mixin keyframes($name) { //only used within _animations.scss for adding browser prefixes to keyframes
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin border-radius($value) {
+    -moz-border-radius: $value;
+    -webkit-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin box-shadow($value...) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin transform($value) {
+    -o-transform: $value;
+    -ms-transform: $value;
+    -webkit-transform: $value;
+    transform: $value;
+}
+
+@mixin transition($value...) {
+    -webkit-transition: $value;
+    transition: $value;
+}
+
+
+/* media query mixins */
+$xl: $break-xl;
+$lg: $break-lg;
+$md: $break-md;
+$sm: $break-sm;
+$xs: $break-xs;
+
+@mixin mq($canvas) {
+    @if $canvas == xs_up {
+        @media only screen and (min-width: $xs) {
+            @content;
+        }
+    }
+    @else if $canvas == sm_up {
+        @media only screen and (min-width: $sm) {
+            @content;
+        }
+    }
+    @else if $canvas == md_up {
+        @media only screen and (min-width: $md) {
+            @content;
+        }
+    }
+    @else if $canvas == lg_up {
+        @media only screen and (min-width: $lg) {
+            @content;
+        }
+    }
+    @else if $canvas == xl_down {
+        @media only screen and (max-width: $xl - 1px){
+            @content;
+        }
+    }
+    @else if $canvas == lg_down {
+        @media only screen and (max-width: $lg - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == md_down {
+        @media only screen and (max-width: $md - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == sm_down {
+        @media only screen and (max-width: $sm - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == xxs {
+        @media only screen and (max-width: $xs - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == xs {
+        @media only screen and (min-width: $xs) and (max-width: $sm - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == sm {
+        @media only screen and (min-width: $sm) and (max-width: $md - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == md {
+        @media only screen and (min-width: $md) and (max-width: $lg - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == lg {
+        @media only screen and (min-width: $lg) and (max-width: $xl - 1px) {
+            @content;
+        }
+    }
+    @else if $canvas == xl {
+        @media only screen and (min-width: $xl) {
+            @content;
+        }
+    }
+}

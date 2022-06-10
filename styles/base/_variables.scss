@@ -1,0 +1,56 @@
+/* Breakpoints */
+$break-xl: 1600px;
+$break-lg: 1280px;
+$break-md: 920px;
+$break-sm: 720px;
+$break-xs: 600px;
+
+/* Layout */
+$width-content: 1440px;
+$width-content-narrow: 960px;
+$width-text: 60rem;
+
+/* Colors */
+$color-primary-lightest: #CBF1F2;
+$color-primary-light: #ABDBDD;
+$color-primary: #038187;
+$color-primary-dark: #09666B;
+$color-primary-darkest: #175759;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+$color-background: $color-white;
+$color-border: $color-primary-light;
+
+$color-text: $color-black;
+$color-link: $color-primary;
+$color-link-hover: $color-primary-darkest;
+
+$color-button: $color-primary;
+$color-button-hover: $color-primary-dark;
+$color-button-press: $color-primary-darkest;
+
+$color-almostcooked: #E43E3B;
+$color-designlab: #1F2453;
+$color-cyberknitics: #7B84FC;
+$color-knitnet: #CC33FF;
+$color-lovelace: #A3B0AE;
+$color-nationbuilder: #1498BE;
+$color-stitchgood: #455FE8;
+$color-tedx: #E43E3B;
+$color-teknikio: #3D53B8;
+$color-wearables: #2CB7C0;
+$color-web: #0F63DA;
+$color-weatherwhiskers: #2CB7C0;
+$color-woven: #1A1D1F;
+
+
+
+
+/* Fonts */
+$font1: 'Nanum Gothic', sans-serif;
+$font2: 'Quincy', sans-serif;
+
+/* Font Weights */
+$font-weight-regular: 400;
+$font-weight-bold: 700;

@@ -1,0 +1,120 @@
+/* Resets file to fix inconsistencies in browsers */
+/* based on normalize.css | github.com/necolas/normalize.css */
+html {
+    // Prevent adjustments of font size after orientation changes in iOS.
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    // Remove the margin in all browsers
+    margin: 0;
+}
+main {
+    // Render the `main` element consistently in IE
+    display: block;
+}
+hr {
+    // Add the correct box sizing in Firefox
+    box-sizing: content-box;
+    // Show the overflow in Edge and IE
+    height: 0;
+    overflow: visible;
+}
+a {
+    // Remove the gray background on active links in IE 10.
+    background-color: transparent;
+}
+abbr[title] {
+    // Remove the bottom border in Chrome 57-
+    border-bottom: none;
+    // Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+img {
+    // Remove the border on images inside links in IE 10.
+    border-style: none;
+}
+button, input, optgroup, select, textarea {
+    // Change the font styles in all browsers.
+    font-family: inherit;
+}
+button, input {
+    // Show the overflow in Edge.
+    overflow: visible;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+    // Correct the inability to style clickable types in iOS and Safari.
+    -webkit-appearance: button;
+    &::-moz-focus-inner {
+        // Remove the inner border and padding in Firefox.
+        border-style: none;
+        padding: 0;
+    }
+    &:-moz-focusring {
+        // Restore the focus styles unset by the previous rule.
+        outline: 1px dotted ButtonText;
+    }
+}
+fieldset {
+    // Correct the padding in Firefox
+    padding: 0.35em 0.75em 0.625em;
+}
+legend {
+    // Correct the text wrapping in Edge and IE.
+    box-sizing: border-box;
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+    // Correct the color inheritance from `fieldset` elements in IE.
+    color: inherit;
+    // Remove the padding in all browsers.
+    padding: 0;
+}
+progress {
+    // Add the correct vertical alignment in Chrome, Firefox, and Opera.
+    vertical-align: baseline;
+}
+textarea {
+    // Remove the default vertical scrollbar in IE 10+.
+    overflow: auto;
+}
+[type="checkbox"], [type="radio"] {
+    // Add the correct box sizing in IE 10.
+    box-sizing: border-box;
+    // Remove the padding in IE 10.
+    padding: 0;
+}
+[type="number"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+        // Correct the cursor style of increment and decrement buttons in Chrome.
+        height: auto;
+    }
+}
+[type="search"] {
+    // Correct the odd appearance in Chrome and Safari.
+    -webkit-appearance: textfield;
+    // Correct the outline style in Safari.
+    outline-offset: -2px;
+    &::-webkit-search-decoration {
+        // Remove the inner padding in Chrome and Safari on macOS.
+        -webkit-appearance: none;
+    }
+}
+::-webkit-file-upload-button {
+    // Correct the inability to style clickable types in iOS and Safari.
+    -webkit-appearance: button;
+    // Change font properties to `inherit` in Safari.
+    font: inherit;
+}
+details {
+    // Add the correct display in Edge, IE 10+, and Firefox.
+    display: block;
+}
+summary {
+    // Add the correct display in all browsers.
+    display: list-item;
+}
+[hidden] {
+    // Add the correct display in IE 10.
+    display: none;
+}

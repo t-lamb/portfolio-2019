@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,89 +9,88 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <h1 class="page-heading lovelace">Lovelace</h1>
-                <p class="tag-line">
-                    A utility harness for women who craft
-                </p>
-            </div><!--/page-head-->
-            <div class="proj-item">
-                <img src="imgs/lovelace/lovelace_side.jpg" alt="lovelace">
-            </div><!--/header image-->
-            <div class="proj-item text-block">
-                <p>
-                    This harness was inspired by the many amazing crafting women in my life. I set out to design a garment for the new era of crafters - women who make by choice, who know making is powerful, and who find their unique voices in the mediums and techniques of mothers and grandmothers. What I found was a truly diverse group of people with an impressive range of skills. I created a harness to store tools on the body that could evolve with the wearer.
-                </p>
-            </div><!--/intro-->
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/lovelace/lovelace_belt.jpg" alt="lovelace">
-                <img class="medium" src="imgs/lovelace/lovelace_pincushion.jpg" alt="lovelace">
-                <img class="medium" src="imgs/lovelace/lovelace_breadboard.jpg" alt="lovelace">
-                <img class="medium" src="imgs/lovelace/lovelace_back.jpg" alt="lovelace">
-            </div><!--/img-block-->
-            <div class="proj-item text-block">
-                <h2>Designed to Evolve &mdash;</h2>
-                <p>
-                    This version was specifically tailored for someone who sews and works on soft circuitry. However, its pieces are modular and can be customized. Many crafters I spoke to switch between crafts and are continually acquiring new skills and new tools. The harness is adjustable and durable, and meant to grow and change with the owner over a very long period of time.
-                </p>
-            </div><!--/design-->
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/lovelace/lovelace_shoulder.jpg" alt="lovelace">
-                <img class="medium" src="imgs/lovelace/lovelace_belt2.jpg" alt="lovelace">
-            </div><!--/img-block-->
-            <div class="proj-item text-block">
-                <h2>The Chatelaine &mdash;</h2>
-                <p>
-                    Chatelaines were worn by women who were head of their household in the Victorian era. They contained all the small tools needed for their daily work often including keys, tools for sewing, time pieces, and small vials.
-                    <br><br>
-                    The chatelaine I designed for the Lovelace vest includes a magnifying glass, a tape measure, a thread cutter, and a continuity tester to check electronic connections and conductivity.
-                </p>
-            </div><!--/chatelaine-->
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/lovelace/lovelace_chatelain.jpg" alt="lovelace">
-                <img class="medium" src="imgs/lovelace/lovelace_continuity.jpg" alt="lovelace">
-            </div><!--/img-block-->
-
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="cyberknitics.html"><span class="arrow"><~</span> Cyberknitics</a>
-            <a class="pag-link next" href="woven.html">Woven <span class="arrow">~></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Lovelace</h1>
+            <p class="display-sm">A Victorian-inspired utility harness for modern crafters</p>
+        </div>
+        <section class="l-container">
+            <p>This harness was inspired by the many amazing crafting women in my life. I set out to design a garment for the new era of crafters - women who make by choice, who know making is powerful, and who find their unique voices in the mediums and techniques of mothers and grandmothers. What I found was a truly diverse group of people with an impressive range of skills. I created a harness to store tools on the body that could evolve with the wearer.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/lovelace/lovelace_belt.jpg" alt="">
+                <img src="imgs/lovelace/lovelace_pincushion.jpg" alt="">
+                <img src="imgs/lovelace/lovelace_breadboard.jpg" alt="">
+                <img src="imgs/lovelace/lovelace_back.jpg" alt="">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Designed to Evolve</h2>
+            <p>This version was specifically tailored for someone who sews and works on soft circuitry. However, its pieces are modular and can be customized. Many crafters I spoke to switch between crafts and are continually acquiring new skills and new tools. The harness is adjustable and durable, and meant to grow and change with the owner over a very long period of time.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/lovelace/lovelace_shoulder.jpg" alt="lovelace">
+                <img src="imgs/lovelace/lovelace_belt2.jpg" alt="lovelace">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">The Chatelaine</h2>
+            <p>Chatelaines were worn by women who were head of their household in the Victorian era. They contained all the small tools needed for their daily work often including keys, tools for sewing, time pieces, and small vials.</p>
+            <div class="u-image-sm">
+                <img src="imgs/lovelace/lovelace_chatelain_inspiration.jpeg" alt="">
+            </div>
+            <p>The chatelaine I designed for the Lovelace vest includes a magnifying glass, a tape measure, a thread cutter, and a continuity tester to check electronic connections and conductivity.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/lovelace/lovelace_chatelain.jpg" alt="">
+                <img src="imgs/lovelace/lovelace_continuity.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

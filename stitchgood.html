@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,75 +9,109 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <h1 class="page-heading stitchgood">StitchGood</h1>
-                <p class="tag-line">
-                    A website that connects crafters to causes in need of handmade goods
-                </p>
-            </div><!--/page-head-->
-            <div class="proj-item">
-                <img src="imgs/stitchgood/stitchgood_head.jpg" alt="stitchgood layout design">
-            </div><!--/header image-->
-            <div class="proj-item text-block">
-                <p>
-                  StitchGood makes it easy for crafters to find projects based on their skills, their location, and the causes they really care about. Visitors are prompted to join the community of crafters by signing up to receive customized monthly emails about causes in need of handmade goods.
-                </p>
-                <p>
-                  <a href="http://stitchgood.org/" target="_blank">StitchGood.org (interactive prototype)</a>
-                </p>
-            </div><!--/intro-->
-            <div class="proj-item">
-                <img src="imgs/stitchgood/stitchgood_layout.jpg" alt="stitchgood layout design">
-            </div><!--/header image-->
-            <div class="proj-item text-block">
-                <h2>About the project &mdash;</h2>
-                <p>
-                  I saw people in my online crafting communities looking for ways to use their skills and extra materials to make a positive impact. Unfortunately, many amazing charities and organizations requesting handmade items are not easy to find online, and it may be even more difficult to navigate websites and compare projects just to begin. StitchGood is meant to be a living directory of these organizations and their needs. It allows for discovery in a way that is not currently possible.
-                </p>
-                <p>
-                  I designed the logo and website to feel modern and clean in contrast to the many cluttered and outdated websites I visited in my research. The design was also driven by images to help develop empathy between the visitor and the cause. I built the responsive prototype using Bootstrap and jQuery.
-                </p>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Case Study: Stitch Good</h1>
+            <p class="display-sm">Connecting crafters to causes in need of <span class="u-nobreak">handmade goods</span></p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading">Overview</h2>
+            <p>StitchGood makes it easy for crafters to find projects based on their skills, their location, and the causes they really care about. Visitors are prompted to join the community of crafters by signing up to receive customized monthly emails about causes in need of handmade goods.</p>
+            <h3 class="subhead">Role:</h3>
+            <p>Designer, Developer</p>
+            <h3 class="subhead">Timeline:</h3>
+            <p>1 week</p>
+            <h3 class="subhead">Tools:</h3>
+            <p>Adobe Illustrator, Adobe Photoshop, HTML5, CSS3, Bootstrap, JQuery</p>
+        </section>
+        <section class="l-container">
+            <div class="u-image-md">
+                <img src="imgs/stitchgood/stitchgood_head.jpg" alt="stitchgood logo">
             </div>
-        </div><!--/flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="nationbuilder.html"><span class="arrow"><~</span> NationBuilder</a>
-            <a class="pag-link next" href="the_knit.html">The Knit Net <span class="arrow">~></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+            <h2 class="heading">Challenge</h2>
+            <p>I saw people in my online crafting communities looking for ways to use their skills and extra materials to make a positive impact. Unfortunately, many amazing charities and organizations requesting handmade items are not easy to find online, and it may be even more difficult to navigate websites and compare projects just to begin.</p>
+            <h3 class="subhead">High Level Goal:</h3>
+            <p>Connect crafters to causes that need handmade goods</p>
+            <h3 class="subhead">Scope:</h3>
+            <ul>
+                <li>
+                    Research existing causes and online resources
+                </li>
+                <li>
+                    Design logo and establish visual direction
+                </li>
+                <li>
+                    Design Home page, About page, and signup modal
+                </li>
+                <li>
+                    Include a call to action for user signup
+                </li>
+                <li>
+                    Build interactive prototype
+                </li>
+            </ul>
+            <h3 class="subhead">Constraints:</h3>
+            <p>Complete initial design and development in one week</p>
+        </section>
+        <section class="l-container">
+            <div class="u-image-wide">
+                <img src="imgs/stitchgood/stitchgood_layout.jpg" alt="stitchgood layout design">
+            </div>
+            <h2 class="heading">Approach</h2>
+            <p>StitchGood is meant to be a living directory of charities and organizations requesting handmade items. It allows for discovery in a way that is not currently possible.</p>
+            <p>I designed the logo and website to feel modern and clean in contrast to the many cluttered and outdated websites I visited in my research. The interface design is focused on images which helps foster empathy between the visitor and the cause. I built the responsive prototype using Bootstrap and jQuery.</p>
+            <p>
+                <a href="http://stitchgood.org/" target="_blank">View the interactive prototype</a>
+            </p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

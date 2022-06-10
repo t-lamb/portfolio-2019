@@ -1,0 +1,22 @@
+.l-header {
+  background-color: $color-background;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto auto;
+  left: 0;
+  margin: 0 auto;
+  max-width: $width-content;
+  padding: 1rem;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.l-header__logo {
+  border: none;
+  color: $color-text;
+  font-family: $font2;
+  font-size: 1.5rem;
+  padding: .5rem;
+  text-decoration: none;
+}

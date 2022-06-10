@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Quincy';
+  src: url("fonts/QuincyCFExtraBold.woff");
+}
+
+.display-lg {
+  font-family: $font2;
+  font-size: 6rem;
+  line-height: 1.2;
+  margin: 0 auto 2rem;
+  @include mq(md_down) {
+    font-size: 3rem;
+  }
+}
+.display-md {
+  font-family: $font2;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  margin: 2rem auto;
+  @include mq(md_down) {
+    font-size: 2.25rem;
+  }
+}
+.display-sm {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 2rem auto 1rem;
+  @include mq(md_up) {
+    font-family: $font2;
+  }
+  @include mq(md_down) {
+    font-size: 1.25rem;
+    font-weight: $font-weight-bold;
+  }
+}
+.heading-lg {
+  font-family: $font2;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 2rem auto 0;
+  @include mq(md_down) {
+    font-size: 1.75rem;
+  }
+}
+.heading {
+  font-family: $font2;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 2rem auto 1rem;
+  @include mq(md_down) {
+    font-size: 1.75rem;
+  }
+}
+.subhead {
+  font-size: 1.5rem;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  margin: 1.5rem auto 0.5rem;
+  @include mq(md_down) {
+    font-size: 1.25rem;
+  }
+}
+.text-large {
+  font-size: 1.5rem;
+  margin: 1.5rem auto 0.5rem;
+  @include mq(md_down) {
+    font-size: 1.25rem;
+  }
+}

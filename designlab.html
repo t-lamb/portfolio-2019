@@ -9,115 +9,129 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-            <div class="page-head">
-                <h1 class="page-heading designlab">Designlab</h1>
-                <p class="tag-line">
-                    Front End Developer and UX Designer for online design education platform
-                </p>
-            </div>
-            <div class="proj-item img-block">
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Designlab</h1>
+            <p class="display-sm">UX Engineer for an online design <span class="u-nobreak">education platform</span></p>
+        </div>
+        <section class="l-container">
+            <p>Designlab is an online platform for design education. We offer online curriculum and 1-on-1 mentorship with professional designers with the goal of helping people upskill and switch careers into User Experience (UX). As a hybrid developer and designer I work closely with the product team and engineers to build high-quality responsive and accessible web pages.</p>
+            <div class="u-image-md">
                 <img src="imgs/designlab/designlab_head.svg" alt="designlab logo header image">
             </div>
-            <div class="proj-item text-block">
-                <p>Designlab is an online platform for design education. We offer online curriculum and 1-on-1 mentorship with professional designers with the goal of helping people upskill and switch careers into User Experience (UX). As a hybrid developer and designer I work closely with the product team and engineers to build high-quality responsive and accessible web pages.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">LUMA Design System</h2>
+            <p>I co-designed and implemented the LUMA (lightweight, unified, modular, and accessible) Design System. Our design system allows us to build and prototype quickly using a set of predefined styles, colors, and components.</p>
+            <p><a href="luma.html">Read the Case Study</a></p>
+            <div class="u-image-grid-2">
+                <img src="imgs/designlab/luma-design-system.png" alt="Luma Design System components">
+                <img src="imgs/designlab/luma-grid-system.png" alt="Luma Design Sytem grid layout">
             </div>
-            <div class="proj-item text-block">
-                <h2>LUMA &mdash;</h2>
-                <p>I co-designed and implemented the LUMA (lightweight, unified, modular, and accessible) Design System. Our design system allows us to build and prototype quickly using a set of predefined styles, colors, and components.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Designlab Blog</h2>
+            <p>I was Front End Developer and Co-designer for the redesign of the <a href="https://designlab.com/blog/" target="_blank">Designlab Blog</a>. When my team approached this project, we knew that many people were finding our high-quality content, but weren’t signing up for our newsletter. We conducted research for optimizing engagement, developed wireframes and prototypes, integrated our LUMA design system, and collaborated with engineers to fine-tune logic. The result was a 1100% increase in readers coming to our site organically and joining our email list.</p>
+            <div class="u-image-md">
+                <img src="imgs/designlab/designlab_blog1.jpg" alt="Designlab blog screenshot">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/designlab/luma-design-system.png" alt="Luma Design System components">
-                <img class="medium" src="imgs/designlab/luma-grid-system.png" alt="Luma Design Sytem grid layout">
+            <div class="u-image-md">
+                <img src="imgs/designlab/designlab_blog2.jpg" alt="Designlab blog screenshot">
             </div>
-            <div class="proj-item text-block">
-                <h2>Designlab Blog &mdash;</h2>
-                <p>I was Front End Developer and Co-designer for the redesign of the Designlab blog. When my team approached this project, we knew that many people were finding our high-quality content, but weren’t signing up for our newsletter. We conducted research for optimizing engagement, developed wireframes and prototypes, integrated our LUMA design system, and collaborated with engineers to fine-tune logic. The result was a 1100% increase in readers coming to our site organically and joining our email list.</p>
-                <p>
-                    <a href="https://trydesignlab.com/blog/" target="_blank">Visit the redesigned Blog</a>
-                </p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Help Center</h2>
+            <p>The <a href="https://help.designlab.com/hc/en-us" target="_blank">Designlab Help Center</a> is the support site for our prospective and active students and mentors. We planned to overhaul our entire support experience by creating an easy-to-navigate knowledge base and increasing visibility of support throughout our website and product.</p>
+            <div class="u-image-md">
+                <img src="imgs/designlab/designlab_helpcenter1.png" alt="Designlab blog screenshot">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/designlab/designlab_blog1.jpg" alt="Designlab blog screenshot">
-                <img class="medium" src="imgs/designlab/designlab_blog2.jpg" alt="Designlab blog screenshot">
+            <div class="u-image-md">
+                <img src="imgs/designlab/designlab_helpcenter2.png" alt="Designlab blog screenshot">
             </div>
-            <div class="proj-item text-block">
-                <h2>Help Center &mdash;</h2>
-                <p>The Designlab Help Center is the support site for our prospective and active students and mentors. We planned to overhaul our entire support experience by creating an easy-to-navigate knowledge base and increasing visibility of support throughout our website and product.</p>
-                <p>
-                    <a href="https://help.trydesignlab.com/hc/en-us" target="_blank">View the Designlab Help Center</a>
-                </p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Enrollment User Flow Update</h2>
+            <p>Our team discovered that potential students were beginning the enrollment process to join our courses, but not completing the multi-stage form. I worked as the UX Designer and Front End Developer to help create a simpler, more user-friendly and responsive version this process. I created a user flow chart for the proposed changes, coded the logic for the one-page app with AngularJS, and refactored our form styles for accessibility.</p>
+            <div class="u-image-md">
+                <img src="imgs/designlab/designlab_enroll1.png" alt="Designlab enrollment user flow">
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/designlab/designlab_helpcenter1.png" alt="Designlab blog screenshot">
-                <img class="medium" src="imgs/designlab/designlab_helpcenter2.png" alt="Designlab blog screenshot">
+            <div class="u-image-md">
+                <img src="imgs/designlab/designlab_enroll2.png" alt="Designlab enroll flow screenshot">
             </div>
-            <div class="proj-item text-block">
-                <h2>Enrollment User Flow Update &mdash;</h2>
-                <p>Our team discovered that potential students were beginning the enrollment process to join our courses, but not completing the multi-stage form. I worked as the UX Designer and Front End Developer to help create a simpler, more user-friendly and responsive version this process. I created a user flow chart for the proposed changes, coded the logic for the one-page app with AngularJS, and refactored our form styles for accessibility.</p>
-                <p>
-                    <a href="https://trydesignlab.com/web-design-course/enroll/" target="_blank">View the simplified enroll page here</a>
-                </p>
+        </section>
+        <section>
+            <div class="l-container">
+                <h2 class="heading">Blog Articles</h2>
             </div>
-            <div class="proj-item img-block">
-                <img class="medium" src="imgs/designlab/designlab_enroll1.png" alt="Designlab enrollment user flow">
-                <img class="medium" src="imgs/designlab/designlab_enroll2.png" alt="Designlab enroll flow screenshot">
-            </div>
-            <div class="proj-item text-block">
-                <h2>Blog Article: 40 Tips For Inclusive And Accessible User Interface Design</h2>
-                <p>As a big advocate for inclusive web design, I was excited to help compile this comprehensive list for the Designlab Blog. We cover everything from typography to forms to screen reader-friendly html to make your website or app easy to use for the broadest audience.</p>
-                <p>
-                  <a href="https://trydesignlab.com/blog/40-tips-inclusion-accessibility-user-interface-design/" target="_blank">Read it on the Designlab Blog</a>
-                </p>
-                <img src="imgs/designlab/designlab_blog_accessibility.png" alt="Designlab enrollment user flow">
-            </div>
-            <div class="proj-item text-block">
-                <h2>Blog Article: Everyday Creativity: Tech and Textiles with Ezra Lamb</h2>
-                <p>I did an interview for the Designlab Blog about my personal work and how I find inspiration.</p>
-                <p>
-                  <a href="https://trydesignlab.com/blog/everyday-creativity-ezra-lamb-tech-textiles-etextiles/" target="_blank">Read it on the Designlab Blog</a>
-                </p>
-                <img src="imgs/designlab/designlab_blog_interview.jpg" alt="Designlab enrollment user flow">
-            </div>
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href=""><span class="arrow">&nbsp;</span></a>
-            <a class="pag-link next" href="nationbuilder.html">NationBuilder <span class="arrow">~></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
+            <div class="l-container l-container--grid-2">
+                <a class="card" href="https://designlab.com/blog/40-tips-inclusion-accessibility-user-interface-design/">
+                    <div class="card__image">
+                        <img src="imgs/designlab/designlab_blog_accessibility.png" alt="Designlab enrollment user flow">
+                    </div>
+                    <div class="card__text">
+                        <h2 class="card__title">40 Tips For Inclusive And Accessible User Interface Design</h2>
+                        <p class="card__tagline">Co-author</p>
+                    </div>
                 </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
+                <a class="card" href="https://designlab.com/blog/everyday-creativity-ezra-lamb-tech-textiles-etextiles/">
+                    <div class="card__image">
+                        <img src="imgs/designlab/designlab_blog_interview.jpg" alt="Designlab enrollment user flow">
+                    </div>
+                    <div class="card__text">
+                        <h2 class="card__title">Everyday Creativity: Tech and Textiles with Ezra Lamb</h2>
+                        <p class="card__tagline">Interview with Designlab and Ezra Lamb</p>
+                    </div>
                 </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>

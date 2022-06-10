@@ -9,105 +9,97 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <div class="header-logo">
-                    <a href="index.html">
-                      Ezra Lamb
-                    </a>
-                </div><!--/header logo-->
-                <div class="header-nav">
-                    <a href="index.html" class="header-nav-link">portfolio</a>
-                    <a href="info.html" class="header-nav-link">info</a>
-                </div><!--/header nav-->
-            </nav>
-        </header>
-
-        <div class="flex-wrap">
-          <div class="page-head">
-              <p class="breadcrumb">
-                <a href="wearables.html">Wearable Exploration</a> >> Talliscope
-              </p>
-          </div>
-            <div class="proj-item text-block">
-                <h1>Talliscope</h1>
-                <p>
-                    This is a project for a wearables class at NYU. This week’s assignment was to come up with a pitch for a wearable that affects the way we see the world.
-                </p>
-                <h4>Background Research</h4>
-                <p>
-                    Many psychological studies have found a link between height and success. Taller people generally end up with better careers, hold leadership positions, make more money, and attend better schools. According to <a href="https://www.apa.org/monitor/julaug04/standing">one study</a>, every inch equates on average to nearly $800 per year, and over $150,000 during the course of a career.
-                </p>
-                <p>
-                    Many psychologists attribute this discrepancy to pure confidence. Tall people view the world from a different angle, physically looking down on their shorter peers and subconsciously garnering respect from others looking up to them. They are treated differently from a young age, assumed to be more mature and better at sports. But is there more to it than being able to reach the top shelf and getting picked first for teams at recess? What if the success and confidence are purely a result of a higher viewpoint? How can I capture the feeling of being tall? And how will that affect my confidence?
-                </p>
-                <h4>Like a socially acceptable periscope…yes, that’s it.</h4>
-                <p>
-                    I am proposing a wearable hat that gives me a taller point of view. The hat will contain a camera that sends a live feed to my phone. Since the camera is camouflaged and because it is socially acceptable to walk around looking at a phone, any short person will be able to discreetly experience “tall vision”.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_mockup.png" alt="talliscope">
-                    <br>Concept art for “Tall-i-Vision”
-                </p>
-                <h4>User Testing</h4>
-                <p>
-                    Sam helped me user test my idea. We used Facetime to create the effect of live streaming footage from directly above my head. We tried landscape (optimal view) vs. portrait (optimal discretion) and varying heights. In the process I noticed myself standing taller, which is presumably the first step to a taller, more successful life.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_process1.jpg" alt="talliscope">
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_process2.jpg" alt="talliscope">
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_process3.jpg" alt="talliscope">
-                </p>
-                <h4>The Talliscope Ecosystem</h4>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_finished.png" alt="talliscope">
-                </p>
-                <p>
-                    The full Talliscope ecosystem will include a stylish hat with a discrete embedded camera and an app for streaming tall footage.
-                </p>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_teal.jpg" alt="talliscope">
-                </p>
-                <p>
-                    Talliscope will change your point of view, boost your confidence, and match your purse.
-                </p>
-                <p>
-                    Beanie design from Wool and the Gang.
-                </p>
-                <h4>Talliscope. See Tall. Dream Tall.</h4>
-                <p>
-                    <img src="imgs/wearables/wearables_talliscope_logo.png" alt="talliscope">
-                </p>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Talliscope</h1>
+            <p class="display-sm">Wearable Exploration: Perspective</p>
+        </div>
+        <section class="l-container">
+            <p>A hat that changes your point of view. Psychologists have found a link between height, confidence, and success. My idea is to allow the wearer to experience the world from a new, slightly taller perspective. A camera in the hat send a live feed directly to their phone, so they can continue to navigate the world as usual.</p>
+            <p>This was a project for a wearables class at NYU. This week’s assignment was to come up with a pitch for a wearable that affects the way we see the world.</p>
+            <h2 class="heading">Background Research</h2>
+            <p>Many psychological studies have found a link between height and success. Taller people generally end up with better careers, hold leadership positions, make more money, and attend better schools. According to <a href="https://www.apa.org/monitor/julaug04/standing">one study</a>, every inch equates on average to nearly $800 per year, and over $150,000 during the course of a career.</p>
+            <p>Many psychologists attribute this discrepancy to pure confidence. Tall people view the world from a different angle, physically looking down on their shorter peers and subconsciously garnering respect from others looking up to them. They are treated differently from a young age, assumed to be more mature and better at sports. But is there more to it than being able to reach the top shelf and getting picked first for teams at recess? What if the success and confidence are purely a result of a higher viewpoint? How can I capture the feeling of being tall? And how will that affect my confidence?</p>
+            <h2 class="heading">Like a socially acceptable periscope…yes, that’s it.</h2>
+            <p>I am proposing a wearable hat that gives me a taller point of view. The hat will contain a camera that sends a live feed to my phone. Since the camera is camouflaged and because it is socially acceptable to walk around looking at a phone, any short person will be able to discreetly experience “tall vision”.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_mockup.png" alt="talliscope">
+                <!--Concept art for “Tall-i-Vision”-->
             </div>
-        </div><!-- end flex-wrap -->
-
-        <div class="pagination">
-            <a class="pag-link prev" href="wearables.html"><span class="arrow"><~</span> Back to Wearable Exploration</a>
-            <a class="pag-link next" href=""> <span class="arrow"></span></a>
-        </div><!--/pagination-->
-
-        <footer>
-            <div class="footer-email">
-                <a href="https://github.com/t-lamb" class="social">
-                    <img src="imgs/github.svg" alt="github" class="social-icon">
-                    <span class="social-label">github</span>
-                </a>
-                <a href="http://www.linkedin.com/in/ezralamb" class="social">
-                    <img src="imgs/linked.svg" alt="linked in" class="social-icon">
-                    <span class="social-label">linkedin</span>
-                </a>
-                <a href="mailto:hello@ezralamb.com" class="social">
-                    <img src="imgs/email.svg" alt="email" class="social-icon">
-                    <span class="social-label">hello@ezralamb.com</span>
-                </a>
-                <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
-            </div><!--/footer-email-->
-        </footer>
-    </div><!--/wrapper-->
+            <h2 class="heading">User Testing</h2>
+            <p>Sam helped me user test my idea. We used Facetime to create the effect of live streaming footage from directly above my head. We tried landscape (optimal view) vs. portrait (optimal discretion) and varying heights. In the process I noticed myself standing taller, which is presumably the first step to a taller, more successful life.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_process1.jpg" alt="talliscope">
+            </div>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_process2.jpg" alt="talliscope">
+            </div>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_process3.jpg" alt="talliscope">
+            </div>
+            <h2 class="heading">The Talliscope Ecosystem</h2>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_finished.png" alt="talliscope">
+            </div>
+            <p>The full Talliscope ecosystem will include a stylish hat with a discrete embedded camera and an app for streaming tall footage.</p>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_teal.jpg" alt="talliscope">
+            </div>
+            <p>Talliscope will change your point of view, boost your confidence, and match your purse.</p>
+            <p>Beanie design from Wool and the Gang.</p>
+            <h2 class="heading">Talliscope. See Tall. Dream Tall.</h2>
+            <div class="u-image-md">
+                <img src="imgs/wearables/wearables_talliscope_logo.png" alt="talliscope">
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
 </body>
 </html>
