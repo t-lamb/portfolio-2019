@@ -10,7 +10,7 @@
     background-color: $color-button-hover;
     color: $color-white;
   }
-  &:active {
+  &:active, &:focus {
     background-color: $color-button-press;
     color: $color-white;
   }

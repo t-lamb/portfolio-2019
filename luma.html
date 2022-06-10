@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LUMA // Ezra Lamb</title>
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Lamb
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Case Study: LUMA</h1>
+            <p class="display-sm">Transforming a Bespoke Website into a Scalable Design System</p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading">Overview</h2>
+            <p>LUMA stands for Lightweight Unified Modular Accessible, which defines our core principles as we established this design system for Designlab.</p>
+            <h3 class="subhead">Client:</h3>
+            <p>Designlab</p>
+            <h3 class="subhead">Role:</h3>
+            <p>UX Engineer (Front End Developer and UX Specialist)</p>
+            <h3 class="subhead">Timeline:</h3>
+            <p>Preliminary Research: 1 month<br>Initial Implementation: 5 months</p>
+            <h3 class="subhead">Tools:</h3>
+            <p>Figma, Sketch, HTML5, CSS3, Sass, JavaScript, JQuery, AngularJS, ReactJS, Django, Python</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Challenge</h2>
+            <h3 class="subhead">Make it the same, but much better</h3>
+            <p>When I was hired, Designlab was a small, early-stage startup establishing itself as a leader in mentor-lead online design education. They were ready to launch into their next phase of rapid-growth with the goal to attract top-tier mentors and students. They needed their site to support lead-generation and reflect their expertise in Design and User Experience, but they did not have the design resources or need for a full redesign.</p>
+            <p>Their website was built piecewise as the company was establishing their brand direction, and while there were throughlines in the visual design, the lack of consistency was impacting the polish and usability. Each page contained a slightly different set of styles, colors, typography, and markup. Disorganized code was creating a maintenance nightmare as each page was made up of competing styles and fixing one issue could easily break something else.</p>
+            <h3 class="subhead">High-Level Goals:</h3>
+            <ul>
+                <li>
+                    Establish consistent branding and UI elements throughout the marketing site
+                </li>
+                <li>
+                    Support a broader audience by making the marketing website fully responsive and incorporating accessibility best practices
+                </li>
+                <li>
+                    Create a strong foundation that can expand to all digital products and support the company’s rapid growth
+                </li>
+            </ul>
+            <h3 class="subhead">Scope:</h3>
+            <ul>
+                <li>
+                    Conduct audit of existing UI elements and patterns
+                </li>
+                <li>
+                    Research CSS Methodologies, Web Accessibility, and Design System Best Practices
+                </li>
+                <li>
+                    Full refactor of the Marketing Website (17 static pages, 2 page templates)
+                </li>
+            </ul>
+            <h3 class="subhead">Constraints:</h3>
+            <ul>
+                <li>
+                    Need to maintain current design
+                </li>
+                <li>
+                    1 month for allocated for research
+                </li>
+                <li>
+                    Limited design and engineering resources
+                </li>
+                <li>
+                    Need to support a phased release
+                </li>
+            </ul>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Research</h2>
+            <p>I began my research by looking into CSS methodologies and existing design systems. At the time I was the first and only front end developer, so I needed to keep in mind how I would communicate and scale our system. </p>
+            <p>I wanted to establish a naming convention that was specific and easy to read, so I chose to follow the BEM methodology. The name of each component was tied to its purpose and not its context so that it could be reused throughout the product. All the styles were global so the names of each class would need to be unique, which BEM made very easy. The naming system was verbose, but just by reading a class name you could decipher the structure, variation, and file location of any element.</p>
+            <p>For the organizational structure I applied a methodology called SMACSS (pronounced “smacks”). The styles were divided into 5 categories: Base, Layout, Modules, States, and Themes. I found this framework to be simple, flexible, easy to maintain, and applicable to projects large and small. Compared to other methodologies I found it had a smaller learning curve for both designers and engineers. It was less focused on dogma and metaphors, and it aligned well with both programmatic principles and component library functionality in design software.</p>
+            <p>At this stage I started compiling documentation and a living Style Guide. While I was prepared for the system to evolve and change, I found it really important to log decisions I’d made and compile the resources that led me there.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/designlab/luma-design-system.png" alt="Luma Design System components">
+                <img src="imgs/designlab/luma-grid-system.png" alt="Luma Design Sytem grid layout">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Audit</h2>
+            <p>A key step in establishing the design system is conducting an audit of the existing styles. I used a tool called Project Wallace to get a baseline for the number of colors and font styles. This may seem small at first, but using consistent brand colors and streamlining typography is a quick way to elevate the design and cut down significantly on design and development effort. Next I looked into high-impact elements including buttons, forms, and navigation. I took note of bugs in responsiveness and created a plan for how to create a flexible grid system to support the content.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Implementation</h2>
+            <p>I worked with the CTO to establish a code structure that would allow me to keep the existing site and styles intact while I started to implement the new design system. Slowly as I eliminated the use of old styles I could remove them until the entire site was moved over. I could perform this with very little design bandwidth. Not only was I moving things to a modular system, but I was also making the site fully responsive. In some instances I needed design buy-in when making a component scale gracefully to smaller screens, but generally we were establishing a pattern that could be reused throughout.</p>
+            <p>Aside from the modular styles, we were using AngularJS and Django templating framework to create reusable and dynamic markup. I worked with our back-end developer to align naming and establish best practices.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Results</h2>
+            <p>Creating LUMA allowed our small team to create a cohesive web presence and improve overall user experience. My team was able to scale LUMA to our student/mentor dashboard, online curriculum, blog, third–party help center, and HTML emails. This initiative significantly increased the speed at which we could prototype and launch code. It also substantially decreased maintenance and UX debt because updates to LUMA would elevate the entire digital ecosystem.</p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="https://github.com/t-lamb" class="social">
+                <img src="imgs/github.svg" alt="github" class="social-icon">
+                <span class="social-label">github</span>
+            </a>
+            <a href="http://www.linkedin.com/in/ezralamb" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <a href="mailto:hello@ezralamb.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">hello@ezralamb.com</span>
+            </a>
+            <p class="footer-attribution">Handmade with &#9825; by Ezra. &copy; 2022</p>
+        </div><!--/footer-email-->
+    </footer>
+</body>
+</html>

@@ -14,10 +14,27 @@
   align-content: center;
   background-color: $color-black;
   display: grid;
-  grid-template-columns: 8rem;
   justify-content: center;
-  padding: 2rem;
   text-align: center;
+  &--sm {
+    grid-template-columns: 8rem;
+    padding: 2rem;
+  }
+  &--almostcooked {
+    background-color: $color-almostcooked;
+  }
+  &--designlab {
+    background-color: $color-designlab;
+  }
+  &--knitnet {
+    background-color: $color-knitnet;
+  }
+  &--stitchgood {
+    background-color: $color-stitchgood;
+  }
+  &--weatherwhiskers {
+    background-color: $color-weatherwhiskers;
+  }
 }
 .case-study__tagline {
   border-bottom: 2px solid $color-link;

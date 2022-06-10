@@ -34,6 +34,7 @@
   }
 }
 .heading-lg {
+  font-family: $font2;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 2rem auto 0;
@@ -54,6 +55,13 @@
   font-size: 1.5rem;
   font-weight: $font-weight-bold;
   line-height: 1.2;
+  margin: 1.5rem auto 0.5rem;
+  @include mq(md_down) {
+    font-size: 1.25rem;
+  }
+}
+.text-large {
+  font-size: 1.5rem;
   margin: 1.5rem auto 0.5rem;
   @include mq(md_down) {
     font-size: 1.25rem;

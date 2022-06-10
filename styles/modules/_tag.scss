@@ -1,6 +1,6 @@
 .tag {
   @include border-radius(8px);
-  border: 1px solid $color-primary-light;
+  background-color: $color-primary-lightest;
   color: $color-text;
   display: inline-block;
   font-size: 1rem;
