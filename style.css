@@ -704,11 +704,17 @@ hr {
   background-color: #000000;
   display: grid;
   justify-content: center;
+  overflow: hidden;
   text-align: center;
 }
 .case-study__image--sm {
   grid-template-columns: 8rem;
   padding: 2rem;
+}
+@media only screen and (max-width: 719px) {
+  .case-study__image--sm {
+    height: 8rem;
+  }
 }
 .case-study__image--almostcooked {
   background-color: #E43E3B;
