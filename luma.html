@@ -108,10 +108,6 @@
             <p>I wanted to establish a naming convention that was specific and easy to read, so I chose to follow the BEM methodology. The name of each component was tied to its purpose and not its context so that it could be reused throughout the product. All the styles were global so the names of each class would need to be unique, which BEM made very easy. The naming system was verbose, but just by reading a class name you could decipher the structure, variation, and file location of any element.</p>
             <p>For the organizational structure I applied a methodology called SMACSS (pronounced “smacks”). The styles were divided into 5 categories: Base, Layout, Modules, States, and Themes. I found this framework to be simple, flexible, easy to maintain, and applicable to projects large and small. Compared to other methodologies I found it had a smaller learning curve for both designers and engineers. It was less focused on dogma and metaphors, and it aligned well with both programmatic principles and component library functionality in design software.</p>
             <p>At this stage I started compiling documentation and a living Style Guide. While I was prepared for the system to evolve and change, I found it really important to log decisions I’d made and compile the resources that led me there.</p>
-            <div class="u-image-grid-2">
-                <img src="imgs/designlab/luma-design-system.png" alt="Luma Design System components">
-                <img src="imgs/designlab/luma-grid-system.png" alt="Luma Design Sytem grid layout">
-            </div>
         </section>
         <section class="l-container">
             <h2 class="heading">Audit</h2>
@@ -121,6 +117,12 @@
             <h2 class="heading">Implementation</h2>
             <p>I worked with the CTO to establish a code structure that would allow me to keep the existing site and styles intact while I started to implement the new design system. Slowly as I eliminated the use of old styles I could remove them until the entire site was moved over. I could perform this with very little design bandwidth. Not only was I moving things to a modular system, but I was also making the site fully responsive. In some instances I needed design buy-in when making a component scale gracefully to smaller screens, but generally we were establishing a pattern that could be reused throughout.</p>
             <p>Aside from the modular styles, we were using AngularJS and Django templating framework to create reusable and dynamic markup. I worked with our back-end developer to align naming and establish best practices.</p>
+            <div class="u-image-md">
+                <img src="imgs/designlab/luma-design-system.png" alt="Luma Design System components">
+            </div>
+            <div class="u-image-md">
+                <img src="imgs/designlab/luma-grid-system.png" alt="Luma Design Sytem grid layout">
+            </div>
         </section>
         <section class="l-container">
             <h2 class="heading">Results</h2>

@@ -15,10 +15,14 @@
   background-color: $color-black;
   display: grid;
   justify-content: center;
+  overflow: hidden;
   text-align: center;
   &--sm {
     grid-template-columns: 8rem;
     padding: 2rem;
+    @include mq(sm_down) {
+      height: 8rem;
+    }
   }
   &--almostcooked {
     background-color: $color-almostcooked;
