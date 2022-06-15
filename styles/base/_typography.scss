@@ -19,6 +19,11 @@
   margin: 2rem auto;
   @include mq(md_down) {
     font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  @include mq(sm_down) {
+    font-size: 2.25rem;
+    margin-bottom: 0;
   }
 }
 .display-sm {

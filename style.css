@@ -244,6 +244,13 @@ hr {
 @media only screen and (max-width: 919px) {
   .display-md {
     font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .display-md {
+    font-size: 2.25rem;
+    margin-bottom: 0;
   }
 }
 
@@ -682,90 +689,91 @@ hr {
   color: #FFFFFF;
 }
 
-.case-study {
-  align-content: center;
+.img-list {
+  list-style: none;
+  margin: 2rem auto;
+}
+
+.img-list__item {
+  align-items: center;
   border: none;
   display: grid;
-  grid-column-gap: 3rem;
-  margin: 2rem 0;
+  grid-column-gap: 2rem;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 0 2rem;
 }
-@media only screen and (min-width: 720px) {
-  .case-study {
+@media only screen and (max-width: 719px) {
+  .img-list__item {
+    grid-column-gap: 1rem;
     grid-template-columns: 1fr 2fr;
-    margin-bottom: 4rem;
   }
 }
 
-.case-study__image {
+.img-list__image {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   align-content: center;
-  background-color: #000000;
+  border: 1px solid #ABDBDD;
   display: grid;
   justify-content: center;
   overflow: hidden;
-  text-align: center;
-}
-.case-study__image--sm {
-  grid-template-columns: 8rem;
-  padding: 2rem;
-}
-@media only screen and (max-width: 719px) {
-  .case-study__image--sm {
-    height: 8rem;
-  }
-}
-.case-study__image--almostcooked {
-  background-color: #E43E3B;
-}
-.case-study__image--designlab {
-  background-color: #1F2453;
-}
-.case-study__image--knitnet {
-  background-color: #CC33FF;
-}
-.case-study__image--stitchgood {
-  background-color: #455FE8;
-}
-.case-study__image--weatherwhiskers {
-  background-color: #2CB7C0;
 }
 
-.case-study__tagline {
-  border-bottom: 2px solid #038187;
-  display: inline-block;
-}
-.case-study__tagline:hover {
-  border-color: #175759;
-  color: #175759;
-}
-
-.case-study__text {
-  padding: 1rem 0 1rem;
-}
-@media only screen and (min-width: 720px) {
-  .case-study__text {
-    padding: 0.5rem 0;
-  }
-}
-
-.case-study__title {
-  color: #000000;
-  font-family: "Quincy", sans-serif;
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin: 1rem auto;
+.img-list__date {
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0 auto 0.25rem;
 }
 @media only screen and (max-width: 919px) {
-  .case-study__title {
-    font-size: 1.75rem;
+  .img-list__date {
+    font-size: 1rem;
+  }
+}
+
+.img-list__location {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin: 0 auto 0.25rem;
+}
+@media only screen and (max-width: 919px) {
+  .img-list__location {
+    font-size: 1rem;
+  }
+}
+
+.img-list__title {
+  color: #000000;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 auto 0.5rem;
+}
+@media only screen and (max-width: 719px) {
+  .img-list__title {
+    font-size: 1.25rem;
   }
 }
 
 .card {
   border: none;
   margin: 1rem 0;
+}
+.card--hz {
+  display: grid;
+  grid-column-gap: 1rem;
+  margin: 0 0 2rem;
+}
+@media only screen and (min-width: 720px) {
+  .card--hz {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .card--hz {
+    grid-column-gap: 2rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .card__icon {
@@ -788,12 +796,49 @@ hr {
   border-radius: 8px;
   align-content: center;
   display: grid;
-  height: 10rem;
+  justify-content: center;
   overflow: hidden;
 }
+.card__image--lg {
+  height: 10rem;
+}
 @media only screen and (min-width: 720px) {
-  .card__image {
+  .card__image--lg {
     height: 18rem;
+  }
+}
+.card__image--xs {
+  grid-template-columns: 8rem;
+  padding: 2rem;
+  text-align: center;
+}
+.card__image--almostcooked {
+  background-color: #E43E3B;
+}
+.card__image--designlab {
+  background-color: #1F2453;
+}
+.card__image--knitnet {
+  background-color: #CC33FF;
+}
+.card__image--stitchgood {
+  background-color: #455FE8;
+}
+.card__image--weatherwhiskers {
+  background-color: #2CB7C0;
+}
+
+.card__link-text {
+  border-bottom: 2px solid #038187;
+  display: inline-block;
+}
+.card__link-text:hover {
+  border-color: #175759;
+  color: #175759;
+}
+@media only screen and (max-width: 599px) {
+  .card__link-text {
+    font-size: 1rem;
   }
 }
 
@@ -804,13 +849,23 @@ hr {
 .card__tagline:hover {
   color: #175759;
 }
+@media only screen and (max-width: 599px) {
+  .card__tagline {
+    font-size: 1rem;
+  }
+}
 
 .card__text {
-  padding: 1rem;
+  margin: 1.5rem;
 }
-@media only screen and (min-width: 720px) {
+@media only screen and (max-width: 599px) {
   .card__text {
-    padding: 0.5rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 719px) {
+  .card__text {
+    margin: 1.5rem 1rem;
   }
 }
 
