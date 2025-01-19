@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PAICE UX Process // Ezra Mustra</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Mustra
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Case Study: PAICE UX Design Process</h1>
+            <p class="display-sm">Unifying a software suite starting with the design team</p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading">Overview</h2>
+            <p>As the first UX Design manager for the PAICE suite of applications, I established a new resource team, unified process, and design environment that could scale with the growth of our department.</p>
+            <h3 class="subhead">Client:</h3>
+            <p>Pearson</p>
+            <h3 class="subhead">Role:</h3>
+            <p>UX Design Lead</p>
+            <h3 class="subhead">Timeline:</h3>
+            <p>6 months of observation, research, and onboarding</p>
+            <!--<h3 class="subhead">Tools:</h3>
+            <p>Figma, PowerPoint</p>-->
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Challenge</h2>
+            <p>I was hired at Pearson to establish a new design team to serve the entire PAICE suite of tools. At the time, PAICE was a collection of 11 applications all working fully siloed with their own managers and developers with little or no design involvement. There were only 2 existing designers for the entire department, but no consistent design vision or process which made it difficult for them to manage time, work across multiple projects, or meaningfully contribute to product discussions.</p>
+            <p>An additional challenge was that Pearson was aiming to reduce costs on external software, so our process set-up involved establishing a new design environment, migrating data, and training all designers and managers.</p>
+            <h3 class="subhead">High Level Goals:</h3>
+            <ol>
+                <li>Unify process for requesting and tracking design work</li>
+                <li>Create transparency into all design work across PAICE</li>
+                <li>Don’t disrupt how Managers maintain their Jira Project organization</li>
+                <li>Allow Designers to manage their time across multiple projects</li>
+                <li>Set clear expectations and accomplishable goals</li>
+            </ol>
+            <h3 class="subhead">Scope:</h3>
+            <ul>
+                <li>
+                    Initiate a unified process for handling all design requests
+                </li>
+                <li>
+                    Audit existing software to achieve a streamlined design environment using only new Pearson-approved software
+                </li>
+                <li>
+                    Build a system in Jira to track work
+                </li>
+                <li>
+                    Document an onboarding process for existing and new team members
+                </li>
+                <li>
+                    Create a cadence for work and set a schedule for recurring meetings
+                </li>
+            </ul>
+            <h3 class="subhead">Constraints:</h3>
+            <ul>
+                <li>In spite of functioning as suite of tools, each application team had their own distinct processes, UI design, cadence, and business objectives</li>
+                <li>Many application teams were not familiar with working with design or had a very limited understanding of how design could benefit their product</li>
+                <li>I was expected to complete design requests until I could establish a process and support new hires</li>
+            </ul>
+        </section>
+        <section class="l-container">
+            <!--<div class="u-image-wide">
+                <img src="imgs/stitchgood/stitchgood_layout.jpg" alt="stitchgood layout design">
+            </div>-->
+            <h2 class="heading">Research</h2>
+            <p>The most important part of my research process was listening and observing. I met regularly with designers, project managers, senior leadership, and some developers. Due to our limited design resources I needed to work as an individual contributor on the design team while also establishing the new process. While the 2 designers continued to work on their 4 existing applications, I needed to deliver designs for the other 7 (plus 2 more applications that I helped launch). I took this time to gain a high-level view of all of PAICE while working closely with each siloed team to understand their working style and pain points.</p>
+            <p>In addition, my research included reviewing design process methodologies including Agile, Product Development Life Cycle, Double Diamond, and Design Thinking. I determined I needed to define the lifecycle of a design task as the framework for my process. Each stage of the life cycle has an associated set of actions, meetings, and statuses.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/process_cheatsheet.png" alt="The lifecycle of a design task is 1.Define 2.Plan 3.Design 4.Feedback and 5.Handoff.">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Design Software</h2>
+            <p>When I joined Pearson, the company was in the middle of auditing and streamlining its third-party software, which coincided with my efforts to develop a design process for the UX team. As part of my research, I reviewed our existing software tools and created a plan to adapt to the changes while making sure my team had all the tools they needed to succeed. The design team’s previous process involved Sketch, PDFs, and Zeplin for design creation and delivery, which led to inefficiencies such as lost information, miscommunication, and delayed feedback. Pearson had already decided to switch to Figma, and I was tasked with migrating the team within five months without disrupting ongoing projects. This transition offered significant benefits, including a simplified workflow, in-app commenting, prototyping, and greater transparency. I was tasked with migrating our files, creating an accessible organizational system, and training non-designers to adopt the new tools.</p>
+            <p>In addition, Pearson was phasing out Miro and Lucidchart in favor of Microsoft Whiteboard for ideation and user flow creation. Despite the more limited features, we were able to leverage Whiteboad’s integrations with Microsoft apps to facilitate team retrospectives and collaborative sessions with non-designers. For user flows and wireframe creation, we adopted community-made Figma libraries and pre-approved plug-ins.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Process Overview</h2>
+            <h3 class="subhead">2 week Sprints</h3>
+            <p>Prior to our process, we had no formal cadence for design. I chose to move us to a 2-week sprint system to align with standard Agile practices. This sprint structure allows us to plan and scope work. It keeps a “small task” from ballooning into a month-long endeavor. It gives our team regular stopping points to celebrate progress and pivot as needed.</p>
+            <h3 class="subhead">Everything, Everywhere, All In One Jira Board</h3>
+            <p>We created a single Kanban board that displays all active design work across PAICE. Each of our project managers can continue to manage their projects and plan their roadmaps without disruption. Using Jira components, labels, and filters we created a system to aggregate design work and plan it across design sprints.</p>
+            <h3 class="subhead">Designers Communicate their Progress</h3>
+            <p>In our defined process, all Jira tickets and Figma files have clearly labeled statuses that the designers keep updated to create optimal transparency. As needed, designers provide additional context via Jira comments and tag team members for added visibility. Managers appreciate not having to send “what’s the status of this?” messages, and designers appreciate limited disruptions to their heads-down creative time.</p>
+            <h3 class="subhead">Prioritize Face-to-face Feedback</h3>
+            <p>I’ve found that the most effective way for our team to receive feedback and approval was through dedicated time-boxed meetings. This allows the designer to guide discussion, walk through flows, explain design decisions, and ask for the type of feedback they need at that time.</p>
+            <h3 class="subhead">Diversified Deliverables</h3>
+            <p>Any UX Designer can tell you the importance of research, analysis, and ideation to their process, so it was essential that we encourage and enable our manager to fit time for these activities into their project roadmaps. We introduced the idea of Exploration and Wireframe tickets to use for any work that didn’t result in a development-ready design. Depending on the project needs, the designer can choose from a menu of activities and deliverables including user research, heuristic analysis, low/mid fidelity designs, PURE evaluations, and more.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Results</h2>
+            <p>The new design process went into full effect starting February of 2023, and so far we’ve completed over 50 sprints. Overall I believe the design process has been a massive success which can be validated based on some key criteria.</p>
+            <h3 class="subhead">Team Growth</h3>
+            <p>We were able to grow our team to 7 designers and we’re aiming to add at least one more in 2025. Each designer can work seamlessly across 2-3 projects and easily adjust their workload based on their availability. Compared to when we first implemented our process, each designer is completing over 35% more work during each sprint, yet they are able to work more reasonable hours and take more vacation.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/storypoints_per_designer.png" alt="In Q2 of 2023 designers averaged 9 story points per sprint. By Q4 of 2024 they averaged 14 story points per sprint and have maintained that number.">
+            </div>
+            <h3 class="subhead">Accuracy Planning Sprints</h3>
+            <p>Our process was designed to help our team better manage their time. We delivered on this goal by reducing the disparity between our committed work at the beginning of a sprint and the completed work at the end. At this time we continually deliver between 98-102% of expected work per sprint, which builds trust with our managers and allows us to plan more accurately long-term. </p>
+            <div class="u-image-md">
+                <img src="imgs/paice/storypoints_per_quarter.png" alt="In Q2 of 2023 we averaged a completion rate of around 60%. Since then we've steadily improved, and now average around 100%.">
+            </div>
+            <h3 class="subhead">Manager Satisfaction</h3>
+            <p>After a year and a half of our process, I sent out anonymous surveys to all the managers working directly with our design team. We received a 4.6 out of 5 satisfaction rating, and the results show that overwhelmingly our managers agree that our process accomplished our goals.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/process_goal_eval.png" alt="On average 82% of managers agreed or strongly agreed that we met our process goals.">
+            </div>
+            <p>We have received the following feedback:</p>
+            <p>“I really like the Jira process of the design team. The components and labels are easy to track and easy to apply when I want the team to work on something. Other teams should adopt the story point system that the design team uses because it ensures that everyone can properly commit to the amount of work they have for the near future.”</p>
+            <p>“Love the board, love the consistency of the meetings, love the work and dedication.”</p>
+            <p>“Every designer has submitted excellent designs. You guys are great. [...] Every team should have such rigor with the Sprints as your team, having them already identified, having a document of the Sprint. All excellent agile ceremonies.”</p>
+            <p>“I adopt your models to our own processes because I find them so useful and easy to follow!”</p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="mailto:ezramustra@gmail.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">ezramustra@gmail.com</span>
+            </a>
+            <a href="http://www.linkedin.com/in/emustra" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <p class="footer-attribution">Handcoded by Ezra. &copy; 2025</p>        </div><!--/footer-email-->
+    </footer>
+</body>
+</html>
