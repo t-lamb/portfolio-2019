@@ -1,3 +1,6 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 /*--PAGINATION----------------------*/
 .pagination {
   font-size:0; margin:2rem 0; width:100%;

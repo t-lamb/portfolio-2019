@@ -1,3 +1,6 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 .l-main {
   margin: 0 auto;
   max-width: $width-content;

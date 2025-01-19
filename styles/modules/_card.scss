@@ -1,3 +1,6 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 .card {
   border: none;
   margin: 1rem 0;
@@ -50,6 +53,9 @@
   }
   &--knitnet {
     background-color: $color-knitnet;
+  }
+  &--paiceux {
+      background-color: $color-paiceux;
   }
   &--stitchgood {
     background-color: $color-stitchgood;

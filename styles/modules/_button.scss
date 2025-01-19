@@ -1,3 +1,6 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 .button {
   @include border-radius(8px);
   //border: 1px solid $color-primary;

@@ -1,3 +1,6 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 .tag {
   @include border-radius(8px);
   background-color: $color-primary-lightest;

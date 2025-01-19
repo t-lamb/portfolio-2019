@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
 /* show/hide */
 .u-hide-xxs { @include mq(xxs) { display: none !important; }}
 .u-hide-xs-up { @include mq(xs_up) { display: none !important; }}

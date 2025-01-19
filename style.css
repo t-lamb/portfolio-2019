@@ -623,12 +623,10 @@ hr {
   .l-footer {
     grid-template-columns: 1fr;
   }
-
   .footer-email {
     border-left: none;
     grid-column-start: 1;
   }
-
   .social {
     margin: 0.5rem 0;
     padding: 0 0 0.5rem;
@@ -754,6 +752,9 @@ hr {
 }
 .card__image--knitnet {
   background-color: #CC33FF;
+}
+.card__image--paiceux {
+  background-color: #354A53;
 }
 .card__image--stitchgood {
   background-color: #455FE8;
@@ -1044,7 +1045,6 @@ hr {
   iframe {
     width: 100%;
   }
-
   .bio-heading {
     font-size: 1.75rem;
   }
@@ -1053,13 +1053,11 @@ hr {
   .pag-link {
     font-size: 1rem;
   }
-
   .prev {
     border: none;
     padding: 0 0 0.5rem 1.5rem;
     width: auto;
   }
-
   .next {
     float: right;
     padding: 0 1.5rem 0.5rem 0;

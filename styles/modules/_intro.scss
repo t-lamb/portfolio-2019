@@ -1,3 +1,6 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
 .intro {
   background-color: $color-primary-light;
   margin: 0 0 2rem;

@@ -1,4 +1,6 @@
-﻿@mixin animation($name, $duration: 1s, $timing: ease, $delay: 0s, $iteration: 1) { //used to call animations in _animations.scss
+﻿@use 'variables' as *;
+
+@mixin animation($name, $duration: 1s, $timing: ease, $delay: 0s, $iteration: 1) { //used to call animations in _animations.scss
     -webkit-animation-name: $name;
     -webkit-animation-duration: $duration;
     -webkit-animation-timing-function: $timing;

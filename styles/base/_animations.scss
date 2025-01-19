@@ -1,4 +1,6 @@
-﻿@include keyframes(fade-in) {
+﻿@use 'mixins' as *;
+
+@include keyframes(fade-in) {
     0% {
         opacity: 0;
     }
