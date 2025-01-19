@@ -162,16 +162,20 @@ summary {
 }
 html {
   color: #000000;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
+  font-optical-sizing: auto;
+  font-style: normal;
   max-width: 60rem;
   padding: 0;
 }
 
 p {
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 1.2rem;
   line-height: 1.6;
   margin: 0 auto 1rem;
@@ -180,6 +184,8 @@ p {
 }
 
 a {
+  font-optical-sizing: auto;
+  font-style: normal;
   border-bottom: 1px solid #038187;
   color: #038187;
   text-decoration: none;
@@ -190,7 +196,9 @@ a:hover {
 }
 
 ul, ol {
+  font-optical-sizing: auto;
   font-size: 1.2rem;
+  font-style: normal;
   line-height: 1.6;
   margin: 1rem auto 2rem;
   max-width: 60rem;
@@ -219,12 +227,8 @@ hr {
   max-width: 60rem;
 }
 
-@font-face {
-  font-family: "Quincy";
-  src: url("fonts/QuincyCFExtraBold.woff");
-}
 .display-lg {
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 6rem;
   line-height: 1.2;
   margin: 0 auto 2rem;
@@ -236,7 +240,7 @@ hr {
 }
 
 .display-md {
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 4.5rem;
   line-height: 1.2;
   margin: 2rem auto;
@@ -261,7 +265,7 @@ hr {
 }
 @media only screen and (min-width: 920px) {
   .display-sm {
-    font-family: "Quincy", sans-serif;
+    font-family: "Parkinsans", sans-serif;
   }
 }
 @media only screen and (max-width: 919px) {
@@ -272,7 +276,7 @@ hr {
 }
 
 .heading-lg {
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 2rem auto 0;
@@ -284,7 +288,7 @@ hr {
 }
 
 .heading {
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 2rem auto 1rem;
@@ -576,7 +580,7 @@ hr {
 .l-header__logo {
   border: none;
   color: #000000;
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 1.5rem;
   padding: 0.5rem;
   text-decoration: none;
@@ -806,7 +810,7 @@ hr {
 
 .card__title {
   color: #000000;
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
   margin: 1rem auto 0.5rem;
@@ -1022,7 +1026,7 @@ hr {
 .pag-link {
   border: none;
   display: inline-block;
-  font-family: "Quincy", sans-serif;
+  font-family: "Parkinsans", sans-serif;
   font-size: 1.25rem;
   padding: 0 1.5rem 0.5rem 1.5rem;
   text-decoration: none;

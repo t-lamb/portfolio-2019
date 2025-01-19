@@ -1,10 +1,6 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-@font-face {
-  font-family: 'Quincy';
-  src: url("fonts/QuincyCFExtraBold.woff");
-}
 
 .display-lg {
   font-family: $font2;
