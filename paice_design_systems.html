@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PAICE Design Systems // Ezra Mustra</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+              Ezra Mustra
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item u-hide-sm-up">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Case Study: PAICE Design Systems</h1>
+            <p class="display-sm">Unified Impact Through Interlinked Design Systems</p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading">Overview</h2>
+            <p>My team established a pair of new interconnected design systems to unify PAICE, Pearson’s suite of authoring, content management and AI tools. Our design systems share colors, fonts, design patterns, icons, and many components so the internal UIs align with the content preview. The PAICE UX Design System is for the authoring and course-creation side of our suite, while the Viewers Design System is for previewing and rendering authored content. Maintaining two systems gives us the flexibility to make decisions that best serve our separate audiences and business needs.</p>
+            <h3 class="subhead">Client:</h3>
+            <p>Pearson</p>
+            <h3 class="subhead">Role:</h3>
+            <p>UX Design Lead: Planning, Analysis, Component Maintenance, Documentation</p>
+            <h3 class="subhead">Timeline:</h3>
+            <p>6 months</p>
+            <h3 class="subhead">Tools:</h3>
+            <p>Figma, Material UI (MUI) React Library, Confluence</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Challenge</h2>
+            <p>The PAICE suite was initially built by siloed teams of managers and developers with little to no design input. This resulted in applications with inconsistent visuals, conflicting design patterns, and significant accessibility issues. There was also a notable divide between authored content and rendered output. To establish the seamless, quality experience throughout our suite, we needed a holistic, systematic, and scalable approach. My team sought to develop two interconnected design systems: one for internal applications and another for learner-facing platforms.</p>
+            <p>The first design system would support Pearson’s internal-facing applications used for creating and distributing courses, textbooks, and assessments across digital and print formats. This system needed to be robust and flexible enough to accommodate the full suite of PAICE applications while adhering to AA Accessibility Standards and stakeholder-driven accessibility requirements. Additionally, it was essential to enable authors to produce AAA-accessible content seamlessly within the system.</p>
+            <p>In parallel, we needed a second design system focused on previewing and rendering learner-facing content. This system required a streamlined approach to support theming, stricter accessibility standards, and multiple color modes, including Light, Dark, and Sepia. The learner-facing UI also had to meet AA Accessibility Standards and stakeholder-driven accessibility requirements while ensuring the viewing experience for AAA-accessible content met the highest inclusivity standards.</p>
+            <h3 class="subhead">High Level Goals:</h3>
+            <ol>
+                <li><b>Consistency:</b> Foster a unified design language across teams to deliver a seamless experience throughout PAICE.</li>
+                <li><b>Scalability:</b> Scale designs effortlessly while reducing onboarding time as the team grows</li>
+                <li><b>Quality:</b> Enhance collaboration to reduce UX debt, minimize bugs, and improve accessibility</li>
+                <li><b>Efficiency:</b> Streamline design processes, focusing creativity on user flow and logic, while reducing redundancy</li>
+            </ol>
+            <h3 class="subhead">Scope:</h3>
+            <ul>
+                <li>Define colors, typography, design patterns, icons, and reusable components</li>
+                <li>Create Figma component libraries</li>
+                <li>Write all documentation for design and development</li>
+                <li>Host collaboration and onboarding sessions with the various software teams</li>
+            </ul>
+            <h3 class="subhead">Constraints:</h3>
+            <ul>
+                <li>Need to align with Pearson Brand Guidelines</li>
+                <li>Need to use components from the MUI React library</li>
+                <li>Limited design and engineering resources</li>
+                <li>Need to support a phased release</li>
+            </ul>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Creating Component Libraries</h2>
+            <p>One challenge to unifying our designs was that we did not have a shared library of reusable components. Building a full library can be very time consuming, especially considering the complexity of our existing UIs. Luckily, the React framework we were using to build our suite had a pre-built library that we were able to purchase and immediately use. Though it wasn’t exactly aligned with the code, it was close enough that we could fill in the gaps. We were able to update the color and typography styles in one location and immediately see them applied throughout the entire library.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/mui_cheat_sheet.png" alt="The design system library has a cheatsheet page showing a layout of several design components. We swapped just the typography and colors to get a proveiw of our system.">
+            </div>
+            <p>To create our library for Viewers library, we duplicated the library with our updated theme colors, then made adjustments to better fit our use case. We were able to remove components and variants that wouldn’t be supported for rendering (like the floating action button or FAB) or wouldn’t meet our stricter accessibility requirements (like the dense variant of menus that wouldn’t meet minimum size requirements for touch screens).</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/paice_viewers_cheat_sheet.png" alt="The Viewers theme is very clearly tied to the PAICE UX theme, but has larger text, fewer components, and a different header.">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Color System</h2>
+            <p>Our existing applications each had their own unique colors, one even had different primary palettes within the same app. We needed our new color system to provide a rich palette that would reflect the Pearson brand, meet accessibility guidelines for color contrast, and could be applied to the MUI theming framework.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/paice_old_colors.png" alt="Looking across 8 of the PAICE applications, there are several different primary palettes, most of which do not pass color contrast requirements for AAA accessibility.">
+            </div>
+            <h3 class="subhead">Analyzing the MUI Library</h3>
+            <p>We audited the MUI Library by listing all color tokens, noting all their usage in components, identifying any inconsistencies with the code implementation, and noting unused tokens. This process ensured that we could make thoughtful changes to color tokens with predictable results. At this time we also tested color contrast across all components and flagged any accessibility issues.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/mui_color_analysis.png" alt="A spreadsheet documenting each color token and its use in components">
+            </div>
+            <h3 class="subhead">Generating Palettes</h3>
+            <p>To create our color system I generated palettes using our Pearson brand colors. Each palette had 11 values to create a range of light to dark shades. I mapped the colors from the generated palettes to colors in the MUI library.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/paice/color_palette_generation.png" alt="A flow chart showing how I started with the Pearson Brand colors, generated palettes, and updated the color tokens in the component library which automatically upated the components for testing and iteration.">
+                <img src="imgs/paice/paice_palette_generation.png" alt="A map of the Pearson brand colors mapped to generated color palettes">
+            </div>
+            <p>Initially I tried to follow the MUI color implementation exactly, but the colors relied heavily on transparency and created many accessibility issues while looking dull and inconsistent with our brand. I revisited the palette implementation and chose an approach that would use the brighter light colors in our palette. All the color tokens within the library would map to the colors from our broader system. To swap a color, the name of the token would stay the same, but the value could be easily swapped out in one location that would populate to the rest of the theme.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/palette_evolution.png" alt="The evolution of our color palettes from dull transparent colors to a richer palette, then the final iteration that uses more vibrant hues from the Pearson brand.">
+            </div>
+            <h3 class="subhead">Color Accessibility</h3>
+            <p>To ensure accessible color contrast across our design system, we tested color combinations and created a color usage chart. We tested the primary, secondary, and semantic colors against our 2 neutral colors, and removed failing combinations. We did not combine non-neutral colors to avoid potential issues for people with color blindness. We labeled all passing combinations based on their acceptable usage. Then we used this chart as reference when we assigned new color values to our library.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/paice_color_usage_chart.png" alt="A chart of every source palette in the design system and a list of color combination and their accessibility level based on color contrast. The failing combinations have been removed.">
+            </div>
+            <h3 class="subhead">Color Modes</h3>
+            <p>We expanded the Viewers library to include light, dark and sepia color modes. For these color modes it was very important that we maintain the primary palette so that it could be swapped out depending on the learning platform’s branding. Inspired by Material Design 3, we used a systematic approach to create a dark mode using the same color palettes, and maintaining accessible color contrast.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/paice/viewers_light_palette.png" alt="A chart of every source palette with each color labeled with a value from 10 to 98, which indicates it's lightness or darkness. In the light theme all colors labeled 40 are the main color in their palette, and they have similar darkness values to ensure color contrast with white text.">
+                <img src="imgs/paice/viewers_dark_palette.png" alt="In the dark theme all colors labeled 80 are the main color in their palette, and they have similar lightness values to ensure color contrast with dark text.">
+            </div>
+            <p>For our sepia mode we swapped our neutral palette for brown tones, but maintained our primary palette to meet our customer’s requirements for consistent branding. Sepia mode is not necessarily an accessibility requirement, but is considered to be more comfortable for some learners. We allowed for some reduced color contrast in sepia mode in favor of color creating a subdued reading experience.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/viewers_color_modes.png" alt="Across all 3 color modes you can see how the primary palette is maintained for consistent branding.">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Typography</h2>
+            <p>Similar to our workflow for determining colors, we analyzed all typography within the Material Design Guidelines and MUI components. It was important that we keep the same naming as MUI so that the typography changes could be implemented through the just theme file rather than customized per component.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/mui_type_analysis.png" alt="A spreadsheet showing every typography style, its usage, size, font weight, and line height. This chart compares Material Design Guidelines to Material UI, which are very similar but MUI has many more styles.">
+            </div>
+            <p>From our analysis we determined how we could improve accessibility, align with the Pearson brand, and support our UI needs. We updated the font to Open Sans, the primary font used by Pearson. We reduced the size of many headings to fit better within our software, but made sure to keep a clear visual hierarchy using varied font weights. We increased the size of many of the smaller text elements and moved the minimum font size to from 10px to 14px. We also improved readability by adjusting line heights, removing use of ALL CAPS and resetting letter-spacing adjustments.</p>
+            <div class="u-image-grid-2">
+                <img src="imgs/paice/paice_typography.png" alt="A chart comparing the default MUI typography elementes to the PAICE updates. The PAICE headings are smaller, but are still easy to read and distinguish.">
+                <img src="imgs/paice/paice_component_typography.png" alt="A chart comparing the default MUI typography within components to the PAICE's updated components. The PAICE components are easier to read.">
+            </div>
+            <p>As a note, the font sizes listed in our analysis are in pixels, but we provide our typography styles in REMs to support accessibility guidelines for scaling.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Documentation</h2>
+            <p>Along with our Figma Libraries, I’ve helped establish a Confluence site for design systems. I like using Confluence because the developers are already familiar with it, coworkers can receive notifications when pages are updated, and I can embed the Figma pages for added clarity. In our documentation, we lean heavily on Material Design 2 and 3 for design and interaction guidelines, and the MUI documentation for our individual components. Instead of creating redundant work, I focus on recording changes we’ve made from the library, any usage rules we’ve established for consistency across our applications, and highlighting any information I think will help developers maintain consistency across codebases.</p>
+            <div class="u-image-md">
+                <img src="imgs/paice/design_system_confluence.png" alt="The design system Confluence site map showing that some pages are shared by both design systems, while others are specific to each.">
+            </div>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Adoption</h2>
+            <p>While using an existing React library and a pre-built Figma library saved us a lot of time on the initial setup, our biggest hurdle for implementation was coordinating with our many development teams across code bases. In an ideal situation, we would have a dedicated resource for developing the theme and maintaining reusable code. We would work with this person or team to build and test every element before releasing for use in production.</p>
+            <p>Design system adoption was critical for the future of our suite, the quality of our work, and the speed we can turn around design requests. In reality, there was always another high-priority feature request from stakeholders that made it nearly impossible to address our tech debt and UX debt. The work to implement the design system is a long, slow negotiation with our development teams even with many developers championing the effort.</p>
+            <p>Given our challenges, we’ve still made remarkable progress moving to the design systems. We’ve built two new applications fully from design system components. We’re in the process of redesigning all of our proof-of-concept AI standalone tools into a stunning, seamless sub-suite. For our more complex applications, we’ve begun to execute our phase-based plan for redesign work, but I’ll save that for another case study.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Takeaways</h2>
+            <p>My design team loves using the design system because they can create functional, accessible designs quickly. They can more easily seek feedback from managers on user flows rather than aesthetics. They save time on handoff because developers are already familiar with the components. We also receive buy-in from stakeholders earlier on in the process because the output is polished, modern and inviting.</p>
+            <p>I’ve learned so much from the experience, and not just the intricacies of Figma components. I believe more than ever that there is no mess so large that it can’t be tackled with a systematic approach, some research, a couple spreadsheets, color-coding, and some well-meaning ambition. There was very little room for error when delivering a solution for several development teams at once, so even small changes needed to be made with precision and considered at scale. Overall, I am incredibly proud of this work and I know it will continue to make a positive impact for years to come.</p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="mailto:ezramustra@gmail.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">ezramustra@gmail.com</span>
+            </a>
+            <a href="http://www.linkedin.com/in/emustra" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <p class="footer-attribution">Handcoded by Ezra. &copy; 2025</p>        </div><!--/footer-email-->
+    </footer>
+</body>
+</html>
