@@ -2,12 +2,13 @@
 @use '../base/mixins' as *;
 
 .intro {
-  background-color: $color-primary-light;
+  background-color: $color-primary-darkest;
+  color: $color-white;
   margin: 0 0 2rem;
   padding: 3rem 2rem 1rem;
   @include mq(md_up) {
-    margin: 0 0 4rem;
-    padding: 4rem 2rem 2rem;
+    margin: 0 0 2rem;
+    padding: 4rem 2rem 6rem;
   }
   &--secondary {
     padding-top: 1rem;

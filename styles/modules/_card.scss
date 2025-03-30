@@ -60,6 +60,9 @@
   &--paiceux {
       background-color: $color-paiceux;
   }
+  &--primary {
+      background-color: $color-primary-darkest;
+  }
   &--stitchgood {
     background-color: $color-stitchgood;
   }
@@ -102,7 +105,10 @@
   font-family: $font2;
   font-size: 2.5rem;
   line-height: 1.2;
-  margin: 1rem auto 0.5rem;
+  margin: 1rem auto 1rem;
+  &:hover {
+    color: $color-link-hover;
+  }
   @include mq(md_down) {
     font-size: 1.75rem;
   }

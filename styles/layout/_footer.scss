@@ -2,26 +2,29 @@
 @use '../base/mixins' as *;
 
 .l-footer {
+  background-color: $color-primary-darkest;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 6rem 0 0;
+  margin: 4rem 0 0;
 }
 .social {
   border:none; display:block; padding:0 0 .5rem;
   .social-icon { width:1.5rem; }
   .social-label {
-    border-bottom:1px solid rgba(255,255,255,0); color:$color-text;
+    border-bottom:1px solid rgba(255,255,255);
+    color: $color-white;
     display:inline-block; margin:.25rem 0 .25rem .25rem;
     vertical-align:bottom;
     &:hover {
-       border-color:$color-link-hover; color:$color-link-hover;
+       border-color:$color-primary-lightest; color:$color-primary-lightest;
     }
   }
 }
 .footer-email {
-  border-left:1px solid $color-border; grid-column-start:2; padding:1.5rem 0 2rem 1.5rem;
+  border-left:1px solid $color-border; grid-column-start:2; padding:2rem 0 1rem 2rem;
 }
 .footer-attribution {
+  color: $color-white;
   font-size:1rem; padding:2rem 0 0;
 }
 

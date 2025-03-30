@@ -186,13 +186,13 @@ p {
 a {
   font-optical-sizing: auto;
   font-style: normal;
-  border-bottom: 1px solid #038187;
-  color: #038187;
+  border-bottom: 1px solid #09666B;
+  color: #09666B;
   text-decoration: none;
 }
 a:hover {
-  border-color: #175759;
-  color: #175759;
+  border-color: #038187;
+  color: #038187;
 }
 
 ul, ol {
@@ -220,7 +220,7 @@ iframe {
 }
 
 hr {
-  background-color: #ABDBDD;
+  background-color: #038187;
   border: none;
   height: 2px;
   margin: 2rem auto;
@@ -230,8 +230,8 @@ hr {
 .display-lg {
   font-family: "Parkinsans", sans-serif;
   font-size: 6rem;
-  line-height: 1.2;
-  margin: 0 auto 2rem;
+  line-height: 1.25;
+  margin: 1rem auto 2rem;
 }
 @media only screen and (max-width: 919px) {
   .display-lg {
@@ -242,7 +242,7 @@ hr {
 .display-md {
   font-family: "Parkinsans", sans-serif;
   font-size: 4.5rem;
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 2rem auto;
 }
 @media only screen and (max-width: 919px) {
@@ -260,7 +260,7 @@ hr {
 
 .display-sm {
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 2rem auto 1rem;
 }
 @media only screen and (min-width: 920px) {
@@ -591,9 +591,10 @@ hr {
 }
 
 .l-footer {
+  background-color: #0E4749;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 6rem 0 0;
+  margin: 4rem 0 0;
 }
 
 .social {
@@ -605,24 +606,25 @@ hr {
   width: 1.5rem;
 }
 .social .social-label {
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
-  color: #000000;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: #FFFFFF;
   display: inline-block;
   margin: 0.25rem 0 0.25rem 0.25rem;
   vertical-align: bottom;
 }
 .social .social-label:hover {
-  border-color: #175759;
-  color: #175759;
+  border-color: #CBF1F2;
+  color: #CBF1F2;
 }
 
 .footer-email {
-  border-left: 1px solid #ABDBDD;
+  border-left: 1px solid #FFFFFF;
   grid-column-start: 2;
-  padding: 1.5rem 0 2rem 1.5rem;
+  padding: 2rem 0 1rem 2rem;
 }
 
 .footer-attribution {
+  color: #FFFFFF;
   font-size: 1rem;
   padding: 2rem 0 0;
 }
@@ -680,10 +682,10 @@ hr {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  background-color: #038187;
+  background-color: #0E4749;
   color: #FFFFFF;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.25rem;
   padding: 1rem 2rem;
 }
 .button:hover {
@@ -691,7 +693,7 @@ hr {
   color: #FFFFFF;
 }
 .button:active, .button:focus {
-  background-color: #175759;
+  background-color: #038187;
   color: #FFFFFF;
 }
 
@@ -767,6 +769,9 @@ hr {
 .card__image--paiceux {
   background-color: #354A53;
 }
+.card__image--primary {
+  background-color: #0E4749;
+}
 .card__image--stitchgood {
   background-color: #455FE8;
 }
@@ -775,12 +780,12 @@ hr {
 }
 
 .card__link-text {
-  border-bottom: 2px solid #038187;
+  border-bottom: 2px solid #09666B;
   display: inline-block;
 }
 .card__link-text:hover {
-  border-color: #175759;
-  color: #175759;
+  border-color: #038187;
+  color: #038187;
 }
 @media only screen and (max-width: 599px) {
   .card__link-text {
@@ -793,7 +798,7 @@ hr {
   line-height: 1.4;
 }
 .card__tagline:hover {
-  color: #175759;
+  color: #038187;
 }
 @media only screen and (max-width: 599px) {
   .card__tagline {
@@ -820,7 +825,10 @@ hr {
   font-family: "Parkinsans", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
-  margin: 1rem auto 0.5rem;
+  margin: 1rem auto 1rem;
+}
+.card__title:hover {
+  color: #038187;
 }
 @media only screen and (max-width: 919px) {
   .card__title {
@@ -853,7 +861,7 @@ hr {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   align-content: center;
-  border: 1px solid #ABDBDD;
+  border: 2px solid #09666B;
   display: grid;
   justify-content: center;
   overflow: hidden;
@@ -907,14 +915,15 @@ hr {
 }
 
 .intro {
-  background-color: #ABDBDD;
+  background-color: #0E4749;
+  color: #FFFFFF;
   margin: 0 0 2rem;
   padding: 3rem 2rem 1rem;
 }
 @media only screen and (min-width: 920px) {
   .intro {
-    margin: 0 0 4rem;
-    padding: 4rem 2rem 2rem;
+    margin: 0 0 2rem;
+    padding: 4rem 2rem 6rem;
   }
 }
 .intro--secondary {
@@ -1039,11 +1048,11 @@ hr {
   text-decoration: none;
 }
 .pag-link:hover {
-  border-color: #ABDBDD;
+  border-color: #FFFFFF;
 }
 
 .prev {
-  border-right: 1px solid #ABDBDD;
+  border-right: 1px solid #FFFFFF;
   width: 50%;
 }
 
@@ -1078,10 +1087,11 @@ hr {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  background-color: #CBF1F2;
-  color: #000000;
+  border: 2px solid #09666B;
+  color: #09666B;
   display: inline-block;
   font-size: 1rem;
+  font-weight: 500;
   padding: 0.5rem;
 }
 

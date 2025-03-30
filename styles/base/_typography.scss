@@ -5,8 +5,8 @@
 .display-lg {
   font-family: $font2;
   font-size: 6rem;
-  line-height: 1.2;
-  margin: 0 auto 2rem;
+  line-height: 1.25;
+  margin: 1rem auto 2rem;
   @include mq(md_down) {
     font-size: 3rem;
   }
@@ -14,7 +14,7 @@
 .display-md {
   font-family: $font2;
   font-size: 4.5rem;
-  line-height: 1.2;
+  line-height: 1.25;
   margin: 2rem auto;
   @include mq(md_down) {
     font-size: 2.25rem;
@@ -27,7 +27,7 @@
 }
 .display-sm {
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 2rem auto 1rem;
   @include mq(md_up) {
     font-family: $font2;

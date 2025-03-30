@@ -20,7 +20,7 @@
 .img-list__image {
   @include border-radius(8px);
   align-content: center;
-  border: 1px solid $color-primary-light;
+  border: 2px solid $color-primary-dark;
   display: grid;
   justify-content: center;
   overflow: hidden;
