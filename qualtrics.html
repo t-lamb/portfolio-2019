@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Qualtrics Data Viz // Ezra Mustra</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__left">
+            <a class="l-header__logo" href="index.html">
+                <img class="l-header__logo__img" src="imgs/em_logo.svg">
+                Ezra Mustra
+            </a>
+        </div><!--/header left-->
+        <nav class="nav" role="navigation" aria-label="Main">
+            <button class="nav__button" id="js-toggle-button" aria-expanded="false" aria-controls="js-toggle-item">
+              <span class="nav__button__open">
+                <img src="imgs/icons/icon-menu.svg">
+              </span>
+              <span class="nav__button__close">
+                <img src="imgs/icons/icon-close.svg">
+              </span>
+            </button>
+            <ul class="nav__list" id="js-toggle-item">
+                <li class="nav__list__item">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="case-studies.html">Case Studies</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="work.html">Work</a>
+                </li>
+                <li class="nav__list__item">
+                    <a class="nav__link" href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="l-main">
+        <div class="intro">
+            <h1 class="display-md">Case Study: Designing Accessible Color for Customer Dashboards</h1>
+            <p class="display-sm">An inclusive approach to data visualization that enhances readability and aligns with system-wide design standards.</p>
+        </div>
+        <section class="l-container">
+            <h2 class="heading">Overview</h2>
+            <p>Our team set out to redesign the default data visualization color palettes used across our customer dashboards. The goal was to create a scalable, accessible system of color palettes that harmonized with our new design system, supported both light and dark modes, and presented clear distinctions between data points even for users with color vision deficiencies.</p>
+
+            <h3 class="subhead">Client:</h3>
+            <p>Qualtrics</p>
+            <h3 class="subhead">Role:</h3>
+            <p>Senior Product Designer</p>
+            <h3 class="subhead">Timeline:</h3>
+            <p>1 month</p>
+            <h3 class="subhead">Tools:</h3>
+            <p>Figma, Viz Palette, Figma Plug-ins for Color Contrast and Color Simulation</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Challenge</h2>
+            <p>Create a new set of default palettes available to all customers in their dashboards. The existing color palettes were out of sync with the new brand and design system. They were only designed to be used with a white background, but lacked sufficient color contrast, and they posed difficulties when interpreting data in many categories.</p>
+            <p>To address accessibility requirements, there was a single high-contrast palette intended for audiences with visual disabilities, but it could only be applied by the dashboard editor. Why not make every palette accessible?</p>
+            <div class="u-image-sm">
+                <img src="imgs/qualtrics/qualtrics_colors_old.png" alt="">
+            </div>
+            <h3 class="subhead">New Palette Requirements</h3>
+            <ol>
+                <li>Use updated design system colors</li>
+                <li>Passed accessibility standards for color contrast with background (3:1 or more)</li>
+                <li>Support light and dark mode color mapping</li>
+                <li>Repeat logically when the number of data points exceeds the number of colors</li>
+                <li>Ensure neighboring colors are distinguishable, even when considering varied forms of color blindness</li>
+            </ol>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Approach</h2>
+            <h3 class="subhead">Audit and Accessibility Research</h3>
+            <p>I conducted a thorough accessibility audit of the current palettes using tools like WCAG contrast checkers and simulators for various types of color blindness.</p>
+            <div class="u-image-sm">
+                <img src="imgs/qualtrics/qualtrics_colors_old_contrast.png" alt="">
+            </div>
+            <p>When tested, 50% of all colors failed to meet the accessible guidelines of having 3:1 or greater color contrast ratio.  One way to mitigate contrast issues is to add a border around elements like bar graphs, but this doesn’t translate well for certain visualizations like line graphs.</p>
+            <div class="u-image-lg">
+                <img src="imgs/qualtrics/qualtrics_colors_old_colors_simulator.png" alt="">
+            </div>
+            <p>Testing the palettes with a color deficiency simulator helped me identify when neighboring colors were not differentiated.</p>
+            <h3 class="subhead">Palette Design Criteria</h3>
+            <p>My team and I also audited the existing palettes against user needs. Each palette needed to support both visual clarity and emotional tone. We identified key use cases and grouped them into these palette types:</p>
+            <ul>
+                <li><b>Standard:</b> a cool-toned palette with 9 unique colors for general categorical data</li>
+                <li><b>Warm:</b> a warm-toned palette with 9 unique colors for general categorical data</li>
+                <li><b>Vibrant:</b> a set of 10 unique colors that maximizes contrast with the background for general categorical data</li>
+                <li><b>Sequential:</b> two 5-color sequential palette using lightness and darkness to communicate ranked or graduated data</li>
+                <li><b>Divergent Sentiment:</b> a 5-color palette from red (negative sentiment) to green (positive sentiment) for visualizing deviation from a neutral midpoint</li>
+                <li><b>Divergent Effort:</b> a 5-color palette from orange (high effort) to blue (low effort) for visualizing deviation from a neutral midpoint</li>
+            </ul>
+            <h3 class="subhead">System Integration</h3>
+            <p>To ensure consistency with our new design system, I used the predefined 8 color ramps (each with 10 values) as building blocks. These ramps were designed with accessibility in mind, making them an ideal foundation. I mapped each palette type to specific values from the ramps, testing combinations iteratively.</p>
+            <div class="u-image-md">
+                <img src="imgs/qualtrics/qualtrics_colors.png" alt="">
+            </div>
+            <h3 class="subhead">Color Theory and Semiotics</h3>
+            <p>I considered color theory and color semiotics to ensure meaning was implied for certain palettes, but wasn’t unintentionally implied for others. For example, as a US-based company we use red to mean negative sentiment in our language analysis, but for eastern cultures red is associated with fortune. For our enterprise customer Target, red is associated with the brand and should not be used to imply negative feedback.</p>
+            <p>Within our own color system, the color Cinnabar 500 has different visual meanings in different contexts. When designing palettes it was important to control for the order colors appear to ensure appropriate contrast with neighboring colors when a visualization contained 1, 2, 3, 4, or any number of data points.</p>
+            <div class="u-image-md">
+                <img src="imgs/qualtrics/qualtrics_colors_semiotics.png" alt="">
+            </div>
+            <p>One way to make our palettes more accessible for users with color deficiencies is to choose colors from separate color ramps to place next to each other. For example, choosing Fuschia 500 and Vermillion 500 as neighbors would likely not be distinguishable for users with certain color deficiencies, but Fuschia 500 and Vermillion 700 would have visual contrast even in grayscale.</p>
+            <h3 class="subhead">Prototyping and Testing</h3>
+            <p>Using Figma and data visualization tools, I prototyped each palette across both light and dark themes. I simulated common color vision deficiencies and ran usability tests internally to confirm that the palettes were distinguishable and readable.</p>
+            <div class="u-image-md">
+                <img src="imgs/qualtrics/qualtrics_colors_viz_palette.png" alt="">
+            </div>
+            <p>I also built a system for fallback and repetition logic, ensuring that when data visualizations included more categories than colors, the palette would repeat with minimal confusion—by maintaining color order and legibility.</p>
+        </section>
+        <section class="l-container">
+            <h2 class="heading">Outcomes</h2>
+            <p>The final result was a set of seven color palette groups that are fully accessible under WCAG 2.1 AA guidelines, adaptable to both light and dark themes, and aligned with our design system for long-term scalability. These palettes significantly improve readability and data comprehension across customer dashboards and give product teams the flexibility to select the right palette for their use case.</p>
+            <div class="u-image-lg">
+                <img src="imgs/qualtrics/qualtrics_colors_new.png" alt="">
+            </div>
+            <p>The new palettes are now used across all customer-facing dashboards and internal reporting tools, providing a consistent, inclusive, and professional visual language for our data.</p>
+            <div class="u-image-md">
+                <img src="imgs/qualtrics/qualtrics_colors_testing.png" alt="">
+            </div>
+            <h3 class="subhead">Additional Accessibility Measures</h3>
+            <p>In addition to redesigning the color palettes, our team took several steps to improve accessibility across data visualizations:</p>
+            <ul>
+                <li>Added a viewer-facing toggle to switch the dashboard between pattern fills and color fills for additional differentiation between data points.</li>
+                <li>Standardized tooltip behavior and labels across data visualizations</li>
+                <li>Supported keyboard navigation for interactive charts</li>
+                <li>Advocated for screen reader compatibility to ensure information was accessible to all users</li>
+                <li>Helped define best practices for accessible chart interactions across the product</li>
+            </ul>
+            <p>These enhancements laid the groundwork for a more inclusive experience throughout the customer dashboards.</p>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-email">
+            <a href="mailto:ezramustra@gmail.com" class="social">
+                <img src="imgs/email.svg" alt="email" class="social-icon">
+                <span class="social-label">ezramustra@gmail.com</span>
+            </a>
+            <a href="http://www.linkedin.com/in/emustra" class="social">
+                <img src="imgs/linked.svg" alt="linked in" class="social-icon">
+                <span class="social-label">linkedin</span>
+            </a>
+            <p class="footer-attribution">Handcoded by Ezra. &copy; 2025</p>        </div><!--/footer-email-->
+    </footer>
+</body>
+</html>
