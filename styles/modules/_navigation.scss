@@ -18,7 +18,7 @@
   }
   @include mq(sm_down) {
     align-content: center;
-    background-color: $color-background;
+    background-color: $color-black;
     grid-row-gap: 0.5rem;
     height: 0;
     max-width: 90vw;
@@ -28,6 +28,8 @@
     top: 4rem;
     width: 0;
     &.is-open {
+      border: 1px solid $color-white;
+      @include border-radius(8px);
       height: 13rem;
       padding: .5rem 0;
       width: 20rem;
@@ -39,7 +41,6 @@
 }
 .nav__link {
   border-bottom: 2px solid rgba(255,255,255,0);
-  color: $color-text;
   font-size: 1rem;
   padding: .5rem;
   text-decoration: none;
@@ -50,16 +51,17 @@
     }
   }
   @include mq(sm_down) {
+    color: $color-white;
     display: block;
     padding: .5rem 1rem;
     &:hover {
-      background-color: $color-primary-lightest;
-      border-color: $color-primary-lightest;
-      color: $color-text;
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-white;
     }
     &:active {
-      background-color: $color-primary-light;
-      border-color: $color-primary-light;
+      background-color: $color-primary-dark;
+      border-color: $color-primary-dark;
     }
   }
 }

@@ -161,7 +161,7 @@ summary {
   }
 }
 html {
-  color: #000000;
+  color: #092A2B;
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
 }
@@ -271,7 +271,6 @@ hr {
 @media only screen and (max-width: 919px) {
   .display-sm {
     font-size: 1.25rem;
-    font-weight: 700;
   }
 }
 
@@ -580,7 +579,7 @@ hr {
 .l-header__logo {
   align-items: center;
   border: none;
-  color: #000000;
+  color: #092A2B;
   display: grid;
   font-family: "Parkinsans", sans-serif;
   font-size: 1.5rem;
@@ -591,10 +590,27 @@ hr {
 }
 
 .l-footer {
-  background-color: #0E4749;
+  background-color: #092A2B;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4rem 0 0;
+}
+
+.l-footer__logo {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.l-footer__left {
+  font-size: 1.2rem;
+  padding: 3rem 2rem;
+}
+
+.l-footer__right {
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 3rem 2rem;
+  text-align: right;
 }
 
 .social {
@@ -615,18 +631,6 @@ hr {
 .social .social-label:hover {
   border-color: #CBF1F2;
   color: #CBF1F2;
-}
-
-.footer-email {
-  border-left: 1px solid #FFFFFF;
-  grid-column-start: 2;
-  padding: 2rem 0 1rem 2rem;
-}
-
-.footer-attribution {
-  color: #FFFFFF;
-  font-size: 1rem;
-  padding: 2rem 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -723,7 +727,7 @@ hr {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   align-content: center;
-  background-color: #000000;
+  background-color: #092A2B;
   display: grid;
   grid-template-columns: 8rem;
   height: 8rem;
@@ -772,6 +776,9 @@ hr {
 .card__image--primary {
   background-color: #0E4749;
 }
+.card__image--qualtrics {
+  background-color: #1A56B3;
+}
 .card__image--stitchgood {
   background-color: #455FE8;
 }
@@ -794,7 +801,7 @@ hr {
 }
 
 .card__tagline {
-  color: #000000;
+  color: #092A2B;
   line-height: 1.4;
 }
 .card__tagline:hover {
@@ -821,7 +828,7 @@ hr {
 }
 
 .card__title {
-  color: #000000;
+  color: #092A2B;
   font-family: "Parkinsans", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
@@ -903,7 +910,7 @@ hr {
 }
 
 .img-list__title {
-  color: #000000;
+  color: #092A2B;
   font-size: 2rem;
   line-height: 1.2;
   margin: 0 auto 0.5rem;
@@ -915,7 +922,7 @@ hr {
 }
 
 .intro {
-  background-color: #0E4749;
+  background-color: #092A2B;
   color: #FFFFFF;
   margin: 0 0 2rem;
   padding: 3rem 2rem 1rem;
@@ -959,7 +966,7 @@ hr {
 @media only screen and (max-width: 719px) {
   .nav__list {
     align-content: center;
-    background-color: #FFFFFF;
+    background-color: #092A2B;
     grid-row-gap: 0.5rem;
     height: 0;
     max-width: 90vw;
@@ -970,6 +977,10 @@ hr {
     width: 0;
   }
   .nav__list.is-open {
+    border: 1px solid #FFFFFF;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
     height: 13rem;
     padding: 0.5rem 0;
     width: 20rem;
@@ -982,7 +993,6 @@ hr {
 
 .nav__link {
   border-bottom: 2px solid rgba(255, 255, 255, 0);
-  color: #000000;
   font-size: 1rem;
   padding: 0.5rem;
   text-decoration: none;
@@ -995,17 +1005,18 @@ hr {
 }
 @media only screen and (max-width: 719px) {
   .nav__link {
+    color: #FFFFFF;
     display: block;
     padding: 0.5rem 1rem;
   }
   .nav__link:hover {
-    background-color: #CBF1F2;
-    border-color: #CBF1F2;
-    color: #000000;
+    background-color: #038187;
+    border-color: #038187;
+    color: #FFFFFF;
   }
   .nav__link:active {
-    background-color: #ABDBDD;
-    border-color: #ABDBDD;
+    background-color: #09666B;
+    border-color: #09666B;
   }
 }
 

@@ -34,7 +34,6 @@
   }
   @include mq(md_down) {
     font-size: 1.25rem;
-    font-weight: $font-weight-bold;
   }
 }
 .heading-lg {

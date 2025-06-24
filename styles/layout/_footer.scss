@@ -2,38 +2,54 @@
 @use '../base/mixins' as *;
 
 .l-footer {
-  background-color: $color-primary-darkest;
+  background-color: $color-black;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 4rem 0 0;
 }
+.l-footer__logo {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.l-footer__left {
+  font-size: 1.2rem; 
+  padding: 3rem 2rem;
+}
+.l-footer__right {
+  color: $color-white;
+  font-size: 1rem; 
+  padding: 3rem 2rem;
+  text-align: right;
+}
 .social {
   border:none; display:block; padding:0 0 .5rem;
-  .social-icon { width:1.5rem; }
+  .social-icon { 
+    width:1.5rem; 
+  }
   .social-label {
-    border-bottom:1px solid rgba(255,255,255);
+    border-bottom: 1px solid rgba(255,255,255);
     color: $color-white;
-    display:inline-block; margin:.25rem 0 .25rem .25rem;
-    vertical-align:bottom;
+    display: inline-block; 
+    margin: .25rem 0 .25rem .25rem;
+    vertical-align: bottom;
     &:hover {
-       border-color:$color-primary-lightest; color:$color-primary-lightest;
+       border-color: $color-primary-lightest; 
+       color: $color-primary-lightest;
     }
   }
 }
-.footer-email {
-  border-left:1px solid $color-border; grid-column-start:2; padding:2rem 0 1rem 2rem;
-}
-.footer-attribution {
-  color: $color-white;
-  font-size:1rem; padding:2rem 0 0;
-}
+
 
 @media screen and (max-width: 768px){
-  .l-footer { grid-template-columns:1fr; }
+  .l-footer { 
+    grid-template-columns: 1fr; 
+  }
   .footer-email {
-    border-left:none; grid-column-start:1;
+    border-left: none; 
+    grid-column-start: 1;
   }
   .social {
-    margin:.5rem 0; padding:0 0 .5rem;
+    margin: .5rem 0; 
+    padding: 0 0 .5rem;
   }
 }
