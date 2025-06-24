@@ -10,11 +10,43 @@
     margin: 0 0 2rem;
     padding: 4rem 2rem 6rem;
   }
-  &--secondary {
-    padding-top: 1rem;
-    text-align: center;
-    @include mq(md_up) {
-      padding-top: 3rem;
-    }
+  &--almostcooked {
+    background-color: $color-almostcooked;
+  }
+  &--designlab {
+    background-color: $color-designlab;
+  }
+  &--cyberknitics {
+    background-color: $color-cyberknitics;
+  }
+  &--knitnet {
+    background-color: $color-knitnet;
+  }
+  &--lovelace {
+    background-color: $color-lovelace;
+  }
+  &--paiceds {
+    background-color: $color-paiceds;
+  }
+  &--paiceux {
+    background-color: $color-paiceux;
+  }
+  &--primary {
+    background-color: $color-primary-darkest;
+  }
+  &--nationbuilder {
+    background-color: $color-nationbuilder;
+  }
+  &--qualtrics {
+      background-color: $color-qualtrics;
+  }
+  &--stitchgood {
+    background-color: $color-stitchgood;
+  }
+  &--teknikio {
+    background-color: $color-teknikio;
+  }
+  &--weatherwhiskers {
+    background-color: $color-weatherwhiskers;
   }
 }

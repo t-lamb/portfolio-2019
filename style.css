@@ -933,14 +933,44 @@ hr {
     padding: 4rem 2rem 6rem;
   }
 }
-.intro--secondary {
-  padding-top: 1rem;
-  text-align: center;
+.intro--almostcooked {
+  background-color: #E43E3B;
 }
-@media only screen and (min-width: 920px) {
-  .intro--secondary {
-    padding-top: 3rem;
-  }
+.intro--designlab {
+  background-color: #1F2453;
+}
+.intro--cyberknitics {
+  background-color: #505CFB;
+}
+.intro--knitnet {
+  background-color: #CC33FF;
+}
+.intro--lovelace {
+  background-color: #6A8A85;
+}
+.intro--paiceds {
+  background-color: #005A70;
+}
+.intro--paiceux {
+  background-color: #354A53;
+}
+.intro--primary {
+  background-color: #0E4749;
+}
+.intro--nationbuilder {
+  background-color: #000000;
+}
+.intro--qualtrics {
+  background-color: #1A56B3;
+}
+.intro--stitchgood {
+  background-color: #455FE8;
+}
+.intro--teknikio {
+  background-color: #3D53B8;
+}
+.intro--weatherwhiskers {
+  background-color: #2CB7C0;
 }
 
 .nav {
